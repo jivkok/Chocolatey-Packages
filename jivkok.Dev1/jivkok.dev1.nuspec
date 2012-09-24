@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>jivkok.dev1</id>
+    <title>Jivkok.Dev1</title>
+    <version>1.0.0.0</version>
+    <authors>Jivko Kolev</authors>
+    <owners>Jivko Kolev</owners>
+    <summary>Jivkok.Dev1 - Suite of dev packages</summary>
+    <description>Jivkok.Dev1 includes a number of packages including BeyondCompare, CoffeeScript, Console2, curl, DependencyWalker, dotPeek, expresso, Fiddler, GithubForWindows, HxD, IcoFx, KDiff3, LessMsi, Linqpad4, Logparser, Logparser.LizardGui, NotepadPlusPlus, Nuget.commandline, NugetPackageExplorer, P4Merge, Paint.net, PeStudio, PsTools, QueryExPlus, Resharper, ResourcesExtract, SqlCop, StyleCop, SublimeText2, Sysinternals, TestDriven.Net, WinDbg.</description>
+    <projectUrl>https://github.com/jivkok/Chocolatey-Packages</projectUrl>
+    <tags>jivkok dev</tags>
+    <dependencies>
+      <dependency id='beyondcompare' />
+      <dependency id='CoffeeScript' />
+      <dependency id='Console2' />
+      <dependency id='curl' />
+      <dependency id='dependencywalker' />
+      <dependency id='dotPeek' />
+      <dependency id='expresso' />
+      <dependency id='fiddler' />
+      <dependency id='githubforwindows' />
+      <dependency id='HxD' />
+      <dependency id='IcoFx' />
+      <dependency id='kdiff3' />
+      <dependency id='lessmsi' />
+      <dependency id='linqpad4' />
+      <dependency id='logparser' />
+      <dependency id='logparser.lizardgui' />
+      <dependency id='notepadplusplus' />
+      <dependency id='nuget.commandline' />
+      <dependency id='NugetPackageExplorer' />
+      <dependency id='P4Merge' />
+      <dependency id='paint.net' />
+      <dependency id='PeStudio' />
+      <dependency id='pstools' />
+      <dependency id='queryexplus' />
+      <dependency id='resharper' />
+      <dependency id='resourcesextract' />
+      <dependency id='sqlcop' />
+      <dependency id='stylecop' />
+      <dependency id='sublimetext2' />
+      <dependency id='sysinternals' />
+      <dependency id='TestDriven.Net' />
+      <dependency id='windbg' />
+    </dependencies>
+  </metadata>
+</package>

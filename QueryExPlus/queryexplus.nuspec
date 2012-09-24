@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <version>2.0.3.2</version>
+    <authors>Joseph Albahari, Timur Fanshteyn</authors>
+    <owners>Jivko Kolev</owners>
+    <projectUrl>http://sourceforge.net/projects/queryexplus/</projectUrl>
+    <iconUrl>http://chocolatey.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>
+    <licenseUrl>http://sourceforge.net/projects/queryexplus/</licenseUrl>
+    <id>queryexplus</id>
+    <title>QueryExPlus</title>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Query Express is a simple Query Analyzer look-alike, but being small and free it can be run where the SQL Server client tools are not installed or licensed. This makes it especially useful as a query tool for MSDE and SQL Express. It also connects to Oracle and other OLE-DB compliant databases..</description>
+    <summary>Database Query Tool - MS Query Analyzer look-alike</summary>
+    <tags>queryexplus database sql query analyzer</tags>
+  </metadata>
+</package>

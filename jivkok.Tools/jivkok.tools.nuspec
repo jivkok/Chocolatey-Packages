@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>jivkok.tools</id>
+    <title>Jivkok.Tools</title>
+    <version>1.0.2</version>
+    <authors>Jivko Kolev</authors>
+    <owners>Jivko Kolev</owners>
+    <summary>Jivkok.Tools - Suite of Utilities</summary>
+    <description>Jivkok.Tools includes a number of utilities including 7zip.install, 7zip.commandline, AutoHotKey_L, Calibre, CCleaner, Defraggler, Far-3, Filezilla, Firefox, FoxitReader, GoogleChrome, HTTrack, KeePass, MicrosoftSecurityEssentials, mRemote, nmap, NugetPackageExplorer, PDFCreator, PomoTime, Putty, Shotty, SkyDrive, Skype, SugarSync, SyncBack, TeamViewer, VirtualCloneDrive, VLC, WinDirStat, WinSCP, XMind.
+cinst jivkok.tools will get all of these tools installed.
+Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+    <projectUrl>https://github.com/jivkok/Chocolatey-Packages</projectUrl>
+    <tags>jivkok utilities tools</tags>
+    <dependencies>
+      <dependency id='7zip.install' />
+      <dependency id='7zip.commandline' />
+      <dependency id='AutoHotKey_L' />
+      <dependency id='calibre' />
+      <dependency id='ccleaner' />
+      <dependency id='defraggler' />
+      <dependency id='Far-3' />
+      <dependency id='filezilla' />
+      <dependency id='Firefox' />
+      <dependency id='FoxitReader' />
+      <dependency id='GoogleChrome' />
+      <dependency id='httrack' />
+      <dependency id='keepass' />
+      <dependency id='MicrosoftSecurityEssentials' />
+      <dependency id='mRemote' />
+      <dependency id='nmap' />
+      <dependency id='PDFCreator' />
+      <dependency id='PomoTime' />
+      <dependency id='putty' />
+      <dependency id='Shotty' />
+      <dependency id='SkyDrive' />
+      <dependency id='skype' />
+      <dependency id='sugarsync' />
+      <dependency id='syncback' />
+      <dependency id='teamviewer' />
+      <dependency id='VirtualCloneDrive' />
+      <dependency id='vlc' />
+      <dependency id='windirstat' />
+      <dependency id='winscp' />
+      <dependency id='xmind' />
+    </dependencies>
+  </metadata>
+</package>

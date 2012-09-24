@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <version>2.2.0.1</version>
+    <authors>Microsoft Corp.</authors>
+    <owners>Jivko Kolev</owners>
+    <projectUrl>http://www.microsoft.com/en-us/download/details.aspx?id=24659</projectUrl>
+    <iconUrl>http://i.microsoft.com/global/ImageStore/PublishingImages/logos/56x56/microsoft_logo_56x56.png</iconUrl>
+    <licenseUrl>http://www.microsoft.com/en-us/download/details.aspx?id=24659</licenseUrl>
+    <id>logparser</id>
+    <title>LogParser</title>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Log parser is a powerful, versatile tool that provides universal query access to text-based data such as log files, XML files and CSV files, as well as key data sources on the Windows® operating system such as the Event Log, the Registry, the file system, and Active Directory®. You tell Log Parser what information you need and how you want it processed. The results of your query can be custom-formatted in text based output, or they can be persisted to more specialty targets like SQL, SYSLOG, or a chart.
+Most software is designed to accomplish a limited number of specific tasks. Log Parser is different... the number of ways it can be used is limited only by the needs and imagination of the user. The world is your database with Log Parser.</description>
+    <summary>Log parser is a powerful, versatile tool that provides universal query access to text-based data such as log files, XML files and CSV files, as well as key data sources on the Windows® operating system such as the Event Log, the Registry, the file system, and Active Directory®.</summary>
+    <tags>logparser log parser eventlog registry ad wmi syslog</tags>
+  </metadata>
+</package>

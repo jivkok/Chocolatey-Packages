@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <version>3.2.21.1</version>
+    <authors>2BrightSparks</authors>
+    <owners>Jivko Kolev</owners>
+    <projectUrl>http://www.2brightsparks.com/syncback/index.html</projectUrl>
+    <iconUrl>http://www.2brightsparks.com/assets/images/freeware/feature-syncback.gif</iconUrl>
+    <licenseUrl>http://www.2brightsparks.com/terms.html</licenseUrl>
+    <id>syncback</id>
+    <title>SyncBack</title>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Freeware program that helps you easily backup and synchronize your files to: the same drive; a different drive or medium (CDRW, CompactFlash, etc); an FTP server; a Network; or a Zip archive.</description>
+    <summary>Backup and synchronize your files</summary>
+    <tags>syncback backup sync synchronize files</tags>
+  </metadata>
+</package>

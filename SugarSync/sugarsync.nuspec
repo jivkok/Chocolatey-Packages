@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <version>1.9.71.1</version>
+    <authors>SugarSync.com</authors>
+    <owners>Jivko Kolev</owners>
+    <projectUrl>https://www.sugarsync.com/</projectUrl>
+    <iconUrl>https://www.sugarsync.com/images/main-logo.png</iconUrl>
+    <licenseUrl>https://www.sugarsync.com/terms.html</licenseUrl>
+    <id>sugarsync</id>
+    <title>SugarSync</title>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>SugarSync is a free service that enables you to access, sync and share your files across all your computers and devices. We enable you to back up, sync and share all of your documents, photos, music and movies so that you can access them from your PC, Mac, iPhone, iPad, Android, BlackBerry, or any other device.</description>
+    <summary>Access, sync, and share your files from any device - free 5GB account</summary>
+    <tags>SugarSync access sync share files documents photos</tags>
+  </metadata>
+</package>
