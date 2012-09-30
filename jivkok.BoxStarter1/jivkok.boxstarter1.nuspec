@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>jivkok.boxstarter1</id>
+    <title>Jivkok.BoxStarter1</title>
+    <version>1.0.0.1</version>
+    <authors>Jivko Kolev</authors>
+    <owners>Jivko Kolev</owners>
+    <summary>Jivkok.BoxStarter1 - Prepare/Configure machine</summary>
+    <description>Jivkok.BoxStarter1 configures new machine to certain personal preferences: disable UAC; set explorer options (view all files); set small taskbar; enable remote desktop; install Windows updates.</description>
+    <projectUrl>https://github.com/jivkok/Chocolatey-Packages</projectUrl>
+    <tags>jivkok boxstarter</tags>
+    <dependencies>
+      <dependency id='notepadplusplus' />
+    </dependencies>
+  </metadata>
+</package>
