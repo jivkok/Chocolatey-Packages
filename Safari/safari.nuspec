@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <version>5.1.7.1</version>
+    <authors>Apple Corp.</authors>
+    <owners>Jivko Kolev</owners>
+    <projectUrl>http://www.apple.com/safari/</projectUrl>
+    <iconUrl>http://images.apple.com/safari/images/overview_title.jpg</iconUrl>
+    <licenseUrl>http://www.apple.com/legal/terms/site.html</licenseUrl>
+    <id>safari</id>
+    <title>Safari</title>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Safari Web Browser.</description>
+    <summary>Safari Web Browser.</summary>
+    <tags>safari web browser apple</tags>
+  </metadata>
+</package>
