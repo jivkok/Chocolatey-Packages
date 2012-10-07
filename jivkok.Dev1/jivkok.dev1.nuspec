@@ -3,14 +3,15 @@
   <metadata>
     <id>jivkok.dev1</id>
     <title>Jivkok.Dev1</title>
-    <version>1.0.0.0</version>
+    <version>1.0.0.1</version>
     <authors>Jivko Kolev</authors>
     <owners>Jivko Kolev</owners>
     <summary>Jivkok.Dev1 - Suite of dev packages</summary>
-    <description>Jivkok.Dev1 includes a number of packages including BeyondCompare, CoffeeScript, Console2, curl, DependencyWalker, dotPeek, expresso, Fiddler, GithubForWindows, HxD, IcoFx, KDiff3, LessMsi, Linqpad4, Logparser, Logparser.LizardGui, NotepadPlusPlus, Nuget.commandline, NugetPackageExplorer, P4Merge, Paint.net, PeStudio, PsTools, QueryExPlus, Resharper, ResourcesExtract, SqlCop, StyleCop, SublimeText2, Sysinternals, TestDriven.Net, WinDbg.</description>
+    <description>Jivkok.Dev1 includes a number of packages including BareTail, BeyondCompare, CoffeeScript, Console2, curl, DependencyWalker, dotPeek, expresso, Fiddler, GithubForWindows, HxD, IcoFx, KDiff3, LessMsi, Linqpad4, Logparser, Logparser.LizardGui, NotepadPlusPlus, Nuget.commandline, NugetPackageExplorer, P4Merge, Paint.net, PeStudio, PsTools, QueryExPlus, Resharper, ResourcesExtract, SqlCop, StyleCop, SublimeText2, Sysinternals, TestDriven.Net, WinDbg.</description>
     <projectUrl>https://github.com/jivkok/Chocolatey-Packages</projectUrl>
     <tags>jivkok dev</tags>
     <dependencies>
+      <dependency id='baretail' />
       <dependency id='beyondcompare' />
       <dependency id='CoffeeScript' />
       <dependency id='Console2' />
