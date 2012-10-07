@@ -1,0 +1,1 @@
+Install-ChocolateyPackage 'sqlbpa.2012' 'msi' '/passive' 'http://download.microsoft.com/download/B/B/2/BB2C20B3-B965-44F2-B22B-9AA3223DBDB2/SQL2012BPA_Setup32.msi' 'http://download.microsoft.com/download/B/B/2/BB2C20B3-B965-44F2-B22B-9AA3223DBDB2/SQL2012BPA_Setup64.msi'

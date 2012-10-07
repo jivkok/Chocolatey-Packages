@@ -1,0 +1,1 @@
+Install-ChocolateyPackage 'sqlbpa.2008' 'msi' '/passive' 'http://download.microsoft.com/download/9/3/C/93CCF4F6-B1DC-4636-BE83-05478125E98E/1033/X86/SQL2008R2BPA_Setup32.msi' 'http://download.microsoft.com/download/9/3/C/93CCF4F6-B1DC-4636-BE83-05478125E98E/1033/X64/SQL2008R2BPA_Setup64.msi'

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <version>2.0.0.1</version>
+    <authors>Microsoft Corp.</authors>
+    <owners>Jivko Kolev</owners>
+    <projectUrl>http://www.microsoft.com/en-us/download/details.aspx?id=16475</projectUrl>
+    <iconUrl>http://i.microsoft.com/global/ImageStore/PublishingImages/logos/56x56/microsoft_logo_56x56.png</iconUrl>
+    <licenseUrl>http://www.microsoft.com/en-us/download/details.aspx?id=16475</licenseUrl>
+    <id>mbca</id>
+    <title>Microsoft Baseline Configuration Analyzer 2.0</title>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Microsoft Baseline Configuration Analyzer 2.0 (MBCA 2.0) can help you maintain optimal system configuration by analyzing configurations of your computers against a predefined set of best practices, and reporting results of the analyses. Best practices are developed by a product development team or domain experts, and are packaged in the form of a best practice model. Models are available as separately-downloadable packages that can be run and analyzed by MBCA. MBCA lets users work with best practice models in a consistent, user-friendly way.</description>
+    <summary>Microsoft Baseline Configuration Analyzer 2.0</summary>
+    <tags>microsoft baseline configuration analyzer best practices</tags>
+  </metadata>
+</package>

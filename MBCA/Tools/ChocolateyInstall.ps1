@@ -1,0 +1,1 @@
+Install-ChocolateyPackage 'mbca' 'msi' '/passive' 'http://download.microsoft.com/download/A/6/E/A6E303A4-D4BA-4423-BAB1-495582C67F64/MBCA_Setup32.msi' 'http://download.microsoft.com/download/A/6/E/A6E303A4-D4BA-4423-BAB1-495582C67F64/MBCA_Setup64.msi'

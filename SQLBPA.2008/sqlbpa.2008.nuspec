@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <version>8.0.0.1</version>
+    <authors>Microsoft Corp.</authors>
+    <owners>Jivko Kolev</owners>
+    <projectUrl>http://www.microsoft.com/en-us/download/details.aspx?id=15289</projectUrl>
+    <iconUrl>http://i.microsoft.com/global/ImageStore/PublishingImages/logos/56x56/microsoft_logo_56x56.png</iconUrl>
+    <licenseUrl>http://www.microsoft.com/en-us/download/details.aspx?id=15289</licenseUrl>
+    <id>sqlbpa.2008</id>
+    <title>Microsoft SQL Server 2008 - Best Practices Analyzer</title>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The Microsoft SQL Server 2008 BPA is a diagnostic tool that performs the following functions:
+- Gathers information about a Server and a Microsoft SQL Server 2008 or 2008 R2 instance installed on that Server
+- Determines if the configurations are set according to the recommended best practices
+- Reports on all configurations, indicating settings that differ from recommendations
+- Indicates potential problems in the installed instance of SQL Server
+- Recommends solutions to potential problems</description>
+    <summary>Microsoft® SQL Server® 2008 Best Practices Analyzer</summary>
+    <tags>sql server best practices analyzer microsoft diag diagnostics</tags>
+    <dependencies>
+      <dependency id='mbca' />
+    </dependencies>
+  </metadata>
+</package>
