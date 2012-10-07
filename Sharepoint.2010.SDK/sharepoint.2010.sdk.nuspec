@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>sharepoint.2010.sdk</id>
+    <title>Microsoft Sharepoint 2010 Software Development Kit</title>
+    <version>12.0.0.1</version>
+    <authors>Microsoft Corp.</authors>
+    <owners>Jivko Kolev</owners>
+    <projectUrl>http://msdn.microsoft.com/en-us/library/ee557253.aspx</projectUrl>
+    <iconUrl>http://i.microsoft.com/global/ImageStore/PublishingImages/logos/56x56/office_symbol_clr_56x56.png</iconUrl>
+    <licenseUrl>http://msdn.microsoft.com/en-us/library/ee557253.aspx</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Microsoft Sharepoint 2010 Software Development Kit</summary>
+    <description>The SDK includes documentation and code samples for Microsoft SharePoint Foundation 2010 and for Microsoft SharePoint Server 2010, which builds upon the SharePoint Foundation 2010 infrastructure. The documentation includes detailed descriptions of the technologies that SharePoint Server 2010 and SharePoint Foundation 2010 provide for developers, reference documentation for the server and client object models, and step-by-step procedures for using and programming with these technologies and object models. This SDK also includes best practices and setup guidance that will help you get started with your own custom applications that build and extend upon the SharePoint Foundation 2010 and SharePoint Server 2010 platforms.</description>
+    <tags>microsoft office sharepoint server 2010 sdk</tags>
+  </metadata>
+</package>
