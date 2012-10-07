@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>project.2010.sdk</id>
+    <title>Microsoft Project 2010 Software Development Kit</title>
+    <version>12.0.0.1</version>
+    <authors>Microsoft Corp.</authors>
+    <owners>Jivko Kolev</owners>
+    <projectUrl>http://www.microsoft.com/en-us/download/details.aspx?id=15511</projectUrl>
+    <iconUrl>http://i.microsoft.com/global/ImageStore/PublishingImages/logos/56x56/office_symbol_clr_56x56.png</iconUrl>
+    <licenseUrl>http://www.microsoft.com/en-us/download/details.aspx?id=15511</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Microsoft Project 2010 Software Development Kit</summary>
+    <description>The Microsoft Project 2010 SDK contains documentation, code samples, "How to" articles, and programming references to help customize and integrate the Project 2010 clients and Project Server 2010 with other applications for enterprise project management.</description>
+    <tags>microsoft office project server projectserver 2010 sdk psi winproj</tags>
+  </metadata>
+</package>
