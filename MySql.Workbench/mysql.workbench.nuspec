@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>mysql.workbench</id>
+    <title>MySQL Workbench</title>
+    <version>5.2.44.1</version>
+    <authors>Oracle</authors>
+    <owners>Jivko Kolev</owners>
+    <projectUrl>http://mysql.com/</projectUrl>
+    <iconUrl>http://www.mysql.com/common/logos/logo-mysql-110x57.png</iconUrl>
+    <licenseUrl>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>MySQL Workbench (GUI Tool)</summary>
+    <description>MySQL Workbench provides DBAs and developers an integrated tools environment for:
+- Database Design and Modeling
+- SQL Development (replacing MySQL Query Browser)
+- Database Administration (replacing MySQL Administrator)</description>
+    <tags>mysql workbench sql database query browser administrator</tags>
+  </metadata>
+</package>
