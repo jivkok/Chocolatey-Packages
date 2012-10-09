@@ -3,11 +3,11 @@
   <metadata>
     <id>jivkok.dev1</id>
     <title>Jivkok.Dev1</title>
-    <version>1.0.0.1</version>
+    <version>1.0.0.3</version>
     <authors>Jivko Kolev</authors>
     <owners>Jivko Kolev</owners>
     <summary>Jivkok.Dev1 - Suite of dev packages</summary>
-    <description>Jivkok.Dev1 includes a number of packages including BareTail, BeyondCompare, CoffeeScript, Console2, curl, DependencyWalker, dotPeek, expresso, Fiddler, GithubForWindows, HxD, IcoFx, KDiff3, LessMsi, Linqpad4, Logparser, Logparser.LizardGui, NotepadPlusPlus, Nuget.commandline, NugetPackageExplorer, P4Merge, Paint.net, PeStudio, PsTools, QueryExPlus, Resharper, ResourcesExtract, SqlCop, StyleCop, SublimeText2, Sysinternals, TestDriven.Net, WinDbg.</description>
+    <description>Jivkok.Dev1 includes a number of packages including BareTail, BeyondCompare, CoffeeScript, Console2, curl, DependencyWalker, dotPeek, expresso, Fiddler, GithubForWindows, HxD, IcoFx, Indihiang, KDiff3, LessMsi, Linqpad4, Logparser, Logparser.LizardGui, NotepadPlusPlus, Nuget.commandline, NugetPackageExplorer, P4Merge, Paint.net, Pal, PerfView, PeStudio, ProcDump, Procexp, ProcMon, PsTools, QueryExPlus, Resharper, ResourcesExtract, SqlCop, SqlDiagManager, SqlNexus, StyleCop, SublimeText2, Sysinternals, TestDriven.Net, WinDbg.</description>
     <projectUrl>https://github.com/jivkok/Chocolatey-Packages</projectUrl>
     <tags>jivkok dev</tags>
     <dependencies>
@@ -23,6 +23,7 @@
       <dependency id='githubforwindows' />
       <dependency id='HxD' />
       <dependency id='IcoFx' />
+      <dependency id='indihiang' />
       <dependency id='kdiff3' />
       <dependency id='lessmsi' />
       <dependency id='linqpad4' />
@@ -33,12 +34,19 @@
       <dependency id='NugetPackageExplorer' />
       <dependency id='P4Merge' />
       <dependency id='paint.net' />
+      <dependency id='pal' />
+      <dependency id='perfview' />
       <dependency id='PeStudio' />
+      <dependency id='procdump' />
+      <dependency id='procexp' />
+      <dependency id='procmon' />
       <dependency id='pstools' />
       <dependency id='queryexplus' />
       <dependency id='resharper' />
       <dependency id='resourcesextract' />
       <dependency id='sqlcop' />
+      <dependency id='sqldiagmanager' />
+      <dependency id='sqlnexus' />
       <dependency id='stylecop' />
       <dependency id='sublimetext2' />
       <dependency id='sysinternals' />
