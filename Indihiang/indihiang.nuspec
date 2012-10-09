@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>indihiang</id>
+    <title>Indihiang - Web Log Analyzing Tool</title>
+    <version>1.0.0.1</version>
+    <authors>agusk</authors>
+    <owners>Jivko Kolev</owners>
+    <projectUrl>http://indihiang.codeplex.com/</projectUrl>
+    <iconUrl>http://chocolatey.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>
+    <licenseUrl>http://indihiang.codeplex.com/license</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>The tool analyzes IIS and Apache Web servers in comprehensive graphs and reports.</summary>
+    <description>The tool analyzes IIS and Apache Web servers in comprehensive graphs and reports.
+Project Features:
+- .NET Framework with C# as programming language
+- Web Log Viewer and analyzer
+- Web Log Consolidation
+- Web Log Real-time monitoring
+- Support for IIS6 and IIS7
+- Trend Data Analysis
+- Reporting</description>
+    <tags>iis apache web server log logparser analysis</tags>
+  </metadata>
+</package>
