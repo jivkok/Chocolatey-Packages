@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>pal</id>
+    <title>Performance Analysis of Logs (PAL) Tool</title>
+    <version>2.3.2.1</version>
+    <authors>mikelag, svenhau</authors>
+    <owners>Jivko Kolev</owners>
+    <projectUrl>http://pal.codeplex.com/</projectUrl>
+    <iconUrl>http://chocolatey.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>
+    <licenseUrl>http://pal.codeplex.com/license</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Ever have a performance problem, but don't know what performance counters to collect or how to analyze them? The PAL (Performance Analysis of Logs) tool is a powerful tool that reads in a performance monitor counter log and analyzes it using known thresholds.</summary>
+    <description>Ever have a performance problem, but don't know what performance counters to collect or how to analyze them? The PAL (Performance Analysis of Logs) tool is a powerful tool that reads in a performance monitor counter log and analyzes it using known thresholds.
+Features:
+- Thresholds files for most of the major Microsoft products such as IIS, MOSS, SQL Server, BizTalk, Exchange, and Active Directory.
+- An easy to use GUI interface which makes creating batch files for the PAL.ps1 script.
+- A GUI editor for creating or editing your own threshold files.
+- Creates an HTML based report for ease of copy/pasting into other applications.
+- Analyzes performance counter logs for thresholds using thresholds that change their criteria based on the computer's role or hardware specs.
+</description>
+    <tags>microsoft performance perfmon counter monitor analysis log iis moss sqlserver biztalk exchange ad</tags>
+  </metadata>
+</package>
