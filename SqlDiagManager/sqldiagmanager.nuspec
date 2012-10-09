@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>sqldiagmanager</id>
+    <title>SqlDiag Manager</title>
+    <version>10.5.1.202</version>
+    <authors>Microsoft</authors>
+    <owners>Jivko Kolev</owners>
+    <projectUrl>http://diagmanager.codeplex.com/</projectUrl>
+    <iconUrl>http://chocolatey.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>
+    <licenseUrl>http://diagmanager.codeplex.com/license</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>SqlDiag Manager is a graphic interface that provides customization capbabilities to collect data for SQL Server using sqldiag collector engine. The data collected can be used by SQL Nexus tool which help you troubleshoot SQL Server performance problems.  This is the same tool Microsoft SQL Server support engineers use to for data collection to troubleshoot customer's performance problems.</summary>
+    <description>Sqldiag Manager is a graphic interface that provides customization capbabilities to collect data for SQL Server using sqldiag collector engine. The data collected can be used by SQL Nexus tool  which help you troubleshoot SQL Server performance problems.  This is the same tool Microsoft SQL Server support engineers use to for data collection to troubleshoot customer's performance problems.
+ 
+How it works
+This tool lets you customize what you want to collect and then let you create a data collection package. You extract the package and run SQLdiag data collector engine on the SQL Server you are troubleshooting.
+ 
+Feature Highlights
+1.Powerful data collection capabilities:  The tool relies on SQLdiag collector engine to provide collection of perfmon, profiler trace, msinfo32, errorlogs, Windows event logs, TSQL script output and registry exports.
+2.Default templates: You can choose SQL Server version and platform (32 bit or 64 bit). The tool will automatically choose a default template for the combination. This will have default set of perfmon counters, profiler traces.
+3.Shipped with ready to use Custom collectors:  Most commonly used custom collectors include SQL Server 2005, 2008 or 2008 R2 performance collector. 
+4.Customization/Extensibility:  You can customize what perfmon and profiler trace events you want to collect.   Additionally, you can create your own custom collectors with TSQL Scripts, batch files and utilities.   See customization guide. 
+5.Packaging:  With a single click of save, the tool will package all your files into a single cab so that you can ship to the machine where you intend to run on. 
+6.Integration with SQL Nexus:  The custom collectors shipped will collect data that can be analyzed by SQL Nexus Tool. 
+</description>
+    <tags>microsoft performance sql diag sqldiag pssdiag diagnostics nexus</tags>
+  </metadata>
+</package>
