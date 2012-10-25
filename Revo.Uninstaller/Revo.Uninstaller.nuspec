@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Revo.Uninstaller</id>
+    <title>Revo Uninstaller</title>
+    <version>1.9.4.1</version>
+    <authors>VS Revo Group</authors>
+    <owners>Jivko Kolev</owners>
+    <projectUrl>http://www.revouninstaller.com/revo_uninstaller_free_download.html</projectUrl>
+    <licenseUrl>http://www.revouninstaller.com/revo_uninstaller_free_download.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Remove unwanted programs and traces easily.</summary>
+    <description>Remove unwanted programs and traces easily.</description>
+    <tags>uninstall programs applications</tags>
+  </metadata>
+</package>
