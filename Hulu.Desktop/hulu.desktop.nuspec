@@ -3,7 +3,7 @@
   <metadata>
     <id>hulu.desktop</id>
     <title>Hulu.Desktop</title>
-    <version>0.9.14.1</version>
+    <version>0.9.14.2</version>
     <authors>Hulu</authors>
     <owners>Jivko Kolev</owners>
     <projectUrl>http://www.hulu.com/labs/hulu-desktop</projectUrl>
@@ -13,5 +13,8 @@
     <summary>Hulu Desktop is a lean-back viewing experience for your personal computer.</summary>
     <description>Hulu Desktop is a lean-back viewing experience for your personal computer. It features a sleek new look that's optimized for use with standard Windows Media Center remote controls or Apple remote controls, allowing you to navigate Hulu's entire library with just six buttons. For users without remotes, the application is keyboard and mouse-enabled. Hulu Desktop is a downloadable application and will work on PCs and Macs. It will initially launch as a beta product during which we plan to gather and incorporate user feedback to improve the service.</description>
     <tags>iis apache web server log logparser analysis</tags>
+    <dependencies>
+      <dependency id='autoit.commandline' />
+    </dependencies>
   </metadata>
 </package>
