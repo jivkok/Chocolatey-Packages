@@ -3,11 +3,11 @@
   <metadata>
     <id>jivkok.tools</id>
     <title>Jivkok.Tools</title>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
     <authors>Jivko Kolev</authors>
     <owners>Jivko Kolev</owners>
     <summary>Jivkok.Tools - Suite of Utilities</summary>
-    <description>Jivkok.Tools includes a number of utilities including 7zip.install, 7zip.commandline, AutoHotKey_L, Calibre, CCleaner, Defraggler, Far-3, Filezilla, Firefox, FoxitReader, GoogleChrome, HTTrack, KeePass, MicrosoftSecurityEssentials, mRemote, nmap, NugetPackageExplorer, PDFCreator, PomoTime, Putty, Shotty, SkyDrive, Skype, SugarSync, SyncBack, TeamViewer, Terminals.app, VirtualCloneDrive, VLC, WinDirStat, WinSCP, XMind.
+    <description>Jivkok.Tools includes a number of utilities including 7zip.install, 7zip.commandline, AutoHotKey_L, Calibre, CCleaner, Defraggler, DeskSpace, Far-3, Filezilla, Firefox, FoxitReader, GoogleChrome, HTTrack, KeePass, MicrosoftSecurityEssentials, mRemote, nmap, NugetPackageExplorer, PDFCreator, PomoTime, Putty, Shotty, SkyDrive, Skype, SugarSync, SyncBack, TeamViewer, Terminals.app, VirtualCloneDrive, VLC, WinDirStat, WinSCP, XMind.
 cinst jivkok.tools will get all of these tools installed.
 Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
     <projectUrl>https://github.com/jivkok/Chocolatey-Packages</projectUrl>
@@ -19,6 +19,7 @@ Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</des
       <dependency id='calibre' />
       <dependency id='ccleaner' />
       <dependency id='defraggler' />
+      <dependency id='DeskSpace' />
       <dependency id='Far-3' />
       <dependency id='filezilla' />
       <dependency id='Firefox' />
