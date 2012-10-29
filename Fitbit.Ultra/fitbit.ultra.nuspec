@@ -2,15 +2,15 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>Fitbit.Ultra</id>
-    <title>Fitbit Ultra - uploader for your daily activity stats (steps, distance) from your FitBit Ultra tracker</title>
-    <version>2.1.0.10</version>
+    <title>Fitbit Ultra</title>
+    <version>2.1.0.11</version>
     <authors>Fitbit.com</authors>
     <owners>Jivko Kolev</owners>
     <projectUrl>http://www.fitbit.com</projectUrl>
     <licenseUrl>http://www.fitbit.com</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Fitbit Ultra - uploader for your daily activity stats (steps, distance) from your Fitbit Ultra tracker</summary>
-    <description>Fitbit's Uploader software uploads your Ultra Tracker's stats from your base station to your personalized dashboard on Fitbit.com, so you can track your activity, log food, and much more.</description>
+    <description>Fitbit's Uploader software uploads your Ultra Tracker's stats (steps, distance) from your base station to your personalized dashboard on Fitbit.com, so you can track your activity, log food, and much more.</description>
     <tags>fitbit ultra tracker</tags>
     <dependencies>
       <dependency id='autoit.commandline' />
