@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>WindowsPhone8SDK</id>
+    <title>Windows Phone 8 SDK</title>
+    <version>8.0.0.2</version>
+    <authors>Microsoft</authors>
+    <owners>Jivko Kolev</owners>
+    <projectUrl>http://dev.windowsphone.com/en-us/downloadsdk</projectUrl>
+    <iconUrl>http://cmsresources.windowsphone.com/windowsphone/shared/WindowsPhone-68217A-175x25.png</iconUrl>
+    <licenseUrl>http://go.microsoft.com/fwlink/p/?linkid=248155</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Windows Phone 8 Software Development Kit (SDK) includes all of the tools that you need to develop apps and games for Windows Phone</summary>
+    <description>Windows Phone 8 Software Development Kit (SDK) includes all of the tools that you need to develop apps and games for Windows Phone.
+Includes:
+- Visual Studio 2012 Express
+- Windows Phone SDK 8.0 - The Windows Phone SDK 8.0 enables you to develop apps for Windows Phone 8 and Windows Phone 7.5 devices
+Notes: requires Windows 8 or later 64-bit machine.</description>
+    <tags>Microsoft Windows Phone 8 SDK Visual Studio 2012 Express WP WP8 WindowsPhone</tags>
+  </metadata>
+</package>
