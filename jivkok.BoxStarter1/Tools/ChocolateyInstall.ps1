@@ -3,7 +3,7 @@ $scriptPath = (Split-Path -parent $MyInvocation.MyCommand.path)
 import-module $scriptPath\boxstarter.psm1
 
 try {
-    Disable-UAC
+    # Disable-UAC
 
     Disable-InternetExplorerESC
 
