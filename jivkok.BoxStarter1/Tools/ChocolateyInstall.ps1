@@ -5,6 +5,8 @@ import-module $scriptPath\boxstarter.psm1
 try {
     # Disable-UAC
 
+    Disable-ShutdownTracker
+
     Disable-InternetExplorerESC
 
     Set-ExplorerOptions -showHidenFilesFoldersDrives $true -showProtectedOSFiles $true -showFileExtensions $true

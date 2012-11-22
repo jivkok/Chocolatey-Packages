@@ -190,4 +190,20 @@ function Enable-RemoteDesktop
     Write-Output ""
 }
 
-Export-ModuleMember Disable-UAC, Disable-InternetExplorerESC, Install-WindowsUpdateWhenDone, Set-ExplorerOptions, Set-TaskbarSmall, Install-WindowsUpdate, Install-VsixSilently, Move-LibraryDirectory, Enable-RemoteDesktop, Restart-Explorer
+function Disable-ShutdownTracker
+{
+    Write-Output "Disabling Windows shutdown event tracker ..."
+
+    $key = 'HKLM:\Software\Policies\Microsoft\Windows NT\Reliability'
+    if (-not (Test-Path $key)) {
+        New-Item -Path $key
+    }
+
+    Set-ItemProperty $key ShutdownReasonOn 0
+    Set-ItemProperty $key ShutdownReasonUI 0
+
+    Write-Output "Disabling Windows shutdown event tracker done."
+    Write-Output ""
+}
+
+Export-ModuleMember Disable-UAC, Disable-InternetExplorerESC, Install-WindowsUpdateWhenDone, Set-ExplorerOptions, Set-TaskbarSmall, Install-WindowsUpdate, Install-VsixSilently, Move-LibraryDirectory, Enable-RemoteDesktop, Restart-Explorer, Disable-ShutdownTracker
