@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>ResophNotes</id>
+    <title>ResophNotes - Quick Notes</title>
+    <version>1.5.3.1</version>
+    <authors>C.Y.Yen</authors>
+    <owners>Jivko Kolev</owners>
+    <projectUrl>http://http://resoph.com/ResophNotes/Welcome.html</projectUrl>
+    <iconUrl>http://chocolatey.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>
+    <licenseUrl>http://http://resoph.com/ResophNotes/Terms_of_Use.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Simple and fast notes on Windows. Sync online with http://Simplenoteapp.com. Access notes on iPhone and iPad.</summary>
+    <description>Simple and fast notes on Windows. Sync online with http://Simplenoteapp.com. Access notes on iPhone and iPad.</description>
+    <tags>notes sync simplenote</tags>
+  </metadata>
+</package>
