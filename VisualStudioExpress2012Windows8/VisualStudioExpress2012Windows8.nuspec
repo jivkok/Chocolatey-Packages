@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>VisualStudioExpress2012Windows8</id>
+    <title>Visual Studio Express 2012 for Windows 8</title>
+    <version>11.0.0.1</version>
+    <authors>Microsoft</authors>
+    <owners>Jivko Kolev</owners>
+    <projectUrl>http://www.microsoft.com/visualstudio/eng/products/visual-studio-express-for-windows-8#product-express-windows-details</projectUrl>
+    <iconUrl>https://github.com/jivkok/Chocolatey-Packages/raw/master/VisualStudioExpress2012Windows8/vs.png</iconUrl>
+    <licenseUrl>http://go.microsoft.com/fwlink/p/?linkid=248155</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Visual Studio Express 2012 for Windows 8</summary>
+    <description>Microsoft Visual Studio Express 2012 for Windows 8 has the tools you need to create exceptional applications for multiple platforms. Build the next killer app, submit it to the Windows Store, and instantly reach a global audience of millions.</description>
+    <tags>Microsoft Visual Studio Express 2012 Windows 8 Windows8 Win8</tags>
+  </metadata>
+</package>
