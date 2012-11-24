@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>VisualStudioExpress2012TFS</id>
+    <title>Visual Studio Express 2012 Team Foundation Server (TFS)</title>
+    <version>11.0.0.1</version>
+    <authors>Microsoft</authors>
+    <owners>Jivko Kolev</owners>
+    <projectUrl>http://www.microsoft.com/visualstudio/eng/products/visual-studio-team-foundation-server-express</projectUrl>
+    <iconUrl>https://github.com/jivkok/Chocolatey-Packages/raw/master/VisualStudioExpress2012TFS/vs.png</iconUrl>
+    <licenseUrl>http://go.microsoft.com/fwlink/p/?linkid=248155</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Visual Studio Express 2012 Team Foundation Server (TFS)</summary>
+    <description>Visual Studio Team Foundation Server Express 2012 gives groups of up to five developers great application lifecycle management features like source code control, work item tracking, and build automation.</description>
+    <tags>Microsoft Visual Studio Express 2012 Team Foundation Server TFS</tags>
+  </metadata>
+</package>
