@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>VisualStudioExpress2012WindowsPhone</id>
+    <title>Visual Studio Express 2012 for Windows Phone</title>
+    <version>11.0.0.1</version>
+    <authors>Microsoft</authors>
+    <owners>Jivko Kolev</owners>
+    <projectUrl>http://www.microsoft.com/visualstudio/eng/products/visual-studio-express-for-windows-phone#product-express-phone-details</projectUrl>
+    <iconUrl>https://github.com/jivkok/Chocolatey-Packages/raw/master/VisualStudioExpress2012WindowsPhone/vs.png</iconUrl>
+    <licenseUrl>http://go.microsoft.com/fwlink/p/?linkid=248155</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Visual Studio Express 2012 for Windows Phone</summary>
+    <description>Build your apps fast with great tools
+Windows Phone SDK provides Visual Studio Express 2012 for Windows Phone and the assets to build epic apps faster using what you know. Use .NET to build your apps or take full advantage of the platform for your games with DirectX/C++. .NET apps and games can reuse their business logic across Windows 8, the web (ASP.NET), and Windows Azure so developers can move faster.
+
+Windows Phone apps
+The Visual Studio 2012 integrated development environment (IDE) simplifies the development of phone apps so you can focus on delighting your users.
+
+Windows Phone Emulator
+Once you’ve built your app, test it using the Windows Phone Emulator. You’ll see it the way users will see it in a simulated, real-world environment.
+
+Blend for Windows Phone
+Seamless integration with Blend for Windows Phone means you can create unique and compelling apps that will shine in the Windows Phone Marketplace.
+
+Use with your existing Visual Studio
+With the Visual Studio Add-in you can create end-to-end solutions. Create continuous services to power your apps with cloud-based services. Or share business logic across Windows Phone, Windows 8, or ASP.NET.</description>
+    <tags>Microsoft Visual Studio Express 2012 Windows Phone WindowsPhone WP8</tags>
+  </metadata>
+</package>
