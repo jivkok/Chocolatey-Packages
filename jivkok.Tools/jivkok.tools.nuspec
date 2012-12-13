@@ -3,11 +3,11 @@
   <metadata>
     <id>jivkok.tools</id>
     <title>Jivkok.Tools</title>
-    <version>1.0.5</version>
+    <version>1.0.5.1</version>
     <authors>Jivko Kolev</authors>
     <owners>Jivko Kolev</owners>
     <summary>Jivkok.Tools - Suite of Utilities</summary>
-    <description>Jivkok.Tools includes a number of utilities including 7zip.install, 7zip.commandline, AutoHotKey_L, Calibre, CCleaner, Defraggler, Dexpot, Far-3, Filezilla, Firefox, FoxitReader, GoogleChrome, HTTrack, KeePass, MicrosoftSecurityEssentials, mRemote, nmap, NugetPackageExplorer, PDFCreator, PomoTime, Putty, Shotty, SkyDrive, Skype, SugarSync, SyncBack, TeamViewer, Terminals.app, VirtualCloneDrive, VLC, WinDirStat, WinSCP, XMind.
+    <description>Jivkok.Tools includes a number of utilities including 7zip.install, 7zip.commandline, AutoHotKey_L, Calibre, CCleaner, Defraggler, Dexpot, Filezilla, Firefox, FoxitReader, FreeCommander, GoogleChrome, HTTrack, KeePass, MicrosoftSecurityEssentials, nmap, NugetPackageExplorer, PDFCreator, PomoTime, Putty, ResophNotes, Secunia.PSI, Shotty, SkyDrive, Skype, SugarSync, SyncBack, Synergy, SwissFileKnife, TeamViewer, Terminals.app, VirtualCloneDrive, VLC, WinDirStat, WinSCP, XMind.
 cinst jivkok.tools will get all of these tools installed.
 Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
     <projectUrl>https://github.com/jivkok/Chocolatey-Packages</projectUrl>
@@ -20,24 +20,27 @@ Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</des
       <dependency id='ccleaner' />
       <dependency id='defraggler' />
       <dependency id='Dexpot' />
-      <dependency id='Far-3' />
       <dependency id='filezilla' />
       <dependency id='Firefox' />
       <dependency id='FoxitReader' />
+      <dependency id='freecommander' />
       <dependency id='GoogleChrome' />
       <dependency id='httrack' />
       <dependency id='keepass' />
       <dependency id='MicrosoftSecurityEssentials' />
-      <dependency id='mRemote' />
       <dependency id='nmap' />
       <dependency id='PDFCreator' />
       <dependency id='PomoTime' />
       <dependency id='putty' />
+      <dependency id='ResophNotes' />
+      <dependency id='Secunia.PSI' />
       <dependency id='Shotty' />
       <dependency id='SkyDrive' />
       <dependency id='skype' />
       <dependency id='sugarsync' />
       <dependency id='syncback' />
+      <dependency id='Synergy' />
+      <dependency id='SwissFileKnife' />
       <dependency id='teamviewer' />
       <dependency id='Terminals.app ' />
       <dependency id='VirtualCloneDrive' />
