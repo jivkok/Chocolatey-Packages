@@ -1,1 +1,1 @@
-Install-ChocolateyPackage 'teamviewer' 'exe' '/quiet' 'http://www.teamviewer.com/download/TeamViewer_Setup_en.exe'
+Install-ChocolateyPackage 'teamviewer' 'exe' '/quiet' 'http://download.teamviewer.com/download/TeamViewer_Setup_en.exe'
