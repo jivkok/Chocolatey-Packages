@@ -3,11 +3,13 @@
   <metadata>
     <id>jivkok.dev1</id>
     <title>Jivkok.Dev1</title>
-    <version>1.0.0.5</version>
+    <version>1.1.0.2</version>
     <authors>Jivko Kolev</authors>
     <owners>Jivko Kolev</owners>
-    <summary>Jivkok.Dev1 - Suite of dev packages</summary>
-    <description>Jivkok.Dev1 includes a number of packages including BareTail, BeyondCompare, CoffeeScript, Console2, curl, DependencyWalker, dotPeek, expresso, Fiddler, GithubForWindows, gow, HxD, IcoFx, Indihiang, KDiff3, LessMsi, Linqpad4, Logparser, Logparser.LizardGui, NotepadPlusPlus, Nuget.commandline, NugetPackageExplorer, P4Merge, Paint.net, Pal, PerfView, PeStudio, ProcDump, Procexp, ProcMon, PsTools, QueryExPlus, Resharper, ResourcesExtract, SourcePreviewHandler, SpecFlow, SqlCop, SqlDiagManager, SqlNexus, StyleCop, SublimeText2, Sysinternals, TestDriven.Net, WinDbg.</description>
+    <summary>Jivkok.Dev1 - Dev Tools Suite</summary>
+    <description>This set includes number of packages installed as part of configuring new Windows dev machine: 
+BareTail, BeyondCompare, CoffeeScript, Console2, curl, DependencyWalker, dotPeek, Expresso, Fiddler, GithubForWindows, GOW, HxD, IcoFx, Indihiang, KDiff3, LessMsi, Linqpad4, Logparser, Logparser.LizardGui, NotepadPlusPlus, Nuget.commandline, NugetPackageExplorer, P4Merge, Paint.net, PAL, PerfView, PeStudio, ProcDump, ProcExp, ProcMon, Prototyper, PsTools, QueryExPlus, Resharper, ResourcesExtract, SourcePreviewHandler, SpecFlow, SqlCop, SqlDiagManager, SqlNexus, SqlSentryPlanExplorer, StyleCop, SublimeText2, Sysinternals, TestDriven.Net, WinDbg.
+    </description>
     <projectUrl>https://github.com/jivkok/Chocolatey-Packages</projectUrl>
     <tags>jivkok dev</tags>
     <dependencies>
@@ -41,6 +43,7 @@
       <dependency id='procdump' />
       <dependency id='procexp' />
       <dependency id='procmon' />
+      <dependency id='prototyper' />
       <dependency id='pstools' />
       <dependency id='queryexplus' />
       <dependency id='resharper' />
@@ -50,6 +53,7 @@
       <dependency id='sqlcop' />
       <dependency id='sqldiagmanager' />
       <dependency id='sqlnexus' />
+      <dependency id='SQLSentryPlanExplorer' />
       <dependency id='stylecop' />
       <dependency id='sublimetext2' />
       <dependency id='sysinternals' />
