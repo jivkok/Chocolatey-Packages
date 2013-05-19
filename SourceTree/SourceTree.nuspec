@@ -3,7 +3,7 @@
   <metadata>
     <id>SourceTree</id>
     <title>SourceTree</title>
-    <version>0.9.1.0</version>
+    <version>0.9.2.3</version>
     <authors>Atlassian</authors>
     <owners>Jivko Kolev</owners>
     <projectUrl>http://www.sourcetreeapp.com</projectUrl>
@@ -13,8 +13,5 @@
     <summary>Git client for Windows or Mac</summary>
     <description>Say goodbye to the command line – use the full capability of Git and Mercurial in the SourceTree desktop app. Manage all your repositories, hosted or local, through SourceTree's simple interface.</description>
     <tags>Git client</tags>
-    <dependencies>
-      <dependency id='autoit.commandline' />
-    </dependencies>
   </metadata>
 </package>
