@@ -1,0 +1,1 @@
+Install-ChocolateyPackage 'VisualStudioExpress2012TeamExplorer' 'exe' "/Passive /NoRestart /Log $env:temp\VSExpress2012TeamExplorer.log" 'http://download.microsoft.com/download/9/B/4/9B44FFC8-64C2-4091-9028-6E8550E9C96E/vs_teamExplorer.exe'

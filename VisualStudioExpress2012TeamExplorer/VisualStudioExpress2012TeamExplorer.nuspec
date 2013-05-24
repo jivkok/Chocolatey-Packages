@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>VisualStudioExpress2012TeamExplorer</id>
+    <title>Visual Studio Express 2012 Team Explorer for TFS</title>
+    <version>11.0.0.1</version>
+    <authors>Microsoft</authors>
+    <owners>Jivko Kolev</owners>
+    <projectUrl>http://www.microsoft.com/en-us/download/details.aspx?id=30656</projectUrl>
+    <iconUrl>https://github.com/jivkok/Chocolatey-Packages/raw/master/VisualStudioExpress2012TFS/vs.png</iconUrl>
+    <licenseUrl>http://go.microsoft.com/fwlink/p/?linkid=248155</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Team Explorer for Microsoft Visual Studio 2012</summary>
+    <description>Visual Studio Team Foundation Server 2012 is the collaboration platform at the core of Visual Studio application lifecycle management. This platform helps teams minimize risk, streamline interactions, and reduce waste throughout the software development and delivery process. Team Explorer is the client software that you use to access the Team Foundation Server functionality.</description>
+    <tags>Microsoft Visual Studio Express 2012 Explorer Team Foundation Server TFS</tags>
+  </metadata>
+</package>
