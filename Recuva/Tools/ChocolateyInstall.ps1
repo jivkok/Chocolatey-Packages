@@ -1,18 +1,21 @@
-$package = 'Recuva';
+﻿# Set the standard 4 parameters
+$packageName = 'recuva'
+$fileType = 'exe'
+$LCID = (Get-Culture).LCID
+$silentArgs = "/S /L=$LCID"
+# Please test every new version of Speccy for possible adware/spyware/crapware which installs silently together with Piriform software products.
+# Only push the new package to the gallery if you are 100 % sure that this package prevents the install of the bundled adware.
+$url = 'http://download.piriform.com/rcsetup147.exe'
+$regAdd = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)\regAdd.ps1"
 
 try {
-    $scriptDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition);
-    $installerAuto = Join-Path $scriptDir 'Recuva.au3';
+    # This adds a registry key which prevents Google Chrome from getting installed together with Piriform software products.
+    Start-ChocolateyProcessAsAdmin "& `'$regAdd`'"
 
-    $installerPackage = Join-Path $scriptDir "rcsetup_slim.exe";
-    Get-ChocolateyWebFile $package $installerPackage 'http://www.piriform.com/recuva/download/slim//downloadfile';
+    Install-ChocolateyPackage $packageName $fileType $silentArgs $url
 
-    Write-Host "Installing `'$installerPackage`' with AutoIt3 using `'$installerAuto`'"
-    $installArgs = "/c autoit3 `"$installerAuto`" `"$installerPackage`""
-    Start-ChocolateyProcessAsAdmin "$installArgs" "cmd.exe"
-
-    Write-ChocolateySuccess $package
+    Write-ChocolateySuccess "$packageName"
 } catch {
-  Write-ChocolateyFailure $package "$($_.Exception.Message)"
-  throw 
+    Write-ChocolateyFailure "$packageName" "$($_.Exception.Message)"
+    throw 
 }

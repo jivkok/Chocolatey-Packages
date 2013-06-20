@@ -1,20 +1,17 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>Recuva</id>
     <title>Recuva</title>
-    <version>1.46.0.1</version>
+    <version>1.47.948</version>
     <authors>Piriform</authors>
     <owners>Jivko Kolev</owners>
     <projectUrl>http://www.piriform.com/recuva</projectUrl>
-    <iconUrl>http://static.piriform.com/pf/icon/rc_64.png</iconUrl>
+    <iconUrl>https://upload.wikimedia.org/wikipedia/en/6/60/Recuva_icon.png</iconUrl>
     <licenseUrl>http://www.piriform.com/recuva</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Recuva recovers files deleted from your Windows computer, Recycle Bin, digital camera card, or MP3 player.</summary>
     <description>Accidentally deleted an important file? Lost something important when your computer crashed? No problem! Recuva recovers files deleted from your Windows computer, Recycle Bin, digital camera card, or MP3 player. And it's free!</description>
     <tags>undelete recover files</tags>
-    <dependencies>
-      <dependency id='autoit.commandline' />
-    </dependencies>
   </metadata>
 </package>
