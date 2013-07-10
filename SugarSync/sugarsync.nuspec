@@ -1,11 +1,11 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <version>1.9.71.1</version>
+    <version>2.0.27.114357</version>
     <authors>SugarSync.com</authors>
     <owners>Jivko Kolev</owners>
     <projectUrl>https://www.sugarsync.com/</projectUrl>
-    <iconUrl>https://www.sugarsync.com/images/main-logo.png</iconUrl>
+    <iconUrl>https://raw.github.com/jivkok/Chocolatey-Packages/master/SugarSync/sugarsync.png</iconUrl>
     <licenseUrl>https://www.sugarsync.com/terms.html</licenseUrl>
     <id>sugarsync</id>
     <title>SugarSync</title>
