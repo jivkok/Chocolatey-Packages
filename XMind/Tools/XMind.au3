@@ -1,4 +1,4 @@
-;Path and filename of the installer executable
+﻿;Path and filename of the installer executable
 $InstallPackage="""" & $CmdLine[1] & """"
 
 ; Run installer

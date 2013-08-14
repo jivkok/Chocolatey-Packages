@@ -1,4 +1,4 @@
-try {
+﻿try {
   $processor = Get-WmiObject Win32_Processor
   $is64bit = $processor.AddressWidth -eq 64
   if ($is64bit) {

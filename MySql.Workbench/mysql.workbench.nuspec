@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>mysql.workbench</id>
@@ -7,7 +7,7 @@
     <authors>Oracle</authors>
     <owners>Jivko Kolev</owners>
     <projectUrl>http://mysql.com/</projectUrl>
-    <iconUrl>http://www.mysql.com/common/logos/logo-mysql-110x57.png</iconUrl>
+    <iconUrl>https://raw.github.com/ferventcoder/chocolateyautomaticpackages/master/mysql/mysqllogo.png</iconUrl>
     <licenseUrl>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>MySQL Workbench (GUI Tool)</summary>

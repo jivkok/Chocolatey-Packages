@@ -1,17 +1,17 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>SourceTree</id>
     <title>SourceTree</title>
-    <version>1.0.5.0</version>
+    <version>1.0.8</version>
     <authors>Atlassian</authors>
     <owners>Jivko Kolev</owners>
     <projectUrl>http://www.sourcetreeapp.com</projectUrl>
-    <iconUrl>http://www.sourcetreeapp.com/images/logoSourceTree.png</iconUrl>
+    <iconUrl>https://raw.github.com/jivkok/Chocolatey-Packages/master/SourceTree/SourceTree.png</iconUrl>
     <licenseUrl>http://www.sourcetreeapp.com</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Git client for Windows or Mac</summary>
-    <description>Say goodbye to the command line � use the full capability of Git and Mercurial in the SourceTree desktop app. Manage all your repositories, hosted or local, through SourceTree's simple interface.</description>
+    <description>Say goodbye to the command line – use the full capability of Git and Mercurial in the SourceTree desktop app. Manage all your repositories, hosted or local, through SourceTree's simple interface.</description>
     <tags>Git client</tags>
   </metadata>
 </package>
