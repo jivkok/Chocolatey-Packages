@@ -1,11 +1,11 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <version>2.5.0.1</version>
     <authors>Lizard Labs</authors>
     <owners>Jivko Kolev</owners>
     <projectUrl>http://www.lizard-labs.net/log_parser_lizard.aspx</projectUrl>
-    <iconUrl>http://www.lizard-labs.net/images/logo.jpg</iconUrl>
+    <iconUrl>https://raw.github.com/jivkok/Chocolatey-Packages/master/LogParser.LizardGui/logparser.lizardgui.png</iconUrl>
     <licenseUrl>http://www.lizard-labs.net/log_parser_lizard.aspx</licenseUrl>
     <id>logparser.lizardgui</id>
     <title>LogParser.LizardGui</title>

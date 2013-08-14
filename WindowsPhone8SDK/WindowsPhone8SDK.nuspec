@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>WindowsPhone8SDK</id>
@@ -7,7 +7,7 @@
     <authors>Microsoft</authors>
     <owners>Jivko Kolev</owners>
     <projectUrl>http://dev.windowsphone.com/en-us/downloadsdk</projectUrl>
-    <iconUrl>http://cmsresources.windowsphone.com/windowsphone/shared/WindowsPhone-68217A-175x25.png</iconUrl>
+    <iconUrl>https://raw.github.com/jivkok/Chocolatey-Packages/master/WindowsPhone8SDK/WindowsPhone8SDK.png</iconUrl>
     <licenseUrl>http://go.microsoft.com/fwlink/p/?linkid=248155</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Windows Phone 8 Software Development Kit (SDK) includes all of the tools that you need to develop apps and games for Windows Phone</summary>

@@ -1,11 +1,11 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <version>3.3.1.0</version>
     <authors>XMind Ltd</authors>
     <owners>Jivko Kolev</owners>
     <projectUrl>http://http://www.xmind.net//</projectUrl>
-    <iconUrl>http://www.xmind.net/s/A/36/css/img/logo.png</iconUrl>
+    <iconUrl>https://raw.github.com/jivkok/Chocolatey-Packages/master/XMind/xmind.png</iconUrl>
     <licenseUrl>http://http://www.xmind.net//</licenseUrl>
     <id>xmind</id>
     <title>XMind</title>
