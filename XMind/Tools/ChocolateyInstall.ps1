@@ -1,4 +1,4 @@
-$package = 'XMind';
+﻿$package = 'XMind';
 
 try {
     $scriptDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition);

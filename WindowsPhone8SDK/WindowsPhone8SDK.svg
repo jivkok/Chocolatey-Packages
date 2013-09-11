@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="128"
+   height="128"
+   viewBox="0 0 102.4 102.4"
+   version="1.1"
+   id="svg2"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="Windows_Phone_8_logo_and_wordmark_(purple).svg">
+  <metadata
+     id="metadata43">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs41" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview39"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="1"
+     inkscape:cx="183.01195"
+     inkscape:cy="184.69817"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <g
+     transform="matrix(1.0959576,0,0,1.0959576,166.60364,-243.7596)"
+     inkscape:label="Layer 1"
+     id="layer1"
+     style="fill:#68217a;fill-opacity:1">
+    <g
+       style="fill:#68217a;fill-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       stroke-miterlimit="4"
+       transform="translate(109.60155,-54.548234)"
+       id="g3012">
+      <g
+         id="g3763"
+         style="fill:#68217a;fill-opacity:1">
+        <path
+           sodipodi:nodetypes="cccccccccccccccccccc"
+           style="fill:#68217a;fill-opacity:1;fill-rule:evenodd;stroke:none"
+           inkscape:connector-curvature="0"
+           d="m -258.56375,292.28688 35.68737,-4.86023 0.0156,34.42275 -35.66975,0.20313 z m 35.67037,33.52906 0.0277,34.45332 -35.66989,-4.9041 -0.002,-29.77972 z m 4.32608,-39.02494 47.31817,-6.90595 0,41.527 -47.31817,0.37565 z m 47.32922,39.34876 -0.0111,41.33992 -47.31817,-6.67838 -0.0663,-34.73858 z"
+           id="path13-7" />
+      </g>
+    </g>
+  </g>
+</svg>
