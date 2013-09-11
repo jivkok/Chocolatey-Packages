@@ -3,12 +3,12 @@
   <metadata>
     <id>jivkok.dev1</id>
     <title>Jivkok.Dev1</title>
-    <version>1.1.0.3</version>
+    <version>1.1.0.4</version>
     <authors>Jivko Kolev</authors>
     <owners>Jivko Kolev</owners>
     <summary>Jivkok.Dev1 - Dev Tools Suite</summary>
-    <description>This set includes number of packages installed as part of configuring new Windows dev machine: 
-BareTail, BeyondCompare, CoffeeScript, Console2, curl, DependencyWalker, dotPeek, Expresso, Fiddler, GithubForWindows, GOW, HxD, IcoFx, Indihiang, KDiff3, LessMsi, Linqpad4, Logparser, Logparser.LizardGui, MetroStudio, NotepadPlusPlus, Nuget.commandline, NugetPackageExplorer, P4Merge, Paint.net, PAL, PerfView, PeStudio, ProcDump, ProcExp, ProcMon, Prototyper, PsTools, QueryExPlus, Resharper, ResourcesExtract, SourcePreviewHandler, SpecFlow, SqlCop, SqlDiagManager, SqlNexus, SqlSentryPlanExplorer, StyleCop, SublimeText2, Sysinternals, TestDriven.Net, WinDbg.
+    <description>This set includes number of packages installed as part of configuring new Windows dev machine:
+BareTail, BeyondCompare, CoffeeScript, Console2, curl, DependencyWalker, dotPeek, Expresso, Fiddler, GithubForWindows, GOW, HxD, IcoFx, Indihiang, KDiff3, LessMsi, Linqpad4, Logparser, Logparser.LizardGui, MetroStudio, NotepadPlusPlus, Nuget.commandline, NugetPackageExplorer, P4Merge, Paint.net, PAL, PerfView, PeStudio, PreviewHandlerPack, ProcDump, ProcExp, ProcMon, Prototyper, PsTools, QueryExPlus, Resharper, ResourcesExtract, SourcePreviewHandler, SpecFlow, SqlCop, SqlDiagManager, SqlNexus, SqlSentryPlanExplorer, StyleCop, SublimeText2, Sysinternals, TestDriven.Net, Vagrant, WinDbg.
     </description>
     <projectUrl>https://github.com/jivkok/Chocolatey-Packages</projectUrl>
     <tags>jivkok dev</tags>
@@ -41,6 +41,7 @@ BareTail, BeyondCompare, CoffeeScript, Console2, curl, DependencyWalker, dotPeek
       <dependency id='pal' />
       <dependency id='perfview' />
       <dependency id='PeStudio' />
+      <dependency id='previewhandlerpack' />
       <dependency id='procdump' />
       <dependency id='procexp' />
       <dependency id='procmon' />
@@ -59,6 +60,7 @@ BareTail, BeyondCompare, CoffeeScript, Console2, curl, DependencyWalker, dotPeek
       <dependency id='sublimetext2' />
       <dependency id='sysinternals' />
       <dependency id='TestDriven.Net' />
+      <dependency id='vagrant' />
       <dependency id='windbg' />
     </dependencies>
   </metadata>
