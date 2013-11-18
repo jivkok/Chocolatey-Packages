@@ -8,26 +8,15 @@ If @error <> 0  Then
     Exit
 EndIf
 
-$title="Setup - SyncBack"
-;Wait for the installation to complete and the Dropbox account entry dialog to appear, close the window
-WinWaitActive($title, "Welcome to the SyncBack Setup Wizard")
-Send("!n")
-WinWaitActive("Setup - SyncBack", "License Agreement")
+$title="Setup - SyncBackFree"
+WinWaitActive($title, "License Agreement")
 Send("!a")
 Send("!n")
-WinWaitActive("Setup - SyncBack", "Please read the following important information before continuing")
+WinWaitActive($title, "Please read the following important information before continuing")
 Send("!n")
-WinWaitActive("Setup - SyncBack", "Select Destination Location")
+WinWaitActive($title, "Select Destination Location")
 Send("!n")
-WinWaitActive("Setup - SyncBack", "Select Start Menu Folder")
-Send("!n")
-WinWaitActive("Setup - SyncBack", "Select Additional Tasks")
-Send("!n")
-WinWaitActive("Setup - SyncBack", "Ready to Install")
-Send("!i")
-WinWaitActive("Setup - SyncBack", "Introducing SyncBackSE")
-Send("!n")
-WinWaitActive("Setup - SyncBack", "Completing the SyncBack Setup Wizard")
+WinWaitActive($title, "Completing the")
 Send("{SPACE}")
 Send("{DOWN}")
 Send("{DOWN}")
