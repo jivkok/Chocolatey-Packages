@@ -1,1 +1,0 @@
-﻿Install-ChocolateyPackage 'sugarsync' 'exe' '/quiet' 'https://www.sugarsync.com/downloads/SugarSyncSetup.exe'

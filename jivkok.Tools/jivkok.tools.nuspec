@@ -3,12 +3,12 @@
   <metadata>
     <id>jivkok.tools</id>
     <title>Jivkok.Tools</title>
-    <version>1.1.0.2</version>
+    <version>1.1.0.3</version>
     <authors>Jivko Kolev</authors>
     <owners>Jivko Kolev</owners>
     <summary>Jivkok.Tools - Utilities Suite</summary>
-    <description>This set includes a number of utilities installed as part of configuring new Windows machine: 
-7zip.install, 7zip.commandline, AutoHotKey_L, Calibre, CCleaner, Defraggler, Dexpot, Filezilla, Firefox, FoxitReader, FreeCommander, Git.Install, GoogleChrome, HTTrack, KeePass, MicrosoftSecurityEssentials, MobaXTerm, nmap, NugetPackageExplorer, PDFCreator, PomoTime, Putty, ResophNotes, Secunia.PSI, Shotty, SkyDrive, Skype, SugarSync, SyncBack, Synergy, SwissFileKnife, TeamViewer, Terminals.app, Tunnelier, VirtualCloneDrive, VLC, WinDirStat, WinSCP, XMind.
+    <description>This set includes a number of utilities installed as part of configuring new Windows machine:
+7zip.install, 7zip.commandline, AutoHotKey_L, Calibre, CCleaner, Defraggler, Dexpot, Filezilla, Firefox, FoxitReader, FreeCommander, Git.Install, GoogleChrome, HTTrack, KeePass, MicrosoftSecurityEssentials, MobaXTerm, nmap, NugetPackageExplorer, PDFCreator, PomoTime, Putty, ResophNotes, Secunia.PSI, Shotty, SkyDrive, Skype, SyncBack, Synergy, SwissFileKnife, TeamViewer, Terminals.app, Tunnelier, VirtualCloneDrive, VLC, WinDirStat, WinSCP, XMind.
     </description>
     <projectUrl>https://github.com/jivkok/Chocolatey-Packages</projectUrl>
     <tags>jivkok utilities tools</tags>
@@ -39,7 +39,6 @@
       <dependency id='Shotty' />
       <dependency id='SkyDrive' />
       <dependency id='skype' />
-      <dependency id='sugarsync' />
       <dependency id='syncback' />
       <dependency id='Synergy' />
       <dependency id='SwissFileKnife' />
