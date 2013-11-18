@@ -3,7 +3,7 @@
   <metadata>
     <id>jivkok.SublimeText3.Packages</id>
     <title>Jivkok - Sublime Text 3 - Editor Enhancing Packages</title>
-    <version>1.0.0.1</version>
+    <version>1.0.0.2</version>
     <authors>Various</authors>
     <owners>Jivko Kolev</owners>
     <summary>A number of packages helpful for increased editor productivity.</summary>
@@ -37,6 +37,9 @@
     </description>
     <projectUrl>http://github.com/jivkok/Chocolatey-Packages/</projectUrl>
     <tags>jivkok SublimeText package editor</tags>
+    <dependencies>
+      <dependency id='SublimeText3' />
+    </dependencies>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://raw.github.com/jivkok/Chocolatey-Packages/master/jivkok.SublimeText3.Packages/Sublime_Text.png</iconUrl>
   </metadata>
