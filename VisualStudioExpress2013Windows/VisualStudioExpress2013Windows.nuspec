@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>VisualStudioExpress2013Windows</id>
+    <title>Visual Studio Express 2013 for Windows</title>
+    <version>12.0.21005.1</version>
+    <authors>Microsoft</authors>
+    <owners>Jivko Kolev</owners>
+    <projectUrl>http://www.visualstudio.com/downloads/download-visual-studio-vs</projectUrl>
+    <iconUrl>https://github.com/jivkok/Chocolatey-Packages/raw/master/VisualStudioExpress2013Windows/vs.png</iconUrl>
+    <licenseUrl>http://msdn.microsoft.com/en-US/cc300389.aspx</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Visual Studio Express 2013 for Windows</summary>
+    <description>Visual Studio Express 2013 for Windows provides the core tools that are required to build compelling, innovative Windows Store apps.</description>
+    <tags>Microsoft Visual Studio Express 2013 Windows IDE</tags>
+  </metadata>
+</package>
