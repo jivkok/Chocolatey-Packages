@@ -15,11 +15,11 @@ try {
 
     Enable-RemoteDesktop
 
-    Install-WindowsUpdate
+    # Install-WindowsUpdate
 
     Restart-Explorer
-} 
+}
 catch {
     Write-ChocolateyFailure 'jivkok.BoxStarter1' $($_.Exception.Message)
-    throw 
+    throw
 }
