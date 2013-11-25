@@ -3,12 +3,12 @@
   <metadata>
     <id>jivkok.tools</id>
     <title>Jivkok.Tools</title>
-    <version>1.1.0.3</version>
+    <version>1.1.0.4</version>
     <authors>Jivko Kolev</authors>
     <owners>Jivko Kolev</owners>
     <summary>Jivkok.Tools - Utilities Suite</summary>
     <description>This set includes a number of utilities installed as part of configuring new Windows machine:
-7zip.install, 7zip.commandline, AutoHotKey_L, Calibre, CCleaner, Defraggler, Dexpot, Filezilla, Firefox, FoxitReader, FreeCommander, Git.Install, GoogleChrome, HTTrack, KeePass, MicrosoftSecurityEssentials, MobaXTerm, nmap, NugetPackageExplorer, PDFCreator, PomoTime, Putty, ResophNotes, Secunia.PSI, Shotty, SkyDrive, Skype, SyncBack, Synergy, SwissFileKnife, TeamViewer, Terminals.app, Tunnelier, VirtualCloneDrive, VLC, WinDirStat, WinSCP, XMind.
+7zip.install, 7zip.commandline, AutoHotKey_L, Calibre, CCleaner, Console2, Defraggler, Dexpot, Filezilla, Firefox, FoxitReader, FreeCommander, Git.Install, GoogleChrome, HTTrack, KeePass, MicrosoftSecurityEssentials, MobaXTerm, nmap, NugetPackageExplorer, PDFCreator, PomoTime, Powershell, Putty, ResophNotes, Secunia.PSI, Shotty, SkyDrive, Skype, SyncBack, Synergy, SwissFileKnife, TeamViewer, Terminals.app, Tunnelier, VirtualCloneDrive, VLC, WinDirStat, WinSCP, XMind.
     </description>
     <projectUrl>https://github.com/jivkok/Chocolatey-Packages</projectUrl>
     <tags>jivkok utilities tools</tags>
@@ -18,6 +18,7 @@
       <dependency id='AutoHotKey_L' />
       <dependency id='calibre' />
       <dependency id='ccleaner' />
+      <dependency id='Console2' />
       <dependency id='defraggler' />
       <dependency id='Dexpot' />
       <dependency id='filezilla' />
@@ -33,6 +34,7 @@
       <dependency id='nmap' />
       <dependency id='PDFCreator' />
       <dependency id='PomoTime' />
+      <dependency id='Powershell' />
       <dependency id='putty' />
       <dependency id='ResophNotes' />
       <dependency id='Secunia.PSI' />
