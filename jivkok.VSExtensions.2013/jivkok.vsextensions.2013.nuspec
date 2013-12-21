@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>jivkok.vsextensions.2013</id>
+    <title>jivkok.vsextensions.2013</title>
+    <version>1.0.0.1</version>
+    <authors>Jivko Kolev</authors>
+    <owners>Jivko Kolev</owners>
+    <summary>My Visual Studio extensions</summary>
+    <description>My Visual Studio extensions:
+- CodeMaid
+- EditorConfig
+- Gister
+- MarkdownMode
+- MultiEdit
+- NuGet
+- PerfWatsonMonitor
+- PostSharp
+- ProPowerTools
+- RoutingAssistant
+- SpecFlow
+- VSColorOutput
+- VsVim
+    </description>
+    <projectUrl>https://github.com/jivkok/Chocolatey-Packages</projectUrl>
+    <tags>jivkok vs visual studio extensions</tags>
+  </metadata>
+</package>
