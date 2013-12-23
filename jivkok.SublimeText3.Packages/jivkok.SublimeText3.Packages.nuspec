@@ -3,7 +3,7 @@
   <metadata>
     <id>jivkok.SublimeText3.Packages</id>
     <title>Jivkok - Sublime Text 3 - Editor Enhancing Packages</title>
-    <version>1.0.0.3</version>
+    <version>1.0.0.4</version>
     <authors>Various</authors>
     <owners>Jivko Kolev</owners>
     <summary>A number of packages helpful for increased editor productivity.</summary>
@@ -16,13 +16,14 @@
     - FileDiffs (https://github.com/colinta/SublimeFileDiffs)
     - Gist (https://github.com/condemil/Gist)
     - Http Requester (https://github.com/braindamageinc/SublimeHttpRequester)
+    - Markdown Preview (https://github.com/revolunet/sublimetext-markdown-preview)
     - Package Control (https://sublime.wbond.net/)
     - PlainTasks (https://github.com/aziz/PlainTasks)
     - PowerShell (https://github.com/SublimeText/PowerShell)
     - SFTP (http://wbond.net/sublime_packages/sftp)
     - SideBarEnhancements (https://github.com/titoBouzout/SideBarEnhancements)
     - StringEncode (https://github.com/colinta/SublimeStringEncode)
-    - SublimeLinter (https://github.com/SublimeLinter/SublimeLinter)
+    - SublimeLinter (https://github.com/SublimeLinter/SublimeLinter3)
     - Theme - Soda (https://github.com/buymeasoda/soda-theme/)
     - TrailingSpaces (https://github.com/SublimeText/TrailingSpaces)
 
