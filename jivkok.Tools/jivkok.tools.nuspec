@@ -3,12 +3,12 @@
   <metadata>
     <id>jivkok.tools</id>
     <title>Jivkok.Tools</title>
-    <version>1.1.0.4</version>
+    <version>1.1.0.5</version>
     <authors>Jivko Kolev</authors>
     <owners>Jivko Kolev</owners>
     <summary>Jivkok.Tools - Utilities Suite</summary>
     <description>This set includes a number of utilities installed as part of configuring new Windows machine:
-7zip.install, 7zip.commandline, AutoHotKey_L, Calibre, CCleaner, Console2, Defraggler, Dexpot, Filezilla, Firefox, FoxitReader, FreeCommander, Git.Install, GoogleChrome, HTTrack, KeePass, MicrosoftSecurityEssentials, MobaXTerm, nmap, NugetPackageExplorer, PDFCreator, PomoTime, Powershell, Putty, ResophNotes, Secunia.PSI, Shotty, SkyDrive, Skype, SyncBack, Synergy, SwissFileKnife, TeamViewer, Terminals.app, Tunnelier, VirtualCloneDrive, VLC, WinDirStat, WinSCP, XMind.
+7zip.install, 7zip.commandline, AutoHotKey_L, Calibre, CCleaner, CloseTheDoor, Console2, CrystalDiskInfo, Defraggler, Dexpot, Filezilla, Firefox, FoxitReader, FreeCommander, Git.Install, GoogleChrome, HTTrack, Inssider, Intel.SSD.Toolbox, KeePass, MicrosoftSecurityEssentials, MobaXTerm, nmap, NetScan64, NugetPackageExplorer, PDFCreator, PomoTime, Powershell, Putty, ResophNotes, RMPrepUSB, RoyalTS, Secunia.PSI, Shotcut, Shotty, SkyDrive, Skype, Speccy, SyncBack, Synergy, SwissFileKnife, TeamViewer, Terminals.app, thebrain.install, Tunnelier, VirtualCloneDrive, VLC, WinDirStat, WinSCP, XMind.
     </description>
     <projectUrl>https://github.com/jivkok/Chocolatey-Packages</projectUrl>
     <tags>jivkok utilities tools</tags>
@@ -18,7 +18,9 @@
       <dependency id='AutoHotKey_L' />
       <dependency id='calibre' />
       <dependency id='ccleaner' />
+      <dependency id='CloseTheDoor' />
       <dependency id='Console2' />
+      <dependency id='CrystalDiskInfo' />
       <dependency id='defraggler' />
       <dependency id='Dexpot' />
       <dependency id='filezilla' />
@@ -28,24 +30,32 @@
       <dependency id='Git.Install' />
       <dependency id='GoogleChrome' />
       <dependency id='httrack' />
+      <dependency id='Intel.SSD.Toolbox' />
+      <dependency id='inssider' />
       <dependency id='keepass' />
       <dependency id='MicrosoftSecurityEssentials' />
       <dependency id='MobaXTerm' />
       <dependency id='nmap' />
+      <dependency id='netscan64' />
       <dependency id='PDFCreator' />
       <dependency id='PomoTime' />
       <dependency id='Powershell' />
       <dependency id='putty' />
       <dependency id='ResophNotes' />
+      <dependency id='RMPrepUSB' />
+      <dependency id='RoyalTS' />
       <dependency id='Secunia.PSI' />
+      <dependency id='Shotcut' />
       <dependency id='Shotty' />
       <dependency id='SkyDrive' />
       <dependency id='skype' />
+      <dependency id='Speccy' />
       <dependency id='syncback' />
       <dependency id='Synergy' />
       <dependency id='SwissFileKnife' />
       <dependency id='teamviewer' />
       <dependency id='Terminals.app ' />
+      <dependency id='thebrain.install' />
       <dependency id='Tunnelier' />
       <dependency id='VirtualCloneDrive' />
       <dependency id='vlc' />
