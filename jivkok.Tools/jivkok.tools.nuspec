@@ -3,12 +3,12 @@
   <metadata>
     <id>jivkok.tools</id>
     <title>Jivkok.Tools</title>
-    <version>1.1.0.5</version>
+    <version>1.1.0.6</version>
     <authors>Jivko Kolev</authors>
     <owners>Jivko Kolev</owners>
     <summary>Jivkok.Tools - Utilities Suite</summary>
     <description>This set includes a number of utilities installed as part of configuring new Windows machine:
-7zip.install, 7zip.commandline, AutoHotKey_L, Calibre, CCleaner, CloseTheDoor, Console2, CrystalDiskInfo, Defraggler, Dexpot, Filezilla, Firefox, FoxitReader, FreeCommander, Git.Install, GoogleChrome, HTTrack, Inssider, Intel.SSD.Toolbox, KeePass, MicrosoftSecurityEssentials, MobaXTerm, nmap, NetScan64, NugetPackageExplorer, PDFCreator, PomoTime, Powershell, Putty, ResophNotes, RMPrepUSB, RoyalTS, Secunia.PSI, Shotcut, Shotty, SkyDrive, Skype, Speccy, SyncBack, Synergy, SwissFileKnife, TeamViewer, Terminals.app, thebrain.install, Tunnelier, VirtualCloneDrive, VLC, WinDirStat, WinSCP, XMind.
+7zip.install, 7zip.commandline, AutoHotKey_L, Calibre, CCleaner, CloseTheDoor, Console2, CrystalDiskInfo, Defraggler, Dexpot, Filezilla, Firefox, FoxitReader, FreeCommander, Git.Install, GoogleChrome, HTTrack, Inssider, Intel.SSD.Toolbox, KeePass, MicrosoftSecurityEssentials, MobaXTerm, Monosnap, NetScan64, NimbleText, nmap, NugetPackageExplorer, PDFCreator, PomoTime, Powershell, Putty, ResophNotes, RMPrepUSB, RoyalTS, Secunia.PSI, Shotcut, Shotty, SkyDrive, Skype, Speccy, SyncBack, Synergy, SwissFileKnife, TeamViewer, TeraCopy, Terminals.app, thebrain.install, Tunnelier, VirtualCloneDrive, VLC, WinDirStat, WinSCP, XMind.
     </description>
     <projectUrl>https://github.com/jivkok/Chocolatey-Packages</projectUrl>
     <tags>jivkok utilities tools</tags>
@@ -35,8 +35,10 @@
       <dependency id='keepass' />
       <dependency id='MicrosoftSecurityEssentials' />
       <dependency id='MobaXTerm' />
-      <dependency id='nmap' />
+      <dependency id='Monosnap' />
       <dependency id='netscan64' />
+      <dependency id='NimbleText' />
+      <dependency id='nmap' />
       <dependency id='PDFCreator' />
       <dependency id='PomoTime' />
       <dependency id='Powershell' />
@@ -54,6 +56,7 @@
       <dependency id='Synergy' />
       <dependency id='SwissFileKnife' />
       <dependency id='teamviewer' />
+      <dependency id='TeraCopy' />
       <dependency id='Terminals.app ' />
       <dependency id='thebrain.install' />
       <dependency id='Tunnelier' />
