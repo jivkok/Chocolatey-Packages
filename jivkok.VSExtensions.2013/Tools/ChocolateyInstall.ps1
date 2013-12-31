@@ -35,6 +35,7 @@ function installsilently($url, $name) {
 try {
     vsvars32
 
+    installsilently http://visualstudiogallery.msdn.microsoft.com/fb5badda-4ea3-4314-a723-a1975cbdabb4/file/100523/7/Microsoft.CodeDigger.vsix CodeDigger.vsix
     installsilently http://visualstudiogallery.msdn.microsoft.com/76293c4d-8c16-4f4a-aee6-21f83a571496/file/9356/23/CodeMaid_v0.7.0.vsix CodeMaid.vsix
     installsilently http://visualstudiogallery.msdn.microsoft.com/c8bccfe2-650c-4b42-bc5c-845e21f96328/file/75539/10/EditorConfigPlugin.vsix EditorConfig.vsix
     installsilently http://visualstudiogallery.msdn.microsoft.com/b31916b0-c026-4c27-9d6b-ba831093f6b2/file/62080/3/Gister.vsix Gister.vsix
@@ -48,6 +49,7 @@ try {
     installsilently http://visualstudiogallery.msdn.microsoft.com/90ac3587-7466-4155-b591-2cd4cc4401bc/file/112721/3/TechTalk.SpecFlow.Vs2013Integration.vsix SpecFlow.vsix
     installsilently http://visualstudiogallery.msdn.microsoft.com/f4d9c2b5-d6d7-4543-a7a5-2d7ebabc2496/file/63103/7/VSColorOutput.vsix VSColorOutput.vsix
     installsilently http://visualstudiogallery.msdn.microsoft.com/59ca71b3-a4a3-46ca-8fe1-0e90e3f79329/file/6390/45/VsVim.vsix VsVim.vsix
+    installsilently http://visualstudiogallery.msdn.microsoft.com/56633663-6799-41d7-9df7-0f2a504ca361/file/105627/23/WebEssentials2013.vsix WebEssentials.vsix
 
     Write-ChocolateySuccess $packageName
 } catch {
