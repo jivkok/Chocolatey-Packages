@@ -2,6 +2,8 @@
 	"installed_packages":
 	[
 		"All Autocomplete",
+		"AutoItScript",
+		"CodeFormatter",
 		"EasyMotion",
 		"Emmet",
 		"ExportHtml",

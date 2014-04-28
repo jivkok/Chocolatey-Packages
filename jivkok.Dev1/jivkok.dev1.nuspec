@@ -3,12 +3,12 @@
   <metadata>
     <id>jivkok.dev1</id>
     <title>Jivkok.Dev1</title>
-    <version>1.1.0.8</version>
+    <version>1.1.0.9</version>
     <authors>Jivko Kolev</authors>
     <owners>Jivko Kolev</owners>
     <summary>Jivkok.Dev1 - Dev Tools Suite</summary>
     <description>This set includes number of packages installed as part of configuring new Windows dev machine:
-BareTail, BeyondCompare, CoffeeScript, Console2, curl, DependencyWalker, dotPeek, Expresso, Fiddler, GithubForWindows, GOW, HxD, IcoFx, Indihiang, KDiff3, LessMsi, Linqpad4, Logparser, Logparser.LizardGui, MetroStudio, NotepadPlusPlus, Nuget.commandline, NugetPackageExplorer, nxlog, P4Merge, Paint.net, PAL, PerfView, PeStudio, Powershell, PreviewHandlerPack, ProcDump, ProcExp, ProcMon, Prototyper, PsTools, QueryExPlus, Resharper, ResourcesExtract, SourcePreviewHandler, SpecFlow, Splunk, SqlCop, SqlDiagManager, SQLite, SQLite.Analyzer, SQLite.Shell, SQLiteAdmin, SqlNexus, SqlSentryPlanExplorer, StyleCop, SublimeText3, Sysinternals, TestDriven.Net, Vagrant, WebPICmd, WinDbg.
+BareTail, BeyondCompare, CoffeeScript, Console2, curl, DependencyWalker, dotPeek, err, Expresso, Fiddler, GithubForWindows, GOW, HxD, IcoFx, Indihiang, KDiff3, LessMsi, Linqpad4, Logparser, Logparser.LizardGui, MetroStudio, NotepadPlusPlus, Nuget.commandline, NugetPackageExplorer, nxlog, P4Merge, Paint.net, PAL, PerfView, PeStudio, Powershell, PreviewHandlerPack, ProcDump, ProcExp, ProcMon, Prototyper, PsTools, QueryExPlus, Resharper, ResourcesExtract, SourcePreviewHandler, SpecFlow, Splunk, SqlCop, SqlDiagManager, SQLite, SQLite.Analyzer, SQLite.Shell, SQLiteAdmin, SqlNexus, SqlSentryPlanExplorer, StyleCop, SublimeText3, Sysinternals, TestDriven.Net, Vagrant, WebPICmd, WinDbg, WindowsAzurePowershell.
     </description>
     <projectUrl>https://github.com/jivkok/Chocolatey-Packages</projectUrl>
     <tags>jivkok dev</tags>
@@ -20,6 +20,7 @@ BareTail, BeyondCompare, CoffeeScript, Console2, curl, DependencyWalker, dotPeek
       <dependency id='curl' />
       <dependency id='dependencywalker' />
       <dependency id='dotPeek' />
+      <dependency id='err' />
       <dependency id='expresso' />
       <dependency id='fiddler' />
       <dependency id='githubforwindows' />
@@ -70,6 +71,7 @@ BareTail, BeyondCompare, CoffeeScript, Console2, curl, DependencyWalker, dotPeek
       <dependency id='vagrant' />
       <dependency id='webpicmd' />
       <dependency id='windbg' />
+      <dependency id='WindowsAzurePowershell' />
     </dependencies>
   </metadata>
 </package>
