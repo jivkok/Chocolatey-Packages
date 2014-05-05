@@ -8,8 +8,6 @@ try {
 
   # Prereqs
   setx TERM msys /M
-  $sublimePath = "$env:ProgramW6432\Sublime Text 3\sublime_text.exe"
-  if (Test-Path $sublimePath) { Write-Output "Found '$sublimePath'" } else { Write-Warning "Could not find '$sublimePath'" }
   $kdiffPath = "$env:ProgramW6432\KDiff3\kdiff3.exe"
   if (Test-Path $kdiffPath) { Write-Output "Found '$kdiffPath'" } else { Write-Warning "Could not find '$kdiffPath'" }
 
@@ -19,14 +17,7 @@ try {
   $defaultEditor = git config --get core.editor
   if (!$defaultEditor)
   {
-    if (Test-Path $sublimePath)
-    {
-      git config --global core.editor "$sublimePath"
-    }
-    else
-    {
       git config --global core.editor notepad
-    }
   }
   git config --global credential.helper winstore
   git config --global help.format html
