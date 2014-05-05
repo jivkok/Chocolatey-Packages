@@ -19,7 +19,6 @@ try {
   {
       git config --global core.editor notepad
   }
-  git config --global credential.helper winstore
   git config --global help.format html
   git config --global pack.packSizeLimit 2g
   git config --global push.default simple

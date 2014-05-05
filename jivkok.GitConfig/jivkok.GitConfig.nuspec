@@ -3,7 +3,7 @@
   <metadata>
     <id>jivkok.GitConfig</id>
     <title>Git - Config</title>
-    <version>1.0.0.2</version>
+    <version>1.0.0.3</version>
     <authors>Various</authors>
     <owners>Jivko Kolev</owners>
     <summary>Git configuration and aliases</summary>
@@ -19,7 +19,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://github.com/ferventcoder/chocolateyautomaticpackages/raw/master/git/git.png</iconUrl>
     <dependencies>
-      <dependency id="git.install" />
+      <dependency id="git-credential-winstore" />
     </dependencies>
   </metadata>
   <files>
