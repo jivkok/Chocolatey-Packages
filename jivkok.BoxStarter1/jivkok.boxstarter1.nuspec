@@ -3,7 +3,7 @@
   <metadata>
     <id>jivkok.boxstarter1</id>
     <title>Jivkok.BoxStarter1</title>
-    <version>1.0.0.5</version>
+    <version>1.0.0.6</version>
     <authors>Jivko Kolev</authors>
     <owners>Jivko Kolev</owners>
     <summary>Jivkok.BoxStarter1 - prepare/configure new machine</summary>
@@ -17,6 +17,7 @@
     <tags>jivkok boxstarter</tags>
     <dependencies>
       <dependency id='jivkok.SublimeText3.Packages' />
+      <dependency id='jivkok.Shell1' />
     </dependencies>
   </metadata>
 </package>

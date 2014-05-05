@@ -3,21 +3,23 @@
   <metadata>
     <id>jivkok.tools</id>
     <title>Jivkok.Tools</title>
-    <version>1.1.0.7</version>
+    <version>1.1.1.0</version>
     <authors>Jivko Kolev</authors>
     <owners>Jivko Kolev</owners>
     <summary>Jivkok.Tools - Utilities Suite</summary>
     <description>This set includes a number of utilities installed as part of configuring new Windows machine:
-7zip.install, 7zip.commandline, AutoHotKey_L, Calibre, CCleaner, CloseTheDoor, Console2, CrystalDiskInfo, Defraggler, Dexpot, Filezilla, Firefox, FoxitReader, FreeCommander, Git.Install, GoogleChrome, HTTrack, Inssider, Intel.SSD.Toolbox, KeePass, MicrosoftSecurityEssentials, MobaXTerm, Monosnap, NetScan64, NimbleText, nmap, NugetPackageExplorer, PDFCreator, PomoTime, Powershell, Putty, ResophNotes, RMPrepUSB, RoyalTS, Secunia.PSI, SetACL, Shotcut, Shotty, SkyDrive, Skype, Speccy, SyncBack, Synergy, SwissFileKnife, TeamViewer, TeraCopy, Terminals.app, thebrain.install, Tunnelier, VirtualCloneDrive, VLC, WinDirStat, WindowsRepair, WinSCP, XMind.
+7zip.install, 7zip.commandline, AutoHotKey_L, Calibre, CCleaner, ChocolateyGui, CloseTheDoor, Console2, CrystalDiskInfo, Defraggler, Dexpot, Filezilla, Firefox, FoxitReader, FreeCommander, Git.Install, GoogleChrome, HTTrack, Inssider, Intel.SSD.Toolbox, KeePass, MicrosoftSecurityEssentials, MobaXTerm, Monosnap, NetScan64, NimbleText, nmap, NugetPackageExplorer, PDFCreator, PomoTime, Powershell, Putty, ResophNotes, RMPrepUSB, RoyalTS, Secunia.PSI, SetACL, Shotcut, Shotty, SkyDrive, Skype, Speccy, SyncBack, Synergy, SwissFileKnife, TeamViewer, TeraCopy, Terminals.app, thebrain.install, Tunnelier, VirtualCloneDrive, VLC, WinDirStat, WindowsRepair, WinSCP, XMind.
     </description>
     <projectUrl>https://github.com/jivkok/Chocolatey-Packages</projectUrl>
     <tags>jivkok utilities tools</tags>
     <dependencies>
+      <dependency id='jivkok.Shell1' />
       <dependency id='7zip.install' />
       <dependency id='7zip.commandline' />
       <dependency id='AutoHotKey_L' />
       <dependency id='calibre' />
       <dependency id='ccleaner' />
+      <dependency id='ChocolateyGui' />
       <dependency id='CloseTheDoor' />
       <dependency id='Console2' />
       <dependency id='CrystalDiskInfo' />

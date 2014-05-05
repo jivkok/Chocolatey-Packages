@@ -3,7 +3,7 @@
   <metadata>
     <id>jivkok.Shell1</id>
     <title>Jivkok - Shell</title>
-    <version>1.0.0.1</version>
+    <version>1.0.0.2</version>
     <authors>Various</authors>
     <owners>Jivko Kolev</owners>
     <summary>Multi-tabbed console with Windows shell, Powershell, and Bash.</summary>
@@ -11,11 +11,12 @@
     <projectUrl>http://github.com/jivkok/Chocolatey-Packages/</projectUrl>
     <tags>jivkok shell cmd powershell bash</tags>
     <dependencies>
-      <dependency id='console2' />
-      <dependency id='jivkok.SublimeText3.Packages' />
-      <dependency id='git-credential-winstore' />
       <dependency id='powershell' />
+      <dependency id='console2' />
+      <dependency id='git-credential-winstore' />
       <dependency id='poshgit' />
+      <dependency id='jivkok.SublimeText3.Packages' />
+      <dependency id='jivkok.GitConfig' />
     </dependencies>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://raw.github.com/jivkok/Chocolatey-Packages/master/jivkok.Shell1/content/Console.png</iconUrl>
