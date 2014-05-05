@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>jivkok.GitConfig</id>
+    <title>Git - Config</title>
+    <version>1.0.0.1</version>
+    <authors>Various</authors>
+    <owners>Jivko Kolev</owners>
+    <summary>Git configuration and aliases</summary>
+    <description>Jivko's standard Git configuration and aliases:
+ - core config
+ - colors (status/diff/branches)
+ - diff tool
+ - merge tool
+ - aliases (amend, branch, commit, checkout, diff, log, rebase, reset, status)
+</description>
+    <projectUrl>https://github.com/jivkok/Chocolatey-Packages</projectUrl>
+    <tags>Git configuration alias</tags>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://github.com/ferventcoder/chocolateyautomaticpackages/raw/master/git/git.png</iconUrl>
+    <dependencies>
+      <dependency id="git.install" />
+      <dependency id="jivkok.SublimeText3.Packages" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
