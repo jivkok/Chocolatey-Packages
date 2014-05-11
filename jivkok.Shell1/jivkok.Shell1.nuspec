@@ -3,13 +3,13 @@
   <metadata>
     <id>jivkok.Shell1</id>
     <title>Jivkok - Shell</title>
-    <version>1.0.0.2</version>
+    <version>1.0.0.3</version>
     <authors>Various</authors>
     <owners>Jivko Kolev</owners>
     <summary>Multi-tabbed console with Windows shell, Powershell, and Bash.</summary>
-    <description>Multi-tabbed console with Windows shell, Powershell, and Bash.</description>
+    <description>Multi-tabbed console with Windows shell, Powershell, and Bash. Windows shell supports custom start commands via %HOMEPATH%\cmd_profile.cmd</description>
     <projectUrl>http://github.com/jivkok/Chocolatey-Packages/</projectUrl>
-    <tags>jivkok shell cmd powershell bash</tags>
+    <tags>jivkok shell cmd powershell bash git</tags>
     <dependencies>
       <dependency id='powershell' />
       <dependency id='console2' />
