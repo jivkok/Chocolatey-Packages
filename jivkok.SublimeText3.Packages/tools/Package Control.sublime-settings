@@ -9,6 +9,8 @@
 		"ExportHtml",
 		"FileDiffs",
 		"Gist",
+		"Git",
+		"GitGutter",
 		"Http Requester",
 		"Markdown Preview",
 		"Package Control",

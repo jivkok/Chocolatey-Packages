@@ -3,7 +3,7 @@
   <metadata>
     <id>jivkok.SublimeText3.Packages</id>
     <title>Jivkok - Sublime Text 3 - Editor Enhancing Packages</title>
-    <version>1.0.0.5</version>
+    <version>1.0.0.6</version>
     <authors>Various</authors>
     <owners>Jivko Kolev</owners>
     <summary>A number of packages helpful for increased editor productivity.</summary>
@@ -17,6 +17,8 @@
     - ExportHtml (https://github.com/facelessuser/ExportHtml)
     - FileDiffs (https://github.com/colinta/SublimeFileDiffs)
     - Gist (https://github.com/condemil/Gist)
+    - Git (https://github.com/kemayo/sublime-text-git)
+    - GitGutter (https://github.com/jisaacks/GitGutter)
     - Http Requester (https://github.com/braindamageinc/SublimeHttpRequester)
     - Markdown Preview (https://github.com/revolunet/sublimetext-markdown-preview)
     - Package Control (https://sublime.wbond.net/)
