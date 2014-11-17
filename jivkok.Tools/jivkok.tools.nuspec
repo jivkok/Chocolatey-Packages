@@ -3,12 +3,12 @@
   <metadata>
     <id>jivkok.tools</id>
     <title>Jivkok.Tools</title>
-    <version>1.1.1.0</version>
+    <version>1.1.1.1</version>
     <authors>Jivko Kolev</authors>
     <owners>Jivko Kolev</owners>
     <summary>Jivkok.Tools - Utilities Suite</summary>
     <description>This set includes a number of utilities installed as part of configuring new Windows machine:
-7zip.install, 7zip.commandline, AutoHotKey_L, Calibre, CCleaner, ChocolateyGui, CloseTheDoor, Console2, CrystalDiskInfo, Defraggler, Dexpot, Filezilla, Firefox, FoxitReader, FreeCommander, Git.Install, GoogleChrome, HTTrack, Inssider, Intel.SSD.Toolbox, KeePass, MicrosoftSecurityEssentials, MobaXTerm, Monosnap, NetScan64, NimbleText, nmap, NugetPackageExplorer, PDFCreator, PomoTime, Powershell, Putty, ResophNotes, RMPrepUSB, RoyalTS, Secunia.PSI, SetACL, Shotcut, Shotty, SkyDrive, Skype, Speccy, SyncBack, Synergy, SwissFileKnife, TeamViewer, TeraCopy, Terminals.app, thebrain.install, Tunnelier, VirtualCloneDrive, VLC, WinDirStat, WindowsRepair, WinSCP, XMind.
+7zip.install, 7zip.commandline, AutoHotKey_L, Calibre, CCleaner, ChocolateyGui, CloseTheDoor, Console2, CrystalDiskInfo, Defraggler, Dexpot, Filezilla, Firefox, FoxitReader, FreeCommander, Git.Install, GoogleChrome, HTTrack, Inssider, Intel.SSD.Toolbox, KeePass, Kitty, MicrosoftSecurityEssentials, MobaXTerm, Monosnap, NetScan64, NimbleText, nmap, NugetPackageExplorer, PDFCreator, PomoTime, Powershell, Putty, ResophNotes, RMPrepUSB, RoyalTS, Secunia.PSI, SetACL, Shotcut, Shotty, SkyDrive, Skype, Speccy, SyncBack, Synergy, SwissFileKnife, TeamViewer, TeraCopy, Terminals.app, thebrain.install, Tunnelier, VirtualCloneDrive, VLC, WinDirStat, WindowsRepair, WinSCP, XMind.
     </description>
     <projectUrl>https://github.com/jivkok/Chocolatey-Packages</projectUrl>
     <tags>jivkok utilities tools</tags>
@@ -35,6 +35,7 @@
       <dependency id='Intel.SSD.Toolbox' />
       <dependency id='inssider' />
       <dependency id='keepass' />
+      <dependency id='Kitty' />
       <dependency id='MicrosoftSecurityEssentials' />
       <dependency id='MobaXTerm' />
       <dependency id='Monosnap' />
