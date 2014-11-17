@@ -1,12 +1,4 @@
 {
-  // Live mode evaluates changes every time file is modified,
-  // Set false to disable evaluation after each input
-  "live_mode": false,
-
-  // Focus Change mode evaluates changes every time a view gets the focus
-  // Set false to disable evaluation when changing views
-  "focus_change_mode": true,
-
   // When set to true GitGutter runs asynchronously in a seperate thread
   // This may cause a small delay between a modification and the icon change
   // but can increase performance greatly if needed.
@@ -23,10 +15,5 @@
   "ignore_whitespace": "eol",
 
   // Add a special marker on untracked files
-  "show_markers_on_untracked_file": true,
-
-  // Add --patience switch to git diff command. See
-  // http://bramcohen.livejournal.com/73318.html for
-  // an example of why you might need this.
-  "patience": true
+  "show_markers_on_untracked_file": true
 }
