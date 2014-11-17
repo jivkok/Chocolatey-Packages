@@ -14,8 +14,22 @@ function .. { Push-Location .. }
 function ... { Push-Location ..\.. }
 function n { notepad $args }
 function nn { &"${Env:ProgramW6432}\Sublime Text 3\sublime_text.exe" $args }
-function fs { findstr /spin $args }
 function qg { start http://www.google.com/#q=$args }
+function fs
+{
+    if (!$args) {
+        echo 'Usage: fs <pattern> <path>'
+        return;
+    }
+    $pattern = $args[0]
+    $path = Split-Path -Path $args[0] -Parent
+    if ($args.length -gt 1) {
+        $path = $args[1]
+    } else {
+        $path = '.\*.*'
+    }
+    Get-ChildItem -Path $path -Recurse | Select-String -pattern $pattern
+}
 function ds
 {
     if (!$args) {

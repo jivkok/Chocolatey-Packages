@@ -49,6 +49,8 @@ try {
   # Set-TaskbarSmall
   # Restart-Explorer
 
+  Set-EnvironmentVariable -Name '_NT_SYMBOL_PATH' -Value 'srv*C:\Symbols*http://referencesource.microsoft.com/symbols*http://srv.symbolsource.org/pdb/Public*http://msdl.microsoft.com/download/symbols' -Scope User
+
   Write-ChocolateySuccess $package
 } catch {
   Write-ChocolateyFailure $package "$($_.Exception.Message)"
