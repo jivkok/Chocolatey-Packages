@@ -3,7 +3,7 @@
   <metadata>
     <id>jivkok.dev1</id>
     <title>Jivkok.Dev1</title>
-    <version>1.1.1.0</version>
+    <version>1.1.1.1</version>
     <authors>Jivko Kolev</authors>
     <owners>Jivko Kolev</owners>
     <summary>Jivkok.Dev1 - Dev Tools Suite</summary>
@@ -13,7 +13,7 @@ BareTail, BeyondCompare, CoffeeScript, Console2, curl, DependencyWalker, dotPeek
     <projectUrl>https://github.com/jivkok/Chocolatey-Packages</projectUrl>
     <tags>jivkok dev</tags>
     <dependencies>
-      <dependency id='jivkok.Shell1' />
+      <dependency id='jivkok.Shell' />
       <dependency id='baretail' />
       <dependency id='beyondcompare' />
       <dependency id='CoffeeScript' />

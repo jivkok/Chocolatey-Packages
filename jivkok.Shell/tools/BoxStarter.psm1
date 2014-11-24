@@ -49,9 +49,12 @@ function Disable-UAC {
 function Enable-RemoteDesktop
 {
     Write-Output "Enabling Remote Desktop ..."
-
-    (Get-WmiObject -Class "Win32_TerminalServiceSetting" -Namespace root\cimv2\terminalservices).SetAllowTsConnections(1)
-    netsh advfirewall firewall set rule group="Remote Desktop" new enable=yes
+    $obj = Get-WmiObject -Class "Win32_TerminalServiceSetting" -Namespace root\cimv2\terminalservices
+    if ($obj -eq $null) {
+        Write-Output "Unable to locate TerminalServices namespace. Remote Desktop is not enabled"
+        return
+    }
+    $obj.SetAllowTsConnections(1,1) | out-null
 
     Write-Output "Enabling Remote Desktop done."
     Write-Output ""

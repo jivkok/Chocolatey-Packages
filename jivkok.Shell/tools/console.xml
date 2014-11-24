@@ -91,7 +91,7 @@
 	</mouse>
 	<tabs>
 		<tab title="Cmd" use_default_icon="1">
-			<console shell="%comspec% /k &quot;&quot;C:\Tools\jivkok\SetEnv.cmd&quot;&quot;" init_dir="C:\" run_as_user="0" user=""/>
+			<console shell="%comspec% /k &quot;&quot;%USERPROFILE%\.shell\SetEnv.cmd&quot;&quot;" init_dir="C:\" run_as_user="0" user=""/>
 			<cursor style="5" r="255" g="255" b="255"/>
 			<background type="0" r="0" g="0" b="0">
 				<image file="" relative="0" extend="0" position="0">
@@ -100,7 +100,7 @@
 			</background>
 		</tab>
 		<tab title="Posh" use_default_icon="1">
-			<console shell="%SystemRoot%\syswow64\WindowsPowerShell\v1.0\powershell.exe -NoExit -ExecutionPolicy Unrestricted -File C:\Tools\jivkok\SetPosh.ps1" init_dir="C:\" run_as_user="0" user=""/>
+			<console shell="%SystemRoot%\syswow64\WindowsPowerShell\v1.0\powershell.exe -NoExit -ExecutionPolicy Unrestricted -File %USERPROFILE%\.shell\SetPosh.ps1" init_dir="C:\" run_as_user="0" user=""/>
 			<cursor style="5" r="255" g="255" b="255"/>
 			<background type="0" r="1" g="36" b="86">
 				<image file="" relative="0" extend="0" position="0">

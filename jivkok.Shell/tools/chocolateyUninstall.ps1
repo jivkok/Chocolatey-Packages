@@ -1,8 +1,7 @@
-$package = 'jivkok.Shell1'
+$package = 'jivkok.Shell'
 
 try {
-  $toolsPath = 'C:\Tools\jivkok'
-  Remove-Item $toolsPath -recurse -force
+  Remove-Item "$Home\.shell" -recurse -force
   Remove-Item "$Home\Desktop\JConsole.lnk" -force
 
   Write-ChocolateySuccess $package

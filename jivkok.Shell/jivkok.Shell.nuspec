@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
-    <id>jivkok.Shell1</id>
+    <id>jivkok.Shell</id>
     <title>Jivkok - Shell</title>
-    <version>1.0.0.4</version>
+    <version>1.0.0.5</version>
     <authors>Various</authors>
     <owners>Jivko Kolev</owners>
     <summary>Multi-tabbed console with Windows shell, Powershell, and Bash.</summary>
-    <description>Multi-tabbed console with Windows shell, Powershell, and Bash. Windows shell supports custom start commands via %HOMEPATH%\cmd_profile.cmd</description>
+    <description>Multi-tabbed console with Windows shell, Powershell, and Bash. Windows shell supports custom start commands via %USERPROFILE%\cmd_profile.cmd</description>
     <projectUrl>http://github.com/jivkok/Chocolatey-Packages/</projectUrl>
     <tags>jivkok shell cmd powershell bash git</tags>
     <dependencies>
@@ -19,6 +19,6 @@
       <dependency id='jivkok.GitConfig' />
     </dependencies>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://raw.github.com/jivkok/Chocolatey-Packages/master/jivkok.Shell1/content/Console.png</iconUrl>
+    <iconUrl>https://raw.github.com/jivkok/Chocolatey-Packages/master/jivkok.Shell/content/Console.png</iconUrl>
   </metadata>
 </package>

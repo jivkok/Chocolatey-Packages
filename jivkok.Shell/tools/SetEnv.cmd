@@ -19,7 +19,10 @@ if exist "%ProgramFiles(x86)%\Git\bin\git.exe" (
 )
 
 rem VS
-if exist "%ProgramFiles(x86)%\Microsoft Visual Studio 12.0\Common7\Tools\VsDevCmd.bat" (
+if exist "%ProgramFiles(x86)%\Microsoft Visual Studio 14.0\Common7\Tools\VsDevCmd.bat" (
+    echo Setting VS 2015 ...
+    call "%ProgramFiles(x86)%\Microsoft Visual Studio 14.0\Common7\Tools\VsDevCmd.bat"
+) else if exist "%ProgramFiles(x86)%\Microsoft Visual Studio 12.0\Common7\Tools\VsDevCmd.bat" (
     echo Setting VS 2013 ...
     call "%ProgramFiles(x86)%\Microsoft Visual Studio 12.0\Common7\Tools\VsDevCmd.bat"
 ) else if exist "%ProgramFiles(x86)%\Microsoft Visual Studio 11.0\Common7\Tools\VsDevCmd.bat" (
@@ -27,8 +30,8 @@ if exist "%ProgramFiles(x86)%\Microsoft Visual Studio 12.0\Common7\Tools\VsDevCm
     call "%ProgramFiles(x86)%\Microsoft Visual Studio 11.0\Common7\Tools\VsDevCmd.bat"
 )
 
-cd /d %HOMEPATH%
+cd /d %USERPROFILE%
 
-if exist "%HOMEPATH%\cmd_profile.cmd" (
-    call "%HOMEPATH%\cmd_profile.cmd"
+if exist "%USERPROFILE%\cmd_profile.cmd" (
+    call "%USERPROFILE%\cmd_profile.cmd"
 )

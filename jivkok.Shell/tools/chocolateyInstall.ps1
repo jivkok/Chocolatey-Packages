@@ -1,4 +1,4 @@
-$package = 'jivkok.Shell1'
+$package = 'jivkok.Shell'
 
 function Get-CurrentDirectory
 {
@@ -19,7 +19,7 @@ function New-Shortcut($ShortcutPath, $TargetPath, $Arguments, $IconLocation)
 try {
   $currentPath = Get-CurrentDirectory
 
-  $destPath = 'C:\Tools\jivkok'
+  $destPath = "$Home\.shell"
   if (!(Test-Path $destPath))
   {
     New-Item $destPath -Type Directory | Out-Null
@@ -38,7 +38,7 @@ try {
       Copy-Item @params
     }
 
-  New-Shortcut "$Home\Desktop\JConsole.lnk" "C:\Chocolatey\bin\Console.bat" "-c c:\tools\jivkok\console.xml" "cmd.exe,0"
+  New-Shortcut "$Home\Desktop\JConsole.lnk" "$Env:ChocolateyInstall\bin\Console.exe" "-c $Home\.shell\console.xml" "cmd.exe,0"
 
   # BoxStarter
   Import-Module (Join-Path $currentPath BoxStarter.psm1)
@@ -49,7 +49,7 @@ try {
   # Set-TaskbarSmall
   # Restart-Explorer
 
-  Set-EnvironmentVariable -Name '_NT_SYMBOL_PATH' -Value 'srv*C:\Symbols*http://referencesource.microsoft.com/symbols*http://srv.symbolsource.org/pdb/Public*http://msdl.microsoft.com/download/symbols' -Scope User
+  [Environment]::SetEnvironmentVariable("_NT_SYMBOL_PATH", "srv*C:\Symbols*http://referencesource.microsoft.com/symbols*http://srv.symbolsource.org/pdb/Public*http://msdl.microsoft.com/download/symbols", "User")
 
   Write-ChocolateySuccess $package
 } catch {
