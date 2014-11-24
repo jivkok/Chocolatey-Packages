@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>VisualStudio2013Community</id>
+    <id>VisualStudioCommunity2013</id>
     <title>Visual Studio Community 2013</title>
     <version>12.0.21005.1</version>
     <authors>Microsoft</authors>
-    <owners>Jivko Kolev</owners>
+    <owners>Redsandro, Jivko Kolev</owners>
     <projectUrl>http://www.visualstudio.com/en-us/downloads/download-visual-studio-vs#d-community</projectUrl>
-    <iconUrl>https://github.com/jivkok/Chocolatey-Packages/raw/master/VisualStudio2013Community/vs.png</iconUrl>
+    <iconUrl>https://github.com/jivkok/Chocolatey-Packages/raw/master/VisualStudioCommunity2013/vs.png</iconUrl>
     <licenseUrl>http://msdn.microsoft.com/en-US/cc300389.aspx</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <summary>Visual Studio Community 2013</summary>
+    <summary>Full-featured free version of Visual Studio</summary>
     <description>Download Visual Studio Community for a free, full-featured IDE with powerful coding productivity features, cross-platform mobile development tools for Windows, iOS and Android, and access to thousands of extensions. This edition of Visual Studio is available at no cost for non-enterprise application development.
 Sign in to Visual Studio within 30 days with your Microsoft account to synchronize your settings across multiple machines and register your product.</description>
     <tags>Microsoft Visual Studio Community 2013 IDE</tags>
