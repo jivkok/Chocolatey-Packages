@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Powerpoint.Viewer</id>
+    <title>Powerpoint.Viewer</title>
+    <version>12.0.6219.1000</version>
+    <authors>Microsoft</authors>
+    <owners>Jivko Kolev</owners>
+    <projectUrl>http://www.microsoft.com/en-us/download/details.aspx?id=13</projectUrl>
+    <iconUrl>http://c.s-microsoft.com/en-us/CMSImages/office_symbol_clr_56x56.png</iconUrl>
+    <licenseUrl>http://www.microsoft.com/en-us/download/details.aspx?id=13</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>PowerPoint Viewer lets you view full-featured presentations created in PowerPoint 97 and later versions.</summary>
+    <description>PowerPoint Viewer lets you view full-featured presentations created in PowerPoint 97 and later versions. Supports the following Powerpoint versions: 2010, 2007, 2003, 2002, 2000, 97.</description>
+    <tags>microsoft office powerpoint viewer</tags>
+  </metadata>
+</package>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Word.Viewer</id>
+    <title>Word.Viewer</title>
+    <version>12.0.6219.1000</version>
+    <authors>Microsoft</authors>
+    <owners>Jivko Kolev</owners>
+    <projectUrl>http://www.microsoft.com/en-us/download/details.aspx?id=4</projectUrl>
+    <iconUrl>http://c.s-microsoft.com/en-us/CMSImages/office_symbol_clr_56x56.png</iconUrl>
+    <licenseUrl>http://www.microsoft.com/en-us/download/details.aspx?id=4</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Open, view, and print Word workbooks, even if you don't have Word installed.</summary>
+    <description>Open, view, and print Word documents, even if you don't have Word installed. Supports the following Word versions: 2010, 2007, 2003, 2002, 2000.</description>
+    <tags>microsoft office Word viewer</tags>
+  </metadata>
+</package>
