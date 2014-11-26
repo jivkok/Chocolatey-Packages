@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>VisualStudio2015Ultimate</id>
+    <title>Visual Studio Ultimate 2015 Preview</title>
+    <version>14.0.0.1</version>
+    <authors>Microsoft</authors>
+    <owners>Jivko Kolev</owners>
+    <projectUrl>http://www.visualstudio.com/en-us/downloads/visual-studio-2015-downloads-vs</projectUrl>
+    <iconUrl>https://github.com/jivkok/Chocolatey-Packages/raw/master/VisualStudio2015Ultimate/vs.png</iconUrl>
+    <licenseUrl>http://msdn.microsoft.com/en-US/cc300389.aspx</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Preview of Visual Studio Ultimate 2015</summary>
+    <description>Visual Studio 2015 Preview contains many new and exciting features to support cross-platform mobile development, web and cloud development, IDE productivity enhancements, and more.
+NOTE Visual Studio 2015 Preview and .NET 4.6 Preview are for testing and feedback purposes only. This release is unsupported and are not intended for use on production computers, or to create production code. We strongly recommend only installing this release in a virtual machine, or on a computer that is available for reformatting.
+</description>
+    <tags>Microsoft Visual Studio Ultimate 2015 IDE</tags>
+  </metadata>
+</package>
