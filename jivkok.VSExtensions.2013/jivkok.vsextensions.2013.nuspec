@@ -3,7 +3,7 @@
   <metadata>
     <id>jivkok.vsextensions.2013</id>
     <title>jivkok.vsextensions.2013</title>
-    <version>1.0.0.3</version>
+    <version>1.0.0.4</version>
     <authors>Jivko Kolev</authors>
     <owners>Jivko Kolev</owners>
     <summary>My Visual Studio extensions</summary>
@@ -15,7 +15,6 @@
 - MarkdownMode
 - MultiEdit
 - NuGet
-- PerfWatsonMonitor
 - PostSharp
 - PowerShellTools
 - ProPowerTools
@@ -24,7 +23,6 @@
 - SpecFlow
 - VSColorOutput
 - VSCommands
-- VsVim
 - WebEssentials
 - WebWorkbench
     </description>
