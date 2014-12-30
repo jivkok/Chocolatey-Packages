@@ -21,4 +21,4 @@ if($hasIE10 -ne $true){
 "@
 }
 
-Install-ChocolateyPackage 'VisualStudioExpress2013WindowsDesktop' 'exe' "/Passive /NoRestart /Log $env:temp\VisualStudioExpress2013Windows.log" 'http://download.microsoft.com/download/7/2/E/72E0F986-D247-4289-B9DC-C4FB07374894/wdexpress_full.exe'
+Install-ChocolateyPackage 'VisualStudioExpress2013WindowsDesktop' 'exe' "/Passive /NoRestart /Log $env:temp\VisualStudioExpress2013Windows.log" 'http://download.microsoft.com/download/1/4/A/14AB19DE-9E0F-4502-993F-52EBB9BA2D80/winexpress_full.exe'
