@@ -3,7 +3,7 @@
   <metadata>
     <id>jivkok.SublimeText3.Packages</id>
     <title>Jivkok - Sublime Text 3 - Editor Enhancing Packages</title>
-    <version>1.0.0.7</version>
+    <version>1.0.0.8</version>
     <authors>Various</authors>
     <owners>Jivko Kolev</owners>
     <summary>A number of packages helpful for increased editor productivity.</summary>
@@ -11,6 +11,7 @@
     Packages:
     - All Autocomplete (https://github.com/alienhard/SublimeAllAutocomplete)
     - AutoItScript (https://github.com/AutoIt/SublimeAutoItScript)
+    - BracketHighlighter (https://github.com/facelessuser/BracketHighlighter)
     - CodeFormatter (https://github.com/akalongman/sublimetext-codeformatter)
     - EasyMotion (https://github.com/tednaleid/sublime-EasyMotion)
     - Emmet (https://github.com/sergeche/emmet-sublime)
@@ -20,13 +21,17 @@
     - Git (https://github.com/kemayo/sublime-text-git)
     - GitGutter (https://github.com/jisaacks/GitGutter)
     - Http Requester (https://github.com/braindamageinc/SublimeHttpRequester)
+    - Jedi - Python autocompletion (https://github.com/srusskih/SublimeJEDI)
+    - JsFormat (https://github.com/jdc0589/JsFormat)
     - Markdown Preview (https://github.com/revolunet/sublimetext-markdown-preview)
+    - MarkdownEditing (https://github.com/SublimeText-Markdown/MarkdownEditing)
     - Package Control (https://sublime.wbond.net/)
     - PlainTasks (https://github.com/aziz/PlainTasks)
     - PowerShell (https://github.com/SublimeText/PowerShell)
     - SFTP (http://wbond.net/sublime_packages/sftp)
     - SideBarEnhancements (https://github.com/titoBouzout/SideBarEnhancements)
     - StringEncode (https://github.com/colinta/SublimeStringEncode)
+    - SublimeCodeIntel (https://github.com/SublimeCodeIntel/SublimeCodeIntel)
     - SublimeLinter (https://github.com/SublimeLinter/SublimeLinter3)
     - Theme - Soda (https://github.com/buymeasoda/soda-theme/)
     - TrailingSpaces (https://github.com/SublimeText/TrailingSpaces)
