@@ -38,10 +38,16 @@ try {
       Copy-Item @params
     }
 
-  New-Shortcut "$Home\Desktop\JConsole.lnk" "$Env:ChocolateyInstall\bin\Console.exe" "-c $Home\.shell\console.xml" "cmd.exe,0"
+  New-Shortcut "$Home\Desktop\Console.lnk" "$Env:ChocolateyInstall\bin\Console.exe" "-c $Home\.shell\console.xml" "cmd.exe,0"
 
   # Bash files
-  Copy-Item .* $destPath -Force
+  $destPath = "$Home"
+  copy (Join-Path $currentPath Bash.aliases) (Join-Path $destPath .aliases)
+  copy (Join-Path $currentPath Bash.bashrc) (Join-Path $destPath .bashrc)
+  copy (Join-Path $currentPath Bash.bash_profile) (Join-Path $destPath .bash_profile)
+  copy (Join-Path $currentPath Bash.bash_prompt) (Join-Path $destPath .bash_prompt)
+  copy (Join-Path $currentPath Bash.exports) (Join-Path $destPath .exports)
+  copy (Join-Path $currentPath Bash.functions) (Join-Path $destPath .functions)
 
   # BoxStarter
   Import-Module (Join-Path $currentPath BoxStarter.psm1)
