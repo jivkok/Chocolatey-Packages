@@ -1,0 +1,46 @@
+if [ -f ~/git-prompt.sh ]; then
+    source ~/git-prompt.sh
+    GIT_PS1_SHOWDIRTYSTATE=1
+    GIT_PS1_SHOWUNTRACKEDFILES=1
+    GIT_PS1_SHOWUPSTREAM="auto"
+else
+    function __git_ps1 {
+        return
+    }
+fi
+
+# Colors
+COLOR_RESET='\[\e[0m\]'
+NO_COLOUR="\[\033[0m\]"
+BLACK="\[\033[0;30m\]"
+RED="\[\033[0;31m\]"
+RED_BOLD="\[\033[01;31m\]"
+GREEN="\[\033[0;32m\]"
+GREEN_BOLD="\[\033[01;32m\]"
+YELLOW="\[\033[0;33m\]"
+YELLOW_BOLD="\[\033[01;33m\]"
+BLUE="\[\033[0;34m\]"
+BLUE_BOLD="\[\033[01;34m\]"
+PURPLE='\[\e[0;35m\]'
+PURPLE_BOLD='\[\e[01;35m\]'
+CYAN='\[\e[0;36m\]'
+CYAN_BOLD='\[\e[01;36m\]'
+WHITE='\[\e[0;37m\]'
+WHITE_BOLD='\[\e[01;37m\]'
+
+function precmd {
+    local separator=' : '
+    local user="${USER} @ ${HOSTNAME}"
+    if [ -z "$SSH_CLIENT" ] && [ -z "$SSH_TTY" ]; then
+        user="$user (local)"
+    fi
+    local location="${PWD}"
+
+    local prefix="\n${YELLOW_BOLD}${user}${COLOR_RESET}${separator}${GREEN_BOLD}${location}${COLOR_RESET}${BLUE_BOLD}$(__git_ps1 " (%s)")${COLOR_RESET}"
+
+    local title="${user}${separator}${location}$(__git_ps1 " (%s)")"
+    echo -ne "\033]0;${title}\007"
+    export PS1="${prefix}\n\$ "
+}
+
+export PROMPT_COMMAND=precmd

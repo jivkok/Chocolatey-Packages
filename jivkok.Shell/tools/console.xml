@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <settings>
-	<console change_refresh="10" refresh="100" rows="50" columns="120" buffer_rows="9999" buffer_columns="0" shell="" init_dir="" start_hidden="0" save_size="0">
+	<console change_refresh="10" refresh="100" rows="49" columns="120" buffer_rows="9999" buffer_columns="0" shell="" init_dir="" start_hidden="0" save_size="0">
+		<!-- Color scheme: Default -->
 		<colors>
 			<color id="0" r="0" g="0" b="0"/>
 			<color id="1" r="0" g="0" b="128"/>
@@ -19,9 +20,47 @@
 			<color id="14" r="255" g="255" b="0"/>
 			<color id="15" r="255" g="255" b="255"/>
 		</colors>
+		<!-- Color scheme: Solarized Light (https://github.com/stevenharman/console2-solarized)-->
+		<!--		<colors>
+			<color id="0" r="238" g="232" b="213"/>
+			<color id="1" r="38" g="139" b="210"/>
+			<color id="2" r="133" g="153" b="0"/>
+			<color id="3" r="42" g="161" b="152"/>
+			<color id="4" r="220" g="50" b="47"/>
+			<color id="5" r="211" g="54" b="130"/>
+			<color id="6" r="181" g="137" b="0"/>
+			<color id="7" r="7" g="54" b="66"/>
+			<color id="8" r="0" g="43" b="54"/>
+			<color id="9" r="38" g="139" b="210"/>
+			<color id="10" r="133" g="153" b="0"/>
+			<color id="11" r="88" g="110" b="117"/>
+			<color id="12" r="203" g="75" b="22"/>
+			<color id="13" r="108" g="113" b="196"/>
+			<color id="14" r="131" g="148" b="150"/>
+			<color id="15" r="0" g="43" b="54"/>
+		</colors>-->
+		<!-- Color scheme: Solarized Dark (https://github.com/stevenharman/console2-solarized) -->
+		<!--		<colors>
+			<color id="0" r="7" g="54" b="66"/>
+			<color id="1" r="38" g="139" b="210"/>
+			<color id="2" r="133" g="153" b="0"/>
+			<color id="3" r="42" g="161" b="152"/>
+			<color id="4" r="220" g="50" b="47"/>
+			<color id="5" r="211" g="54" b="130"/>
+			<color id="6" r="181" g="137" b="0"/>
+			<color id="7" r="238" g="232" b="213"/>
+			<color id="8" r="42" g="161" b="152"/>
+			<color id="9" r="131" g="148" b="150"/>
+			<color id="10" r="88" g="110" b="117"/>
+			<color id="11" r="147" g="161" b="161"/>
+			<color id="12" r="203" g="75" b="22"/>
+			<color id="13" r="108" g="113" b="196"/>
+			<color id="14" r="101" g="123" b="131"/>
+			<color id="15" r="253" g="246" b="227"/>
+		</colors>-->
 	</console>
 	<appearance>
-		<font name="Fixedsys" size="8" bold="0" italic="0" smoothing="0">
+		<font name="Consolas" size="10" bold="0" italic="0" smoothing="0">
 			<color use="0" r="0" g="128" b="0"/>
 		</font>
 		<window title="Console" icon="" use_tab_icon="1" use_console_title="0" show_cmd="1" show_cmd_tabs="1" use_tab_title="1" trim_tab_titles="30" trim_tab_titles_right="10"/>
@@ -30,7 +69,7 @@
 			<selection_color r="255" g="255" b="255"/>
 		</styles>
 		<position x="-1" y="-1" dock="-1" snap="0" z_order="0" save_position="0"/>
-		<transparency type="1" active_alpha="238" inactive_alpha="238" r="0" g="0" b="0"/>
+		<transparency type="1" active_alpha="250" inactive_alpha="250" r="0" g="0" b="0"/>
 	</appearance>
 	<behavior>
 		<copy_paste copy_on_select="1" clear_on_copy="1" no_wrap="1" trim_spaces="1" copy_newline_char="0" sensitive_copy="1"/>
@@ -38,7 +77,7 @@
 		<tab_highlight flashes="3" stay_highligted="1"/>
 	</behavior>
 	<hotkeys use_scroll_lock="1">
-		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="83" command="settings"/>
+		<hotkey ctrl="1" shift="0" alt="0" extended="0" code="83" command="settings"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="112" command="help"/>
 		<hotkey ctrl="0" shift="0" alt="1" extended="0" code="115" command="exit"/>
 		<hotkey ctrl="1" shift="0" alt="0" extended="0" code="112" command="newtab1"/>
@@ -78,7 +117,7 @@
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="scrollpageleft"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="scrollpageright"/>
 		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="112" command="dumpbuffer"/>
-		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="67" command="activate"/>
+		<hotkey ctrl="1" shift="0" alt="0" extended="0" code="223" command="activate"/>
 	</hotkeys>
 	<mouse>
 		<actions>
@@ -93,7 +132,7 @@
 		<tab title="Cmd" use_default_icon="1">
 			<console shell="%comspec% /k &quot;&quot;%USERPROFILE%\.shell\SetEnv.cmd&quot;&quot;" init_dir="C:\" run_as_user="0" user=""/>
 			<cursor style="5" r="255" g="255" b="255"/>
-			<background type="0" r="0" g="0" b="0">
+			<background type="0" r="0" g="43" b="54">
 				<image file="" relative="0" extend="0" position="0">
 					<tint opacity="0" r="0" g="0" b="0"/>
 				</image>
@@ -102,7 +141,7 @@
 		<tab title="Posh" use_default_icon="1">
 			<console shell="%SystemRoot%\syswow64\WindowsPowerShell\v1.0\powershell.exe -NoExit -ExecutionPolicy Unrestricted -File %USERPROFILE%\.shell\SetPosh.ps1" init_dir="C:\" run_as_user="0" user=""/>
 			<cursor style="5" r="255" g="255" b="255"/>
-			<background type="0" r="1" g="36" b="86">
+			<background type="0" r="0" g="43" b="54">
 				<image file="" relative="0" extend="0" position="0">
 					<tint opacity="0" r="0" g="0" b="0"/>
 				</image>
@@ -111,7 +150,7 @@
 		<tab title="Bash" use_default_icon="0">
 			<console shell="&quot;%ProgramFiles(x86)%\Git\bin\sh.exe&quot; --login -i" init_dir="C:\" run_as_user="0" user=""/>
 			<cursor style="5" r="255" g="255" b="255"/>
-			<background type="0" r="0" g="0" b="0">
+			<background type="0" r="0" g="43" b="54">
 				<image file="" relative="0" extend="0" position="0">
 					<tint opacity="0" r="0" g="0" b="0"/>
 				</image>

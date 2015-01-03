@@ -40,6 +40,9 @@ try {
 
   New-Shortcut "$Home\Desktop\JConsole.lnk" "$Env:ChocolateyInstall\bin\Console.exe" "-c $Home\.shell\console.xml" "cmd.exe,0"
 
+  # Bash files
+  Copy-Item .* $destPath -Force
+
   # BoxStarter
   Import-Module (Join-Path $currentPath BoxStarter.psm1)
   Disable-ShutdownTracker

@@ -1,0 +1,44 @@
+# Easier navigation
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias -- -="cd -"
+
+# Directories
+alias md="mkdir"
+alias rd="rm -rf"
+alias du='du -h $* | sort -h -r'
+alias tree2='tree -A -C -L 2 --dirsfirst'
+alias tree2a='tree -a -A -C -L 2 --dirsfirst'
+
+# Shortcuts
+alias g="git"
+alias h="history"
+alias j="jobs"
+alias s="subl"
+alias a="atom"
+alias v="vim"
+alias em='emacs -nw'     # No X11 windows
+alias eqq='emacs -nw -Q' # No config and no X11
+
+# Listing
+alias l='ls -AF --group-directories-first --color=auto'
+alias ll='ls -AlF --group-directories-first --color=auto'
+alias dir='ls -AlF --group-directories-first --color=auto'
+
+# Stopwatch
+alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
+
+# IP addresses
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)'"
+
+# View HTTP traffic
+alias sniff="sudo ngrep -d 'eth0' -t '^(GET|POST) ' 'tcp and port 80'"
+alias httpdump="sudo tcpdump -i eth0 -n -s 0 -w -"
+
+# URL-encode strings
+alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
+
+# Reload the shell (i.e. invoke as a login shell)
+alias reload="exec $SHELL -l"
