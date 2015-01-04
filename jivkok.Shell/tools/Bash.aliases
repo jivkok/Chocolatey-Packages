@@ -21,10 +21,27 @@ alias v="vim"
 alias em='emacs -nw'     # No X11 windows
 alias eqq='emacs -nw -Q' # No config and no X11
 
+# ls dirs flag
+if ls ~ --group-directories-first > /dev/null 2>&1; then
+    dirsflag=" --group-directories-first"
+else
+    dirsflag=""
+fi
+# ls color flag
+if ls ~ --color > /dev/null 2>&1; then
+    # GNU
+    colorflag=" --color=auto"
+elif ls ~ -G > /dev/null 2>&1; then
+    # OSX
+    colorflag=" -G"
+else
+    colorflag=""
+fi
+
 # Listing
-alias l='ls -AF --group-directories-first --color=auto'
-alias ll='ls -AlF --group-directories-first --color=auto'
-alias dir='ls -AlF --group-directories-first --color=auto'
+alias l="ls -AF$dirsflag$colorflag"
+alias ll="ls -AlF$dirsflag$colorflag"
+alias dir="ls -AlF$dirsflag$colorflag"
 
 # Stopwatch
 alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
