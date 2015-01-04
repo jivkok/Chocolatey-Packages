@@ -16,9 +16,8 @@ export LC_ALL="en_US.UTF-8";
 # Highlight section titles in manual pages
 export LESS_TERMCAP_md="${yellow}";
 
-# Don’t clear the screen after quitting a manual page
-export MANPAGER="less -X";
-
-# Always enable colored `grep` output
-export GREP_OPTIONS="--color=auto";
-export GREP_COLOR='1;31' # green for matches
+# Enable colored `grep` output
+if echo zzz | grep --color=auto zzz > /dev/null 2>&1; then
+    export GREP_OPTIONS="--color=auto";
+    export GREP_COLOR='1;31' # green for matches
+fi
