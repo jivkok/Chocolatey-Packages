@@ -1,8 +1,8 @@
 export PATH=$PATH
-export PATH=$HOME/bin:$PATH
 export PATH=/usr/bin:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
+export PATH=$HOME/bin:$PATH
 
 # Load the shell dotfiles (~/.path can be used to extend `$PATH`)
 for file in ~/.{bashrc,exports,path}; do

@@ -20,6 +20,7 @@ alias a="atom"
 alias v="vim"
 alias em='emacs -nw'     # No X11 windows
 alias eqq='emacs -nw -Q' # No config and no X11
+alias x='exit'
 
 # ls dirs flag
 if ls ~ --group-directories-first > /dev/null 2>&1; then
@@ -28,31 +29,33 @@ else
     dirsflag=""
 fi
 # ls color flag
-if ls ~ --color > /dev/null 2>&1; then
+if ls --color ~ > /dev/null 2>&1; then
     # GNU
-    colorflag=" --color=auto"
-elif ls ~ -G > /dev/null 2>&1; then
+    colorflag="--color=auto"
+elif ls -G ~ > /dev/null 2>&1; then
     # OSX
-    colorflag=" -G"
+    colorflag="-G"
 else
     colorflag=""
 fi
 
 # Listing
-alias l="ls -AF$dirsflag$colorflag"
-alias ll="ls -AlF$dirsflag$colorflag"
-alias dir="ls -AlF$dirsflag$colorflag"
+alias l="ls -AF $dirsflag $colorflag"
+alias ll="ls -AlF $dirsflag $colorflag"
+alias recent='ls -Alt | head'   # Most recent files
+
+# Top processes
+alias top10='ps -eo pcpu,pid,user,args | sort -k 1 -r | head -10'
+
+# Get week number
+alias week='date +%V'
 
 # Stopwatch
 alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)'"
-
-# View HTTP traffic
-alias sniff="sudo ngrep -d 'eth0' -t '^(GET|POST) ' 'tcp and port 80'"
-alias httpdump="sudo tcpdump -i eth0 -n -s 0 -w -"
+alias localip="ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'"
 
 # URL-encode strings
 alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
