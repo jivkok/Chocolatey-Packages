@@ -7,7 +7,7 @@ try {
   # https://gist.github.com/oli/1637874
 
   # Prereqs
-  setx TERM msys /M
+  setx TERM cygwin /M
   $kdiffPath = "$env:ProgramW6432\KDiff3\kdiff3.exe"
   if (Test-Path $kdiffPath) { Write-Output "Found '$kdiffPath'" } else { Write-Warning "Could not find '$kdiffPath'" }
 
@@ -21,7 +21,7 @@ try {
   }
   git config --global help.format html
   git config --global pack.packSizeLimit 2g
-  git config --global push.default simple
+  git config --global push.default current
   git config --global rebase.autosquash true
 
   # Colors
