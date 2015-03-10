@@ -1,4 +1,8 @@
-$adminFile = (Join-Path $(Split-Path -parent $MyInvocation.MyCommand.Definition) 'AdminDeployment.xml')
+$adminFile = $env:chocolateyPackageParameters
+
+if ([string]::IsNullOrEmpty($adminFile)){
+    $adminFile = (Join-Path $(Split-Path -parent $MyInvocation.MyCommand.Definition) 'AdminDeployment.xml')
+}
 
 $packageName = 'VisualStudioCommunity2013'
 $installerType = 'exe'
