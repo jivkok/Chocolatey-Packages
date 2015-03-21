@@ -7,7 +7,7 @@
     <authors>Microsoft</authors>
     <owners>Jivko Kolev</owners>
     <projectUrl>http://www.visualstudio.com/downloads/download-visual-studio-vs</projectUrl>
-    <iconUrl>https://github.com/jivkok/Chocolatey-Packages/raw/master/VisualStudioExpress2013WindowsDesktop/vs.png</iconUrl>
+    <iconUrl>https://github.com/jivkok/Chocolatey-Packages/raw/master/VisualStudioExpress2013WindowsDesktop/vs.svg</iconUrl>
     <licenseUrl>http://msdn.microsoft.com/en-US/cc300389.aspx</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Visual Studio Express 2013 for Windows Desktop</summary>
