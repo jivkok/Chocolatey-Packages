@@ -3,23 +3,26 @@
   <metadata>
     <id>jivkok.SublimeText3.Packages</id>
     <title>Jivkok - Sublime Text 3 - Editor Enhancing Packages</title>
-    <version>1.0.0.8</version>
+    <version>1.0.0.9</version>
     <authors>Various</authors>
     <owners>Jivko Kolev</owners>
-    <summary>A number of packages helpful for increased editor productivity.</summary>
-    <description>Includes a number of very useful packages for Sublime Text.
-    Packages:
+    <summary>Number of packages for increasing productivity in SublimeText</summary>
+    <description>Packages:
+
     - All Autocomplete (https://github.com/alienhard/SublimeAllAutocomplete)
     - AutoItScript (https://github.com/AutoIt/SublimeAutoItScript)
     - BracketHighlighter (https://github.com/facelessuser/BracketHighlighter)
     - CodeFormatter (https://github.com/akalongman/sublimetext-codeformatter)
+    - Color Highlighter (https://github.com/Monnoroch/ColorHighlighter)
     - EasyMotion (https://github.com/tednaleid/sublime-EasyMotion)
     - Emmet (https://github.com/sergeche/emmet-sublime)
     - ExportHtml (https://github.com/facelessuser/ExportHtml)
     - FileDiffs (https://github.com/colinta/SublimeFileDiffs)
+    - FilterPipes (https://github.com/tylerl/FilterPipes)
     - Gist (https://github.com/condemil/Gist)
     - Git (https://github.com/kemayo/sublime-text-git)
     - GitGutter (https://github.com/jisaacks/GitGutter)
+    - HTMLBeautify (https://github.com/rareyman/HTMLBeautify)
     - Http Requester (https://github.com/braindamageinc/SublimeHttpRequester)
     - Jedi - Python autocompletion (https://github.com/srusskih/SublimeJEDI)
     - JsFormat (https://github.com/jdc0589/JsFormat)
@@ -37,6 +40,7 @@
     - TrailingSpaces (https://github.com/SublimeText/TrailingSpaces)
 
     User Preferences
+
      - ensuring 4 tab indent
      - use spaces everywhere
      - drawing whitespace
