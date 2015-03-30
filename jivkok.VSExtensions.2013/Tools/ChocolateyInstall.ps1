@@ -54,9 +54,7 @@ try {
     # installsilently http://visualstudiogallery.msdn.microsoft.com/59ca71b3-a4a3-46ca-8fe1-0e90e3f79329/file/6390/45/VsVim.vsix VsVim.vsix
     installsilently http://visualstudiogallery.msdn.microsoft.com/56633663-6799-41d7-9df7-0f2a504ca361/file/105627/23/WebEssentials2013.vsix WebEssentials.vsix
     installsilently http://visualstudiogallery.msdn.microsoft.com/2b96d16a-c986-4501-8f97-8008f9db141a/file/53962/59/Mindscape.WebWorkbench.Integration.10.vsix WebWorkbench.vsix
-
-    Write-ChocolateySuccess $packageName
 } catch {
-  Write-ChocolateyFailure $packageName "$($_.Exception.Message)"
+    Write-ChocolateyFailure $packageName "$($_.Exception.Message)"
     throw
 }

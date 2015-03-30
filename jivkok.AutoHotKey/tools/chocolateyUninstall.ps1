@@ -13,8 +13,6 @@ try {
     echo "Removing $destFile"
     Remove-Item $destFile -force
   }
-
-  Write-ChocolateySuccess $package
 } catch {
   Write-ChocolateyFailure $package "$($_.Exception.Message)"
   throw

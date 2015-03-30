@@ -107,8 +107,6 @@ try {
   {
     Write-Warning "Set git global username with git config --global user.name 'foo' to use standup"
   }
-
-  Write-ChocolateySuccess $package
 } catch {
   Write-ChocolateyFailure $package "$($_.Exception.Message)"
   throw

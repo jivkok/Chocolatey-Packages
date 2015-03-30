@@ -59,8 +59,6 @@ try {
   # Restart-Explorer
 
   [Environment]::SetEnvironmentVariable("_NT_SYMBOL_PATH", "srv*C:\Symbols*http://referencesource.microsoft.com/symbols*http://srv.symbolsource.org/pdb/Public*http://msdl.microsoft.com/download/symbols", "User")
-
-  Write-ChocolateySuccess $package
 } catch {
   Write-ChocolateyFailure $package "$($_.Exception.Message)"
   throw
