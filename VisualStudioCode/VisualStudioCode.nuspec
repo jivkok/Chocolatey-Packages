@@ -3,15 +3,18 @@
   <metadata>
     <id>VisualStudioCode</id>
     <title>Visual Studio Code</title>
-    <version>0.1.0.0</version>
+    <version>0.1.0</version>
     <authors>Microsoft</authors>
     <owners>Jivko Kolev</owners>
-    <projectUrl>https://code.visualstudio.com/Download</projectUrl>
+    <projectUrl>https://code.visualstudio.com</projectUrl>
     <iconUrl>https://github.com/jivkok/Chocolatey-Packages/raw/master/VisualStudioCode/vs.png</iconUrl>
     <licenseUrl>https://code.visualstudio.com/License</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Visual Studio Code</summary>
     <description>Build and debug modern web and cloud applications. Code is free and available on your favorite platform - Linux, Mac OSX, and Windows.</description>
     <tags>Microsoft Visual Studio Code editor ide</tags>
+    <dependencies>
+      <dependency id="DotNet4.5.1" />
+    </dependencies>
   </metadata>
 </package>
