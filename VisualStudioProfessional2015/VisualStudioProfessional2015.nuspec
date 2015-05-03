@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>VisualStudioProfessional2015</id>
+    <title>Visual Studio Professional 2015 RC</title>
+    <version>14.0.22823.0-RC</version>
+    <authors>Microsoft</authors>
+    <owners>Jivko Kolev</owners>
+    <projectUrl>https://www.visualstudio.com/vs-2015-product-editions</projectUrl>
+    <iconUrl>https://github.com/jivkok/Chocolatey-Packages/raw/master/VisualStudioCommon/VS2015.png</iconUrl>
+    <licenseUrl>http://msdn.microsoft.com/en-US/cc300389.aspx</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Professional developer tools and services for individual developers or small teams</summary>
+    <description>Professional developer tools and services for individual developers or small teams.
+
+- Professional developer tool for building any application type
+- Powerful features to improve your team's productivity such as CodeLens
+- Improve team collaboration with Agile project planning tools, Team Rooms, charts and more
+- MSDN subscription benefits including access to core software for dev/test, Team Foundation Server, Visual Studio Online Basic, $50/month in Azure credits, training and support.
+
+=== Optional Features ===
+Optional features (Sql tools, phone tools, etc.) are available but not installed by default.
+You can provide optional parameters to include them during the install.
+Here is example that includes the Sql Tools and Windows Phone Emulators:
+
+choco install VisualStudioProfessional2015 -packageParameters "Features:SQL,WindowsPhone81Emulators"
+
+Available features:
+- LightSwitch
+- MDDCPlusPlus
+- MDDJS
+- OfficeDeveloperTools
+- SilverLight_Developer_Kit
+- SQL
+- ToolsForWin81_WP80_WP81
+- VC_MFC_Libraries
+- WindowsPhone81Emulators
+</description>
+    <tags>Microsoft Visual Studio Professional 2015 IDE</tags>
+  </metadata>
+  <files>
+    <file src="Tools\AdminDeployment.xml" target="Tools\AdminDeployment.xml" />
+    <file src="Tools\ChocolateyInstall.ps1" target="Tools\ChocolateyInstall.ps1" />
+    <file src="Tools\ChocolateyUninstall.ps1" target="Tools\ChocolateyUninstall.ps1" />
+    <file src="..\VisualStudioCommon\VSModules2015.psm1" target="Tools\VSModules.psm1" />
+  </files>
+</package>

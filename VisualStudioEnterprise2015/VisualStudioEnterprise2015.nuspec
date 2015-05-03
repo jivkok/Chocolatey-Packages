@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>VisualStudioEnterprise2015</id>
+    <title>Visual Studio Enterprise 2015 RC</title>
+    <version>14.0.22823.0-RC</version>
+    <authors>Microsoft</authors>
+    <owners>Jivko Kolev</owners>
+    <projectUrl>https://www.visualstudio.com/vs-2015-product-editions</projectUrl>
+    <iconUrl>https://github.com/jivkok/Chocolatey-Packages/raw/master/VisualStudioCommon/VS2015.png</iconUrl>
+    <licenseUrl>http://msdn.microsoft.com/en-US/cc300389.aspx</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Enterprise grade solution with advanced capabilities for teams working on projects of any size or complexity, including advanced testing and DevOps</summary>
+    <description>Enterprise grade solution with advanced capabilities for teams working on projects of any size or complexity, including advanced testing and DevOps.
+
+- End-to-end solution for your development teams, including the most feature-rich Visual Studio IDE for working on any type of project.
+- Build quality applications at scale with advanced features such as Load Testing, automated and manual testing and new IntelliTest capabilities.
+- Manage complexity and resolve issues quickly with features such as Code Map and IntelliTrace.
+- Enhanced MSDN subscription benefits including comprehensive access to software for dev/test, Team Foundation Server, Visual Studio Online Advanced, $150/month in Azure credits, training and support.
+
+=== Optional Features ===
+Optional features (Sql tools, phone tools, etc.) are available but not installed by default.
+You can provide optional parameters to include them during the install.
+Here is example that includes the Sql Tools and Windows Phone Emulators:
+
+choco install VisualStudioEnterprise2015 -packageParameters "Features:SQL,WindowsPhone81Emulators"
+
+Available features:
+- LightSwitch
+- MDDCPlusPlus
+- MDDJS
+- OfficeDeveloperTools
+- SilverLight_Developer_Kit
+- SQL
+- ToolsForWin81_WP80_WP81
+- VC_MFC_Libraries
+- WindowsPhone81Emulators
+</description>
+    <tags>Microsoft Visual Studio Enterprise 2015 IDE</tags>
+  </metadata>
+  <files>
+    <file src="Tools\AdminDeployment.xml" target="Tools\AdminDeployment.xml" />
+    <file src="Tools\ChocolateyInstall.ps1" target="Tools\ChocolateyInstall.ps1" />
+    <file src="Tools\ChocolateyUninstall.ps1" target="Tools\ChocolateyUninstall.ps1" />
+    <file src="..\VisualStudioCommon\VSModules2015.psm1" target="Tools\VSModules.psm1" />
+  </files>
+</package>
