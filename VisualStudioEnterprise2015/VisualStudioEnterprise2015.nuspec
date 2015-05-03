@@ -11,21 +11,25 @@
     <licenseUrl>http://msdn.microsoft.com/en-US/cc300389.aspx</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Enterprise grade solution with advanced capabilities for teams working on projects of any size or complexity, including advanced testing and DevOps</summary>
-    <description>Enterprise grade solution with advanced capabilities for teams working on projects of any size or complexity, including advanced testing and DevOps.
+    <description>### Overview
+Enterprise grade solution with advanced capabilities for teams working on projects of any size or complexity, including advanced testing and DevOps.
 
 - End-to-end solution for your development teams, including the most feature-rich Visual Studio IDE for working on any type of project.
 - Build quality applications at scale with advanced features such as Load Testing, automated and manual testing and new IntelliTest capabilities.
 - Manage complexity and resolve issues quickly with features such as Code Map and IntelliTrace.
 - Enhanced MSDN subscription benefits including comprehensive access to software for dev/test, Team Foundation Server, Visual Studio Online Advanced, $150/month in Azure credits, training and support.
 
-=== Optional Features ===
+### Customizations
+You can customize the installation either by adding optional available features or by specifying own installation configuration file.
+
+#### Adding optional features
 Optional features (Sql tools, phone tools, etc.) are available but not installed by default.
 You can provide optional parameters to include them during the install.
 Here is example that includes the Sql Tools and Windows Phone Emulators:
 
-choco install VisualStudioEnterprise2015 -packageParameters "Features:SQL,WindowsPhone81Emulators"
+    choco install VisualStudioEnterprise2015 -packageParameters "/Features:SQL,WindowsPhone81Emulators"
 
-Available features:
+##### Available features:
 - LightSwitch
 - MDDCPlusPlus
 - MDDJS
@@ -35,6 +39,12 @@ Available features:
 - ToolsForWin81_WP80_WP81
 - VC_MFC_Libraries
 - WindowsPhone81Emulators
+
+#### Using own configuration file
+Specifying the optional features above modifies the configuration file used during installation (AdminDeployment.xml). If that is not enough you can provide this file on your own.
+Example:
+
+    choco install VisualStudioEnterprise2015 -packageParameters "/AdminFile:c:\path to your\AdminDeployment.xml"
 </description>
     <tags>Microsoft Visual Studio Enterprise 2015 IDE</tags>
   </metadata>

@@ -11,21 +11,25 @@
     <licenseUrl>http://msdn.microsoft.com/en-US/cc300389.aspx</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Professional developer tools and services for individual developers or small teams</summary>
-    <description>Professional developer tools and services for individual developers or small teams.
+    <description>### Overview
+Professional developer tools and services for individual developers or small teams.
 
 - Professional developer tool for building any application type
 - Powerful features to improve your team's productivity such as CodeLens
 - Improve team collaboration with Agile project planning tools, Team Rooms, charts and more
 - MSDN subscription benefits including access to core software for dev/test, Team Foundation Server, Visual Studio Online Basic, $50/month in Azure credits, training and support.
 
-=== Optional Features ===
+### Customizations
+You can customize the installation either by adding optional available features or by specifying own installation configuration file.
+
+#### Adding optional features
 Optional features (Sql tools, phone tools, etc.) are available but not installed by default.
 You can provide optional parameters to include them during the install.
 Here is example that includes the Sql Tools and Windows Phone Emulators:
 
-choco install VisualStudioProfessional2015 -packageParameters "Features:SQL,WindowsPhone81Emulators"
+    choco install VisualStudioProfessional2015 -packageParameters "/Features:SQL,WindowsPhone81Emulators"
 
-Available features:
+##### Available features:
 - LightSwitch
 - MDDCPlusPlus
 - MDDJS
@@ -35,6 +39,12 @@ Available features:
 - ToolsForWin81_WP80_WP81
 - VC_MFC_Libraries
 - WindowsPhone81Emulators
+
+#### Using own configuration file
+Specifying the optional features above modifies the configuration file used during installation (AdminDeployment.xml). If that is not enough you can provide this file on your own.
+Example:
+
+    choco install VisualStudioProfessional2015 -packageParameters "/AdminFile:c:\path to your\AdminDeployment.xml"
 </description>
     <tags>Microsoft Visual Studio Professional 2015 IDE</tags>
   </metadata>

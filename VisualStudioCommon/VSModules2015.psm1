@@ -1,16 +1,22 @@
 # Parse input argument string into a hashtable
-# Format: Features:WebTools,Win8SDK ProductKey:AB-D1
+# Format: /AdminFile:file location /Features:WebTools,Win8SDK /ProductKey:AB-D1
 function Parse-Parameters ($s)
 {
-    $MATCH_PATTERN = '([a-zA-Z]+):([a-zA-Z0-9-_,]+)'
-    $NAME_INDEX = 1
-    $VALUE_INDEX = 2
-
     $parameters = @{ }
-    $results = $s | Select-String $MATCH_PATTERN -AllMatches
-    foreach ($match in $results.matches)
+
+    if (!$s) { return $parameters}
+
+    $kvps = $s.Split('/')
+    foreach ($kvp in $kvps)
     {
-        $parameters.Add($match.Groups[$NAME_INDEX].Value.Trim(), $match.Groups[$VALUE_INDEX].Value.Trim())
+        $delimiterIndex = $kvp.IndexOf(':')
+        if (($delimiterIndex -eq 0) -or ($delimiterIndex -ge ($kvp.Length - 1))) { continue }
+
+        $key = $kvp.Substring(0, $delimiterIndex).Trim().ToLower()
+        if ($key -eq '') { continue }
+        $value = $kvp.Substring($delimiterIndex + 1).Trim()
+
+        $parameters.Add($key, $value)
     }
 
     return $parameters
@@ -36,14 +42,20 @@ function Update-Admin-File($parameters, $adminFile)
     $xml.Save($adminFile)
 }
 
-function Generate-Install-Arguments-String($parameters, $adminFile)
+function Generate-Install-Arguments-String($parameters, $defaultAdminFile)
 {
     $s = "/Passive /NoRestart /Log $env:temp\vs.log"
 
-    $f = $parameters['Features']
-    if ($f)
+    $adminFile = $parameters['AdminFile']
+    $features = $parameters['Features']
+    if (!$adminFile -and $features)
     {
-        $s = $s + " /AdminFile $adminFile"
+        $adminFile = $defaultAdminFile
+    }
+
+    if ($adminFile)
+    {
+        $s = $s + " /AdminFile ""$adminFile"""
     }
 
     $pk = $parameters['ProductKey']
@@ -97,12 +109,14 @@ param(
         -2147185721 # pending restart required
     )
 
+    $defaultAdminFile = (Join-Path $PSScriptRoot 'AdminDeployment.xml')
+
     $packageParameters = Parse-Parameters $env:chocolateyPackageParameters
+    if ($packageParameters.Length -gt 0) { Write-Output $packageParameters }
 
-    $adminFile = (Join-Path $PSScriptRoot 'AdminDeployment.xml')
-    Update-Admin-File $packageParameters $adminFile
+    Update-Admin-File $packageParameters $defaultAdminFile
 
-    $silentArgs = Generate-Install-Arguments-String $packageParameters $adminFile
+    $silentArgs = Generate-Install-Arguments-String $packageParameters $defaultAdminFile
 
     Write-Output "Install-ChocolateyPackage $packageName $installerType $silentArgs $url -validExitCodes $validExitCodes"
     Install-ChocolateyPackage $packageName $installerType $silentArgs $url -validExitCodes $validExitCodes

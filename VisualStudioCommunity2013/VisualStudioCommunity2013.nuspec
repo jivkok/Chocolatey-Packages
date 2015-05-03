@@ -11,22 +11,36 @@
     <licenseUrl>http://msdn.microsoft.com/en-US/cc300389.aspx</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Free, full-featured and extensible tool for developers building non-enterprise applications</summary>
-    <description>Free, full-featured IDE with powerful coding productivity features, cross-platform mobile development tools for Windows, iOS and Android, and access to thousands of extensions. This edition of Visual Studio is available at no cost for non-enterprise application development.
+    <description>### Overview
+Free, full-featured and extensible tool for developers building non-enterprise applications.
 
-=== Optional Features ===
-Optional features (Blend, Sql tools, Web tools, etc.) are available and not installed by default.
-You can provide optional parameters to add them.
+- Full-featured Integrated Development Environment for building Web, Windows Desktop and cross-platform iOS, Android, and Windows apps.
+- Ecosystem with thousands of extensions to choose from in the Visual Studio Gallery, or create your own.
+- Free for open source projects, academic research, training, education and small professional teams.
+
+### Customizations
+You can customize the installation either by adding optional available features or by specifying own installation configuration file.
+
+#### Adding optional features
+Optional features (Blend, Sql tools, Web tools, etc.) are available but not installed by default.
+You can provide optional parameters to include them during the install.
 Here is example that includes the Web Tools and the Windows 8 Store App SDK:
 
-choco install VisualStudioCommunity2013 -packageParameters "Features:WebTools,Win8SDK"
+    choco install VisualStudioCommunity2013 -packageParameters "/Features:WebTools,Win8SDK"
 
-Available features:
+##### Available features:
 - Blend
 - SilverLightDeveloperKit
 - SQL
 - WebTools
 - Win8SDK
 - WindowsPhone80
+
+#### Using own configuration file
+Specifying the optional features above modifies the configuration file used during installation (AdminDeployment.xml). If that is not enough you can provide this file on your own.
+Example:
+
+    choco install VisualStudioCommunity2013 -packageParameters "/AdminFile:c:\path to your\AdminDeployment.xml"
 </description>
     <tags>Microsoft Visual Studio Community 2013 IDE</tags>
   </metadata>
