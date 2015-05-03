@@ -2,17 +2,32 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>VisualStudioCommunity2013</id>
-    <title>Visual Studio Community 2013</title>
-    <version>12.0.21005.1</version>
+    <title>Visual Studio Community 2013 with Update 4</title>
+    <version>12.0.31101.0</version>
     <authors>Microsoft</authors>
     <owners>Redsandro, Jivko Kolev</owners>
     <projectUrl>http://www.visualstudio.com/en-us/downloads/download-visual-studio-vs#d-community</projectUrl>
     <iconUrl>https://github.com/jivkok/Chocolatey-Packages/raw/master/VisualStudioCommunity2013/vs.png</iconUrl>
     <licenseUrl>http://msdn.microsoft.com/en-US/cc300389.aspx</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <summary>Full-featured free version of Visual Studio</summary>
-    <description>Download Visual Studio Community for a free, full-featured IDE with powerful coding productivity features, cross-platform mobile development tools for Windows, iOS and Android, and access to thousands of extensions. This edition of Visual Studio is available at no cost for non-enterprise application development.
-Sign in to Visual Studio within 30 days with your Microsoft account to synchronize your settings across multiple machines and register your product.</description>
+    <summary>Free, full-featured and extensible tool for developers building non-enterprise applications</summary>
+    <description>Free, full-featured IDE with powerful coding productivity features, cross-platform mobile development tools for Windows, iOS and Android, and access to thousands of extensions. This edition of Visual Studio is available at no cost for non-enterprise application development.
+
+=== Optional Features ===
+Optional features (Blend, Sql tools, Web tools, etc.) are available and not installed by default.
+You can provide optional parameters to add them.
+Here is example that includes the Web Tools and the Windows 8 Store App SDK:
+
+choco install VisualStudioCommunity2013 -packageParameters "Features:WebTools,Win8SDK"
+
+Available features:
+- Blend
+- SilverLightDeveloperKit
+- SQL
+- WebTools
+- Win8SDK
+- WindowsPhone80
+</description>
     <tags>Microsoft Visual Studio Community 2013 IDE</tags>
   </metadata>
 </package>
