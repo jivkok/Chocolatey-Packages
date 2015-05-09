@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>VisualStudioCommunity2015</id>
-    <title>Visual Studio Community 2015 RC</title>
+    <id>VisualStudio2015Professional</id>
+    <title>Visual Studio 2015 Professional RC</title>
     <version>14.0.22823.0-RC</version>
     <authors>Microsoft</authors>
     <owners>Jivko Kolev</owners>
@@ -10,13 +10,14 @@
     <iconUrl>https://github.com/jivkok/Chocolatey-Packages/raw/master/VisualStudioCommon/VS2015.png</iconUrl>
     <licenseUrl>http://msdn.microsoft.com/en-US/cc300389.aspx</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <summary>Free, full-featured and extensible tool for developers building non-enterprise applications</summary>
+    <summary>Professional developer tools and services for individual developers or small teams</summary>
     <description>### Overview
-Free, full-featured and extensible tool for developers building non-enterprise applications.
+Professional developer tools and services for individual developers or small teams.
 
-- Full-featured Integrated Development Environment for building Web, Windows Desktop and cross-platform iOS, Android, and Windows apps.
-- Ecosystem with thousands of extensions to choose from in the Visual Studio Gallery, or create your own.
-- Free for open source projects, academic research, training, education and small professional teams.
+- Professional developer tool for building any application type
+- Powerful features to improve your team's productivity such as CodeLens
+- Improve team collaboration with Agile project planning tools, Team Rooms, charts and more
+- MSDN subscription benefits including access to core software for dev/test, Team Foundation Server, Visual Studio Online Basic, $50/month in Azure credits, training and support.
 
 ### Customizations
 You can customize the installation either by adding optional available features or by specifying own installation configuration file.
@@ -26,11 +27,13 @@ Optional features (Sql tools, phone tools, etc.) are available but not installed
 You can provide optional parameters to include them during the install.
 Here is example that includes the Sql Tools and Windows Phone Emulators:
 
-    choco install VisualStudioCommunity2015 -packageParameters "/Features:SQL,WindowsPhone81Emulators"
+    choco install VisualStudio2015Professional -packageParameters "/Features:SQL,WindowsPhone81Emulators"
 
 ##### Available features:
+- LightSwitch
 - MDDCPlusPlus
 - MDDJS
+- OfficeDeveloperTools
 - SilverLight_Developer_Kit
 - SQL
 - ToolsForWin81_WP80_WP81
@@ -41,9 +44,9 @@ Here is example that includes the Sql Tools and Windows Phone Emulators:
 Specifying the optional features above modifies the configuration file used during installation (AdminDeployment.xml). If that is not enough you can provide this file on your own.
 Example:
 
-    choco install VisualStudioCommunity2015 -packageParameters "/AdminFile:c:\path to your\AdminDeployment.xml"
+    choco install VisualStudio2015Professional -packageParameters "/AdminFile:c:\path to your\AdminDeployment.xml"
 </description>
-    <tags>Microsoft Visual Studio Community 2015 IDE</tags>
+    <tags>Microsoft Visual Studio 2015 Professional IDE</tags>
   </metadata>
   <files>
     <file src="Tools\AdminDeployment.xml" target="Tools\AdminDeployment.xml" />

@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>VisualStudioProfessional2015</id>
-    <title>Visual Studio Professional 2015 RC</title>
+    <id>VisualStudio2015Enterprise</id>
+    <title>Visual Studio 2015 Enterprise RC</title>
     <version>14.0.22823.0-RC</version>
     <authors>Microsoft</authors>
     <owners>Jivko Kolev</owners>
@@ -10,14 +10,14 @@
     <iconUrl>https://github.com/jivkok/Chocolatey-Packages/raw/master/VisualStudioCommon/VS2015.png</iconUrl>
     <licenseUrl>http://msdn.microsoft.com/en-US/cc300389.aspx</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <summary>Professional developer tools and services for individual developers or small teams</summary>
+    <summary>Enterprise grade solution with advanced capabilities for teams working on projects of any size or complexity, including advanced testing and DevOps</summary>
     <description>### Overview
-Professional developer tools and services for individual developers or small teams.
+Enterprise grade solution with advanced capabilities for teams working on projects of any size or complexity, including advanced testing and DevOps.
 
-- Professional developer tool for building any application type
-- Powerful features to improve your team's productivity such as CodeLens
-- Improve team collaboration with Agile project planning tools, Team Rooms, charts and more
-- MSDN subscription benefits including access to core software for dev/test, Team Foundation Server, Visual Studio Online Basic, $50/month in Azure credits, training and support.
+- End-to-end solution for your development teams, including the most feature-rich Visual Studio IDE for working on any type of project.
+- Build quality applications at scale with advanced features such as Load Testing, automated and manual testing and new IntelliTest capabilities.
+- Manage complexity and resolve issues quickly with features such as Code Map and IntelliTrace.
+- Enhanced MSDN subscription benefits including comprehensive access to software for dev/test, Team Foundation Server, Visual Studio Online Advanced, $150/month in Azure credits, training and support.
 
 ### Customizations
 You can customize the installation either by adding optional available features or by specifying own installation configuration file.
@@ -27,7 +27,7 @@ Optional features (Sql tools, phone tools, etc.) are available but not installed
 You can provide optional parameters to include them during the install.
 Here is example that includes the Sql Tools and Windows Phone Emulators:
 
-    choco install VisualStudioProfessional2015 -packageParameters "/Features:SQL,WindowsPhone81Emulators"
+    choco install VisualStudio2015Enterprise -packageParameters "/Features:SQL,WindowsPhone81Emulators"
 
 ##### Available features:
 - LightSwitch
@@ -44,9 +44,9 @@ Here is example that includes the Sql Tools and Windows Phone Emulators:
 Specifying the optional features above modifies the configuration file used during installation (AdminDeployment.xml). If that is not enough you can provide this file on your own.
 Example:
 
-    choco install VisualStudioProfessional2015 -packageParameters "/AdminFile:c:\path to your\AdminDeployment.xml"
+    choco install VisualStudio2015Enterprise -packageParameters "/AdminFile:c:\path to your\AdminDeployment.xml"
 </description>
-    <tags>Microsoft Visual Studio Professional 2015 IDE</tags>
+    <tags>Microsoft Visual Studio 2015 Enterprise IDE</tags>
   </metadata>
   <files>
     <file src="Tools\AdminDeployment.xml" target="Tools\AdminDeployment.xml" />

@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>VisualStudioEnterprise2015</id>
-    <title>Visual Studio Enterprise 2015 RC</title>
+    <id>VisualStudio2015Community</id>
+    <title>Visual Studio 2015 Community RC</title>
     <version>14.0.22823.0-RC</version>
     <authors>Microsoft</authors>
     <owners>Jivko Kolev</owners>
@@ -10,14 +10,13 @@
     <iconUrl>https://github.com/jivkok/Chocolatey-Packages/raw/master/VisualStudioCommon/VS2015.png</iconUrl>
     <licenseUrl>http://msdn.microsoft.com/en-US/cc300389.aspx</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <summary>Enterprise grade solution with advanced capabilities for teams working on projects of any size or complexity, including advanced testing and DevOps</summary>
+    <summary>Free, full-featured and extensible tool for developers building non-enterprise applications</summary>
     <description>### Overview
-Enterprise grade solution with advanced capabilities for teams working on projects of any size or complexity, including advanced testing and DevOps.
+Free, full-featured and extensible tool for developers building non-enterprise applications.
 
-- End-to-end solution for your development teams, including the most feature-rich Visual Studio IDE for working on any type of project.
-- Build quality applications at scale with advanced features such as Load Testing, automated and manual testing and new IntelliTest capabilities.
-- Manage complexity and resolve issues quickly with features such as Code Map and IntelliTrace.
-- Enhanced MSDN subscription benefits including comprehensive access to software for dev/test, Team Foundation Server, Visual Studio Online Advanced, $150/month in Azure credits, training and support.
+- Full-featured Integrated Development Environment for building Web, Windows Desktop and cross-platform iOS, Android, and Windows apps.
+- Ecosystem with thousands of extensions to choose from in the Visual Studio Gallery, or create your own.
+- Free for open source projects, academic research, training, education and small professional teams.
 
 ### Customizations
 You can customize the installation either by adding optional available features or by specifying own installation configuration file.
@@ -27,13 +26,11 @@ Optional features (Sql tools, phone tools, etc.) are available but not installed
 You can provide optional parameters to include them during the install.
 Here is example that includes the Sql Tools and Windows Phone Emulators:
 
-    choco install VisualStudioEnterprise2015 -packageParameters "/Features:SQL,WindowsPhone81Emulators"
+    choco install VisualStudio2015Community -packageParameters "/Features:SQL,WindowsPhone81Emulators"
 
 ##### Available features:
-- LightSwitch
 - MDDCPlusPlus
 - MDDJS
-- OfficeDeveloperTools
 - SilverLight_Developer_Kit
 - SQL
 - ToolsForWin81_WP80_WP81
@@ -44,9 +41,9 @@ Here is example that includes the Sql Tools and Windows Phone Emulators:
 Specifying the optional features above modifies the configuration file used during installation (AdminDeployment.xml). If that is not enough you can provide this file on your own.
 Example:
 
-    choco install VisualStudioEnterprise2015 -packageParameters "/AdminFile:c:\path to your\AdminDeployment.xml"
+    choco install VisualStudio2015Community -packageParameters "/AdminFile:c:\path to your\AdminDeployment.xml"
 </description>
-    <tags>Microsoft Visual Studio Enterprise 2015 IDE</tags>
+    <tags>Microsoft Visual Studio 2015 Community IDE</tags>
   </metadata>
   <files>
     <file src="Tools\AdminDeployment.xml" target="Tools\AdminDeployment.xml" />

@@ -55,7 +55,7 @@ function Generate-Install-Arguments-String($parameters, $defaultAdminFile)
 
     if ($adminFile)
     {
-        $s = $s + " /AdminFile ""$adminFile"""
+        $s = $s + " /AdminFile $adminFile"
     }
 
     $pk = $parameters['ProductKey']
@@ -83,7 +83,7 @@ It's recommended you call it the same as your nuget package id.
 This is the url to download the VS web installer.
 
 .EXAMPLE
-Install-VS 'VisualStudioCommunity2015' 'http://download.microsoft.com/download/zzz/vs_community.exe'
+Install-VS 'VisualStudio2015Community' 'http://download.microsoft.com/download/zzz/vs_community.exe'
 
 .OUTPUTS
 None
@@ -140,7 +140,7 @@ The VisualStudio app name - i.e. 'Microsoft Visual Studio Community 2015'.
 This name of the installer executable - i.e. 'vs_community.exe'.
 
 .EXAMPLE
-Uninstall-VS 'VisualStudioCommunity2015' 'Microsoft Visual Studio Community 2015' 'vs_community.exe'
+Uninstall-VS 'VisualStudio2015Community' 'Microsoft Visual Studio Community 2015' 'vs_community.exe'
 
 .OUTPUTS
 None
