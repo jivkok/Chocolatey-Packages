@@ -3,7 +3,7 @@
   <metadata>
     <id>jivkok.Shell</id>
     <title>Jivkok - Shell</title>
-    <version>1.0.0.10</version>
+    <version>1.0.0.11</version>
     <authors>Various</authors>
     <owners>Jivko Kolev</owners>
     <summary>Multi-tabbed console with Windows shell, Powershell, and Bash.</summary>
@@ -15,6 +15,7 @@
       <dependency id='console2' />
       <dependency id='git-credential-winstore' />
       <dependency id='poshgit' />
+      <dependency id='psget' />
       <dependency id='jivkok.SublimeText3.Packages' />
       <dependency id='jivkok.GitConfig' />
     </dependencies>
