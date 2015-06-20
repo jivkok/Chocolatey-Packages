@@ -1,7 +1,7 @@
 $packageName = 'VisualStudioCode'
 $installerType = 'exe'
 $silentArgs = '-s'
-$32BitUrl  = 'http://download.microsoft.com/download/0/D/5/0D57186C-834B-463A-AECB-BC55A8E466AE/VSCodeSetup.exe'
+$32BitUrl  = 'https://az764295.vo.msecnd.net/public/0.3.0/VSCodeSetup.exe'
 $validExitCodes = @(
     0 # success
 )
