@@ -3,7 +3,7 @@
   <metadata>
     <id>VisualStudio2015Community</id>
     <title>Visual Studio 2015 Community RC</title>
-    <version>14.0.22823.0-RC</version>
+    <version>14.0.22823.20150620-RC</version>
     <authors>Microsoft</authors>
     <owners>Jivko Kolev</owners>
     <projectUrl>https://www.visualstudio.com/vs-2015-product-editions</projectUrl>
@@ -26,7 +26,7 @@ Optional features (Sql tools, phone tools, etc.) are available but not installed
 You can provide optional parameters to include them during the install.
 Here is example that includes the Sql Tools and Windows Phone Emulators:
 
-    choco install VisualStudio2015Community -packageParameters "/Features:SQL,WindowsPhone81Emulators"
+    choco install VisualStudio2015Community -packageParameters "--Features SQL,WindowsPhone81Emulators"
 
 ##### Available features:
 - MDDCPlusPlus
@@ -39,9 +39,10 @@ Here is example that includes the Sql Tools and Windows Phone Emulators:
 
 #### Using own configuration file
 Specifying the optional features above modifies the configuration file used during installation (AdminDeployment.xml). If that is not enough you can provide this file on your own.
-Example:
+Examples:
 
-    choco install VisualStudio2015Community -packageParameters "/AdminFile:c:\path to your\AdminDeployment.xml"
+    choco install VisualStudio2015Community -packageParameters "--AdminFile c:\path to your\AdminDeployment.xml"
+    choco install VisualStudio2015Community -packageParameters "--AdminFile http://path/to/your/AdminDeployment.xml"
 </description>
     <tags>Microsoft Visual Studio 2015 Community IDE</tags>
   </metadata>

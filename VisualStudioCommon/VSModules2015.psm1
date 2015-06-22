@@ -4,27 +4,81 @@ function Parse-Parameters ($s)
 {
     $parameters = @{ }
 
-    if (!$s) { return $parameters}
+    if (!$s)
+    {
+        Write-Debug "No package parameters."
+        return $parameters
+    }
 
-    $kvps = $s.Split('/')
+    Write-Debug "Package parameters: $s"
+    $s = ' ' + $s
+    [String[]] $kvpPrefix = @(" --")
+    $kvpDelimiter = ' '
+
+    $kvps = $s.Split($kvpPrefix, [System.StringSplitOptions]::RemoveEmptyEntries)
     foreach ($kvp in $kvps)
     {
-        $delimiterIndex = $kvp.IndexOf(':')
-        if (($delimiterIndex -eq 0) -or ($delimiterIndex -ge ($kvp.Length - 1))) { continue }
+        Write-Debug "Package parameter kvp: $kvp"
+        $delimiterIndex = $kvp.IndexOf($kvpDelimiter)
+        if (($delimiterIndex -le 0) -or ($delimiterIndex -ge ($kvp.Length - 1))) { continue }
 
         $key = $kvp.Substring(0, $delimiterIndex).Trim().ToLower()
         if ($key -eq '') { continue }
         $value = $kvp.Substring($delimiterIndex + 1).Trim()
 
+        Write-Debug "Package parameter: key=$key, value=$value"
         $parameters.Add($key, $value)
     }
 
     return $parameters
 }
 
+# Generates customizations file. Returns its path
+function Generate-Admin-File($parameters, $defaultAdminFile)
+{
+    $adminFile = $parameters['AdminFile']
+    $features = $parameters['Features']
+    if (!$adminFile -and !$features)
+    {
+        return $null
+    }
+
+    $localAdminFile = (Join-Path $env:temp 'AdminDeployment.xml')
+    if (Test-Path $localAdminFile)
+    {
+        Remove-Item $localAdminFile
+    }
+
+    if ($adminFile)
+    {
+        if (Test-Path $adminFile)
+        {
+            Copy-Item $adminFile $localAdminFile -force
+        }
+        else
+        {
+            if (($adminFile -as [System.URI]).AbsoluteURI -ne $null)
+            {
+                Get-ChocolateyWebFile 'adminFile' $localAdminFile $adminFile
+            }
+            else
+            {
+                throw 'Invalid AdminFile setting.'
+            }
+        }
+    }
+    elseif ($features)
+    {
+        Copy-Item $defaultAdminFile $localAdminFile -force
+    }
+
+    return $localAdminFile
+}
+
 # Turns on features in the customizations file
 function Update-Admin-File($parameters, $adminFile)
 {
+    if (!$adminFile) { return }
     $s = $parameters['Features']
     if (!$s) { return }
 
@@ -42,16 +96,9 @@ function Update-Admin-File($parameters, $adminFile)
     $xml.Save($adminFile)
 }
 
-function Generate-Install-Arguments-String($parameters, $defaultAdminFile)
+function Generate-Install-Arguments-String($parameters, $adminFile)
 {
     $s = "/Passive /NoRestart /Log $env:temp\vs.log"
-
-    $adminFile = $parameters['AdminFile']
-    $features = $parameters['Features']
-    if (!$adminFile -and $features)
-    {
-        $adminFile = $defaultAdminFile
-    }
 
     if ($adminFile)
     {
@@ -110,13 +157,17 @@ param(
     )
 
     $defaultAdminFile = (Join-Path $PSScriptRoot 'AdminDeployment.xml')
+    Write-Debug "Default AdminFile: $defaultAdminFile"
 
     $packageParameters = Parse-Parameters $env:chocolateyPackageParameters
     if ($packageParameters.Length -gt 0) { Write-Output $packageParameters }
 
-    Update-Admin-File $packageParameters $defaultAdminFile
+    $adminFile = Generate-Admin-File $packageParameters $defaultAdminFile
+    Write-Debug "AdminFile: $adminFile"
 
-    $silentArgs = Generate-Install-Arguments-String $packageParameters $defaultAdminFile
+    Update-Admin-File $packageParameters $adminFile
+
+    $silentArgs = Generate-Install-Arguments-String $packageParameters $adminFile
 
     Write-Output "Install-ChocolateyPackage $packageName $installerType $silentArgs $url -validExitCodes $validExitCodes"
     Install-ChocolateyPackage $packageName $installerType $silentArgs $url -validExitCodes $validExitCodes
