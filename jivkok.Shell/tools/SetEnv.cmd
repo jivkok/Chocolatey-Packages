@@ -2,9 +2,13 @@
 
 set COPYCMD=/y
 
+set prompt=$_%USERNAME% @ %COMPUTERNAME% : $P$_$G$S
+
 DOSKEY cd=cd $*$Tdir
 DOSKEY ..=pushd ..
 DOSKEY ...=pushd ..\..
+DOSKEY l=dir /a /ogn /w $*
+DOSKEY ll=dir /a /ogn $*
 DOSKEY n=notepad.exe $*
 DOSKEY ds=dir /s/b $*
 DOSKEY fs=findstr /spin $1 $2
@@ -32,6 +36,6 @@ if exist "%ProgramFiles(x86)%\Microsoft Visual Studio 14.0\Common7\Tools\VsDevCm
 
 cd /d %USERPROFILE%
 
-if exist "%USERPROFILE%\cmd_profile.cmd" (
-    call "%USERPROFILE%\cmd_profile.cmd"
+if exist "%USERPROFILE%\profile.cmd" (
+    call "%USERPROFILE%\profile.cmd"
 )
