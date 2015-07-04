@@ -3,7 +3,7 @@
   <metadata>
     <id>jivkok.tools</id>
     <title>Jivkok.Tools</title>
-    <version>1.1.1.2</version>
+    <version>1.1.1.4</version>
     <authors>Jivko Kolev</authors>
     <owners>Jivko Kolev</owners>
     <summary>Jivkok.Tools - Utilities Suite</summary>
@@ -16,6 +16,7 @@
       <dependency id='jivkok.Shell' />
       <dependency id='7zip.install' />
       <dependency id='7zip.commandline' />
+      <dependency id='Ansicon' />
       <dependency id='AutoHotKey_L' />
       <dependency id='calibre' />
       <dependency id='ccleaner' />

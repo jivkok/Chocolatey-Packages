@@ -37,6 +37,7 @@ try {
 
     installsilently http://visualstudiogallery.msdn.microsoft.com/fb5badda-4ea3-4314-a723-a1975cbdabb4/file/100523/7/Microsoft.CodeDigger.vsix CodeDigger.vsix
     installsilently http://visualstudiogallery.msdn.microsoft.com/76293c4d-8c16-4f4a-aee6-21f83a571496/file/9356/23/CodeMaid_v0.7.0.vsix CodeMaid.vsix
+    installsilently http://visualstudiogallery.msdn.microsoft.com/86548753-2b00-42e0-a40c-185f93e37a4f/file/136953/3/EasyMotion.vsix EasyMotion.vsix
     installsilently http://visualstudiogallery.msdn.microsoft.com/c8bccfe2-650c-4b42-bc5c-845e21f96328/file/75539/10/EditorConfigPlugin.vsix EditorConfig.vsix
     installsilently http://visualstudiogallery.msdn.microsoft.com/b31916b0-c026-4c27-9d6b-ba831093f6b2/file/62080/3/Gister.vsix Gister.vsix
     installsilently http://visualstudiogallery.msdn.microsoft.com/0855e23e-4c4c-4c82-8b39-24ab5c5a7f79/file/15725/4/MarkdownMode.vsix MarkdownMode.vsix
