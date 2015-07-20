@@ -2,8 +2,8 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>VisualStudio2015Professional</id>
-    <title>Visual Studio 2015 Professional RC</title>
-    <version>14.0.22823.20150620-RC</version>
+    <title>Visual Studio 2015 Professional</title>
+    <version>14.0.23107.0</version>
     <authors>Microsoft</authors>
     <owners>Jivko Kolev</owners>
     <projectUrl>https://www.visualstudio.com/vs-2015-product-editions</projectUrl>
