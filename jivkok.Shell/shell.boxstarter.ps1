@@ -15,4 +15,4 @@ $Boxstarter.AutoLogin=$true
 
 Set-BoxstarterConfig -NugetSources "http://www.myget.org/F/jivkok-chocolatey/api/v2;http://chocolatey.org/api/v2;http://www.myget.org/F/boxstarter/api/v2"
 
-cinst jivkok.shell
+cinst jivkok.shell -y

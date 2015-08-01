@@ -34,6 +34,27 @@ cinst -y ccleaner
 cinst -y CloseTheDoor
 cinst -y secunia.psi
 
+# Apps
+cinst -y calibre
+cinst -y dropbox
+cinst -y dmde
+cinst -y evernote
+cinst -y inssider
+cinst -y Intel.SSD.Toolbox
+cinst -y iTunes
+cinst -y keepass
+cinst -y ketarin
+cinst -y ProduKey
+cinst -y prototyper
+cinst -y rdmfree
+cinst -y Recuva
+cinst -y Revo.Uninstaller
+cinst -y skype
+cinst -y speccy
+cinst -y teamviewer
+cinst -y terminals
+cinst -y vlc
+
 # Tools
 cinst -y 7zip
 cinst -y autohotkey
