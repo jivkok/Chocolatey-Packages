@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>cwrsync</id>
+    <title>cwRsync Free Edition</title>
+    <version>5.4.1</version>
+    <authors>ITeF!x</authors>
+    <owners>Jivko Kolev</owners>
+    <projectUrl>https://www.itefix.net/content/cwrsync-free-edition</projectUrl>
+    <summary>Barebone distribution of RSync for Windows</summary>
+    <description>Barebone distribution of RSync for Windows. Packs the minimum files required from Cygwin for rsync to work.</description>
+    <tags>rsync cygwin backup file</tags>
+  </metadata>
+</package>
