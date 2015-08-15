@@ -3,11 +3,12 @@
   <metadata>
     <id>jivkok.GitConfig</id>
     <title>Git - Config</title>
-    <version>1.0.0.7</version>
+    <version>1.0.0.8</version>
     <authors>Various</authors>
     <owners>Jivko Kolev</owners>
-    <summary>Git configuration and aliases</summary>
+    <summary>Jivko's standard Git configuration and aliases</summary>
     <description>Jivko's standard Git configuration and aliases:
+
  - core config
  - colors (status/diff/branches)
  - diff tool
@@ -19,7 +20,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://github.com/ferventcoder/chocolateyautomaticpackages/raw/master/git/git.png</iconUrl>
     <dependencies>
-      <dependency id="git-credential-winstore" />
+      <dependency id="git" />
     </dependencies>
   </metadata>
 </package>
