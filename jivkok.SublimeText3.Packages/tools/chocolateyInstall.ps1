@@ -52,6 +52,6 @@ try {
     Write-Warning 'Please close and re-open Sublime Text to force packages to update'
   }
 } catch {
-  Write-ChocolateyFailure $package "$($_.Exception.Message)"
+  Write-ChocolateyFailure $package "$_"
   throw
 }

@@ -120,8 +120,7 @@ function Install-SublimePackageControl
   $packageControl = Join-Path $packagesPath 'Package Control.sublime-package'
   if (!(Test-Path $packageControl))
   {
-    # https://sublime.wbond.net/installation
-    $packageUrl = 'http://sublime.wbond.net/Package%20Control.sublime-package'
+    $packageUrl = 'https://packagecontrol.io/Package%20Control.sublime-package'
     Get-ChocolateyWebFile -url $packageUrl -fileFullPath $packageControl
   }
 }
