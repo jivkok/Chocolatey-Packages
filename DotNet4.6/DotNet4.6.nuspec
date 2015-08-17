@@ -2,8 +2,8 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>DotNet4.6</id>
-    <title>Dot Net 4.6 Framework RC</title>
-    <version>4.6.00057.0-RC</version>
+    <title>Dot Net 4.6 Framework</title>
+    <version>4.6.0.20150720</version>
     <authors>Microsoft</authors>
     <owners>Jivko Kolev</owners>
     <projectUrl>https://www.visualstudio.com/vs-2015-product-editions</projectUrl>
@@ -12,6 +12,6 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Microsoft .NET Framework 4.6</summary>
     <description>The Microsoft .NET Framework 4.6 is a highly compatible, in-place update to the Microsoft .NET Framework 4, Microsoft .NET Framework 4.5, Microsoft .NET Framework 4.5.1 and Microsoft .NET Framework 4.5.2. The web installer is a small package that automatically determines and downloads only the components applicable for a particular platform.</description>
-    <tags>Microsoft .net Framework 4.6 Redistributable</tags>
+    <tags>microsoft .net framework 4.6 redistributable</tags>
   </metadata>
 </package>
