@@ -216,7 +216,9 @@ param(
     $app = Get-WmiObject -Class Win32_Product | Where-Object { $_.Name -like "$applicationName*"} | Sort-Object { $_.Name } | Select-Object -First 1
     if ($app -ne $null)
     {
-        $uninstaller = Get-Childitem "$env:ProgramData\Package Cache\" -Recurse -Filter $uninstallerName | ? { $_.VersionInfo.ProductVersion.StartsWith($app.Version)}
+        $version = New-Object System.Version($app.Version)
+        $uninstaller = Get-Childitem "$env:ProgramData\Package Cache\" -Recurse -Filter $uninstallerName |
+            Where-Object { $_.VersionInfo.ProductMajorPart -eq $version.Major -and $_.VersionInfo.ProductMinorPart -eq $version.Minor }
         if ($uninstaller -ne $null)
         {
             Uninstall-ChocolateyPackage $packageName $installerType $silentArgs $uninstaller.FullName

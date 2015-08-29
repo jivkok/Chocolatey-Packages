@@ -47,9 +47,7 @@ Examples:
     <tags>Microsoft Visual Studio 2015 Community IDE</tags>
   </metadata>
   <files>
-    <file src="Tools\AdminDeployment.xml" target="Tools\AdminDeployment.xml" />
-    <file src="Tools\ChocolateyInstall.ps1" target="Tools\ChocolateyInstall.ps1" />
-    <file src="Tools\ChocolateyUninstall.ps1" target="Tools\ChocolateyUninstall.ps1" />
+    <file src="Tools\*" target="Tools\" />
     <file src="..\VisualStudioCommon\VSModules2015.psm1" target="Tools\VSModules.psm1" />
   </files>
 </package>
