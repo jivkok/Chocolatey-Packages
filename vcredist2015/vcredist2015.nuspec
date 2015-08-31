@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>vcredist2015</id>
+    <title>Visual C++ Redistributable Packages for Visual Studio 2015</title>
+    <version>14.0.23026.0</version>
+    <authors>Microsoft</authors>
+    <owners>Jivko Kolev</owners>
+    <projectUrl>https://www.microsoft.com/en-us/download/details.aspx?id=48145</projectUrl>
+    <iconUrl>https://github.com/jivkok/Chocolatey-Packages/raw/master/vcredist2015/ms.png</iconUrl>
+    <licenseUrl>http://msdn.microsoft.com/en-US/cc300389.aspx</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Run-time components that are required to run C++ applications built using Visual Studio 2015</summary>
+    <description>
+The Visual C++ Redistributable Packages install run-time components of Visual C++ libraries. These components are required to run C++ applications that are developed using Visual Studio 2015 and link dynamically to Visual C++ libraries. These package can be used to run such applications on a computer even if it does not have Visual Studio 2015 installed. These packages install run-time components of these libraries: C Runtime (CRT), Standard C++, MFC, C++ AMP, and OpenMP.
+    </description>
+    <tags>visual studio 2015 c++ redistributable</tags>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
