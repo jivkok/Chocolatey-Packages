@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>TeamFoundationServer2015</id>
+    <title>Visual Studio Team Foundation Server 2015</title>
+    <version>14.0.23129.0</version>
+    <authors>Microsoft</authors>
+    <owners>Jivko Kolev</owners>
+    <projectUrl>https://www.visualstudio.com/products/mt238358</projectUrl>
+    <iconUrl>https://github.com/jivkok/Chocolatey-Packages/raw/master/TeamFoundationServer2015/vs.png</iconUrl>
+    <licenseUrl>http://msdn.microsoft.com/en-US/cc300389.aspx</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Team Foundation Server 2015</summary>
+    <description>Free source-code-control, project-management, and team-collaboration platform at the core of the Microsoft suite of Application Lifecycle Management (ALM) tools. By automating the software delivery process, entire teams can track team actions, transactions, and project artifacts such as requirements, tasks, bugs, source code, build results, and test results. Collaborate, manage your repositories and automate build processes.</description>
+    <tags>Microsoft Visual Studio Team Foundation Server 2015 TFS</tags>
+  </metadata>
+  <files>
+    <file src="Tools\*" target="Tools\" />
+    <file src="..\VisualStudioCommon\VSModules2015.psm1" target="Tools\VSModules.psm1" />
+  </files>
+</package>
