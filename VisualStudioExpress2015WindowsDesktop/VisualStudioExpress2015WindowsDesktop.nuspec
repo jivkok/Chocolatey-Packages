@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>VisualStudioExpress2015WindowsDesktop</id>
+    <title>Visual Studio Express 2015 for Desktop</title>
+    <version>14.0.23107.0</version>
+    <authors>Microsoft</authors>
+    <owners>Jivko Kolev</owners>
+    <projectUrl>https://www.visualstudio.com/products/mt238358</projectUrl>
+    <iconUrl>https://github.com/jivkok/Chocolatey-Packages/raw/master/VisualStudioExpress2015WindowsDesktop/vs.png</iconUrl>
+    <licenseUrl>http://msdn.microsoft.com/en-US/cc300389.aspx</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Visual Studio Express 2015 for Desktop</summary>
+    <description>Visual Studio Express 2015 for Desktop supports the creation of desktop applications for Windows.</description>
+    <tags>Microsoft Visual Studio Express 2015 Windows Desktop IDE</tags>
+  </metadata>
+  <files>
+    <file src="Tools\*" target="Tools\" />
+    <file src="..\VisualStudioCommon\VSModules2015.psm1" target="Tools\VSModules.psm1" />
+  </files>
+</package>

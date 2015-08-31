@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>VisualStudioExpress2015Web</id>
+    <title>Visual Studio Express 2015 for Web</title>
+    <version>14.0.23107.0</version>
+    <authors>Microsoft</authors>
+    <owners>Jivko Kolev</owners>
+    <projectUrl>https://www.visualstudio.com/products/mt238358</projectUrl>
+    <iconUrl>https://github.com/jivkok/Chocolatey-Packages/raw/master/VisualStudioExpress2015Web/vs.png</iconUrl>
+    <licenseUrl>http://msdn.microsoft.com/en-US/cc300389.aspx</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Visual Studio Express 2015 for Web</summary>
+    <description>Visual Studio Express 2015 for Web helps you create standards-based, responsive websites, web APIs, or real-time online experiences using ASP.NET.</description>
+    <tags>Microsoft Visual Studio Express 2015 Web IDE</tags>
+  </metadata>
+  <files>
+    <file src="Tools\*" target="Tools\" />
+    <file src="..\VisualStudioCommon\VSModules2015.psm1" target="Tools\VSModules.psm1" />
+  </files>
+</package>
