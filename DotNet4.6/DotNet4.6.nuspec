@@ -2,16 +2,20 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>DotNet4.6</id>
-    <title>Dot Net 4.6 Framework</title>
-    <version>4.6.00081.20150819</version>
+    <title>Microsoft .NET Framework 4.6</title>
+    <version>4.6.00081.20150925</version>
     <authors>Microsoft</authors>
     <owners>Jivko Kolev</owners>
-    <projectUrl>https://www.visualstudio.com/vs-2015-product-editions</projectUrl>
+    <projectUrl>https://msdn.microsoft.com/en-us/library/w0x726c2(v=vs.110).aspx</projectUrl>
     <iconUrl>https://github.com/jivkok/Chocolatey-Packages/raw/master/DotNet4.6/dotnet.png</iconUrl>
     <licenseUrl>http://msdn.microsoft.com/en-US/cc300389.aspx</licenseUrl>
+    <packageSourceUrl>https://github.com/jivkok/Chocolatey-Packages/tree/master/DotNet4.6-TargetPack</packageSourceUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Microsoft .NET Framework 4.6</summary>
     <description>The Microsoft .NET Framework 4.6 is a highly compatible, in-place update to the Microsoft .NET Framework 4, Microsoft .NET Framework 4.5, Microsoft .NET Framework 4.5.1 and Microsoft .NET Framework 4.5.2. The web installer is a small package that automatically determines and downloads only the components applicable for a particular platform.</description>
     <tags>microsoft .net framework 4.6 redistributable</tags>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

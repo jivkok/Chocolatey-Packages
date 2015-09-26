@@ -2,21 +2,25 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>DotNet4.6-TargetPack</id>
-    <title>Dot Net Framework 4.6 Targeting Pack</title>
-    <version>4.6.00081.20150819</version>
+    <title>Microsoft .NET Framework 4.6 Targeting Pack</title>
+    <version>4.6.00081.20150925</version>
     <authors>Microsoft</authors>
     <owners>Jivko Kolev</owners>
     <projectUrl>http://www.microsoft.com/en-us/download/details.aspx?id=48136</projectUrl>
     <iconUrl>https://github.com/jivkok/Chocolatey-Packages/raw/master/DotNet4.6-TargetPack/dotnet.png</iconUrl>
     <licenseUrl>http://msdn.microsoft.com/en-US/cc300389.aspx</licenseUrl>
+    <packageSourceUrl>https://github.com/jivkok/Chocolatey-Packages/tree/master/DotNet4.6-TargetPack</packageSourceUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Microsoft .NET Framework 4.6 Targeting Pack</summary>
     <description>The .NET Framework 4.6 Targeting Pack is a package that enables developers to build applications targeting the .NET Framework 4.6 using either Visual Studio 2013, Visual Studio 2012 or third party IDEs.
 
 Restart requirement - you may have to restart the computer after you install this package. It is recommended that you close all applications that are using the .NET Framework before installing this package.</description>
-    <tags>microsoft .net framework 4.6 target pack</tags>
+    <tags>microsoft .net framework 4.6 developer target pack</tags>
     <dependencies>
-      <dependency id='DotNet4.6' version='4.6.00081.20150819'/>
+      <dependency id='DotNet4.6' version='4.6.00081.20150925'/>
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
