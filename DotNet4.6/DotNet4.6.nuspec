@@ -7,9 +7,9 @@
     <authors>Microsoft</authors>
     <owners>Jivko Kolev</owners>
     <projectUrl>https://msdn.microsoft.com/en-us/library/w0x726c2(v=vs.110).aspx</projectUrl>
-    <iconUrl>https://github.com/jivkok/Chocolatey-Packages/raw/master/DotNet4.6/dotnet.png</iconUrl>
+    <packageSourceUrl>https://github.com/jivkok/Chocolatey-Packages/tree/master/DotNet4.6</packageSourceUrl>
+    <iconUrl>https://github.com/jivkok/Chocolatey-Packages/raw/master/icons/dotnet.png</iconUrl>
     <licenseUrl>http://msdn.microsoft.com/en-US/cc300389.aspx</licenseUrl>
-    <packageSourceUrl>https://github.com/jivkok/Chocolatey-Packages/tree/master/DotNet4.6-TargetPack</packageSourceUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Microsoft .NET Framework 4.6</summary>
     <description>The Microsoft .NET Framework 4.6 is a highly compatible, in-place update to the Microsoft .NET Framework 4, Microsoft .NET Framework 4.5, Microsoft .NET Framework 4.5.1 and Microsoft .NET Framework 4.5.2. The web installer is a small package that automatically determines and downloads only the components applicable for a particular platform.</description>
