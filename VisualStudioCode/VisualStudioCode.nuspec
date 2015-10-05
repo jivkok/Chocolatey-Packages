@@ -3,10 +3,11 @@
   <metadata>
     <id>VisualStudioCode</id>
     <title>Visual Studio Code</title>
-    <version>0.5.0.0</version>
+    <version>0.8.0.0</version>
     <authors>Microsoft</authors>
     <owners>Jivko Kolev</owners>
     <projectUrl>https://code.visualstudio.com</projectUrl>
+    <packageSourceUrl>https://github.com/jivkok/Chocolatey-Packages/tree/master/VisualStudioCode</packageSourceUrl>
     <iconUrl>https://github.com/jivkok/Chocolatey-Packages/raw/master/VisualStudioCode/vs.png</iconUrl>
     <licenseUrl>https://code.visualstudio.com/License</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
