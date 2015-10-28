@@ -3,14 +3,14 @@
   <metadata>
     <id>pal</id>
     <title>Performance Analysis of Logs (PAL) Tool</title>
-    <version>2.3.2.2</version>
-    <authors>mikelag, svenhau</authors>
-    <owners>Jivko Kolev</owners>
+    <version>2.7.4</version>
+    <authors>ClintH, mikelag, svenhau</authors>
+    <owners>Jivko Kolev, flcdrg</owners>
     <projectUrl>http://pal.codeplex.com/</projectUrl>
     <iconUrl>http://chocolatey.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>
     <licenseUrl>http://pal.codeplex.com/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <summary>Ever have a performance problem, but don't know what performance counters to collect or how to analyze them? The PAL (Performance Analysis of Logs) tool is a powerful tool that reads in a performance monitor counter log and analyzes it using known thresholds.</summary>
+    <summary>The PAL (Performance Analysis of Logs) tool is a powerful tool that reads in a performance monitor counter log and analyzes it using known thresholds.</summary>
     <description>Ever have a performance problem, but don't know what performance counters to collect or how to analyze them? The PAL (Performance Analysis of Logs) tool is a powerful tool that reads in a performance monitor counter log and analyzes it using known thresholds.
 Features:
 - Thresholds files for most of the major Microsoft products such as IIS, MOSS, SQL Server, BizTalk, Exchange, and Active Directory.
@@ -19,6 +19,13 @@ Features:
 - Creates an HTML based report for ease of copy/pasting into other applications.
 - Analyzes performance counter logs for thresholds using thresholds that change their criteria based on the computer's role or hardware specs.
 </description>
+<releaseNotes>
+v2.7.4
+* Bug fix: Fixed a bug the PowerStates.xml threshold file would return an error of "not compatible".
+* Bug fix: Fixed a bug related to this error: Cannot convert the "System.Object[]" value of type "System.Object[]" to "System.Double".
+* Change: Disabled analyses titled with "“(Total Latch Wait Time) / (Latch Waits/Sec)" in the SQL Server related threshold files since the threshold does not reflect the description.
+* Change: The new Exchange Server 2013 threshold file was not inheriting from SystemOverview.xml. Fixed.
+</releaseNotes>
     <tags>microsoft performance perfmon counter monitor analysis log iis moss sqlserver biztalk exchange ad</tags>
   </metadata>
 </package>
