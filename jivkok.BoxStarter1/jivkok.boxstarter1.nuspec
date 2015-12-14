@@ -3,15 +3,15 @@
   <metadata>
     <id>jivkok.boxstarter1</id>
     <title>Jivkok.BoxStarter1</title>
-    <version>1.0.0.8</version>
+    <version>1.0.0.9</version>
     <authors>Jivko Kolev</authors>
     <owners>Jivko Kolev</owners>
-    <summary>Jivkok.BoxStarter1 - prepare/configure new machine</summary>
-    <description>Jivkok.BoxStarter1 configures new machine to certain personal preferences:
-- disable Windows shutdown tracker;
-- set Explorer options (view all files);
-- set small taskbar;
-- enable remote desktop;
+    <summary>Jivkok.BoxStarter1 - new machine configuration</summary>
+    <description>Jivkok.BoxStarter1 configures new machine with :
+
+- shell config
+- apps
+- preferences: disable Windows shutdown tracker; set Explorer options (view all files); small taskbar; remote desktop
 </description>
     <projectUrl>https://github.com/jivkok/Chocolatey-Packages</projectUrl>
     <tags>jivkok boxstarter</tags>

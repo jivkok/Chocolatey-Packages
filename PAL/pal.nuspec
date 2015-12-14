@@ -3,7 +3,7 @@
   <metadata>
     <id>pal</id>
     <title>Performance Analysis of Logs (PAL) Tool</title>
-    <version>2.3.2.2</version>
+    <version>2.7.5.0</version>
     <authors>mikelag, svenhau</authors>
     <owners>Jivko Kolev</owners>
     <projectUrl>http://pal.codeplex.com/</projectUrl>
@@ -12,7 +12,9 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Ever have a performance problem, but don't know what performance counters to collect or how to analyze them? The PAL (Performance Analysis of Logs) tool is a powerful tool that reads in a performance monitor counter log and analyzes it using known thresholds.</summary>
     <description>Ever have a performance problem, but don't know what performance counters to collect or how to analyze them? The PAL (Performance Analysis of Logs) tool is a powerful tool that reads in a performance monitor counter log and analyzes it using known thresholds.
+
 Features:
+
 - Thresholds files for most of the major Microsoft products such as IIS, MOSS, SQL Server, BizTalk, Exchange, and Active Directory.
 - An easy to use GUI interface which makes creating batch files for the PAL.ps1 script.
 - A GUI editor for creating or editing your own threshold files.

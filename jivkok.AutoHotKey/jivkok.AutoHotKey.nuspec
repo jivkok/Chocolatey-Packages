@@ -3,11 +3,12 @@
   <metadata>
     <id>jivkok.AutoHotKey</id>
     <title>Jivkok - AutoHotKey keyboard shortcuts</title>
-    <version>1.0.0.1</version>
+    <version>1.0.0.2</version>
     <authors>Various</authors>
     <owners>Jivko Kolev</owners>
     <summary>Jivkok - AutoHotKey keyboard shortcuts</summary>
     <description>Shortcuts for:
+
 - SublimeText (Windows-Shift-T)
 - Chrome (Windows-Shift-G or Windows-Shift-S)
 </description>

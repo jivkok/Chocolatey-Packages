@@ -3,11 +3,12 @@
   <metadata>
     <id>jivkok.vsextensions.2013</id>
     <title>jivkok.vsextensions.2013</title>
-    <version>1.0.0.5</version>
+    <version>1.0.0.6</version>
     <authors>Jivko Kolev</authors>
     <owners>Jivko Kolev</owners>
     <summary>My Visual Studio extensions</summary>
     <description>My Visual Studio extensions:
+
 - CodeDigger
 - CodeMaid
 - EasyMotion

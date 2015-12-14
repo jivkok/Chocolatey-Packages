@@ -2,24 +2,18 @@ import-module (Join-Path $env:ChocolateyInstall \chocolateyInstall\helpers\choco
 $scriptPath = (Split-Path -parent $MyInvocation.MyCommand.path)
 import-module $scriptPath\boxstarter.psm1
 
-try {
-    # Disable-UAC
+# Disable-UAC
 
-    Disable-ShutdownTracker
+Disable-ShutdownTracker
 
-    Disable-InternetExplorerESC
+Disable-InternetExplorerESC
 
-    Set-ExplorerOptions -showHidenFilesFoldersDrives $true -showProtectedOSFiles $true -showFileExtensions $true
+Set-ExplorerOptions -showHidenFilesFoldersDrives $true -showProtectedOSFiles $true -showFileExtensions $true
 
-    Set-TaskbarSmall
+Set-TaskbarSmall
 
-    Enable-RemoteDesktop
+Enable-RemoteDesktop
 
-    # Install-WindowsUpdate
+# Install-WindowsUpdate
 
-    Restart-Explorer
-}
-catch {
-    Write-ChocolateyFailure 'jivkok.BoxStarter1' $($_.Exception.Message)
-    throw
-}
+Restart-Explorer
