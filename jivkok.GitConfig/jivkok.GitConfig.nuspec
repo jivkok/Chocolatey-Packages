@@ -21,7 +21,7 @@
     <iconUrl>https://github.com/ferventcoder/chocolateyautomaticpackages/raw/master/git/git.png</iconUrl>
     <dependencies>
       <dependency id="git" />
-      <dependency id="git-credential-manager-for-windows " />
+      <dependency id="git-credential-manager-for-windows" />
     </dependencies>
   </metadata>
 </package>
