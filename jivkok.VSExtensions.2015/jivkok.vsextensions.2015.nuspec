@@ -1,34 +1,35 @@
 <?xml version="1.0"?>
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
-    <id>jivkok.vsextensions.2013</id>
-    <title>jivkok.vsextensions.2013</title>
-    <version>1.0.0.7</version>
-    <authors>Jivko Kolev</authors>
+    <id>jivkok.vsextensions.2015</id>
+    <title>jivkok.vsextensions.2015</title>
+    <version>1.0.0.1</version>
+    <authors>various</authors>
     <owners>Jivko Kolev</owners>
-    <summary>My Visual Studio 2013 extensions</summary>
-    <description>My Visual Studio 2013 extensions:
+    <summary>My Visual Studio 2015 extensions</summary>
+    <description># My Visual Studio 2015 extensions:
 
-- CodeDigger
+## Common
 - CodeMaid
-- EasyMotion
 - EditorConfig
-- Gister
 - MarkdownMode
-- MultiEdit
-- NuGet
-- PostSharp
+- MixEdit
+- NuGet.Tools
 - PowerShellTools
 - ProPowerTools
-- RoutingAssistant
 - SnippetDesigner
 - SpecFlow
 - VSColorOutput
 - VSCommands
+
+## Web
 - WebEssentials
+- Bundler-Minifier
+- ImageOptimizer
+- WebCompiler
 - WebWorkbench
     </description>
     <projectUrl>https://github.com/jivkok/Chocolatey-Packages</projectUrl>
-    <tags>jivkok vs visual studio 2013 extensions</tags>
+    <tags>jivkok vs visual studio 2015 extensions</tags>
   </metadata>
 </package>

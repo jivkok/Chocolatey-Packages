@@ -1,7 +1,7 @@
 ﻿$packageName = 'jivkok.vsextensions.2013'
 
 function RunBatchfileAndUseItsEnvironmentVariables ($file) {
-  $cmd = "`"$file`" & set"
+  $cmd = """$file"" & set"
   cmd /c $cmd | Foreach-Object {
     $p, $v = $_.split('=')
     Set-Item -path env:$p -value $v
@@ -27,7 +27,7 @@ function Install-Extension($url, $name) {
 }
 
 $BatchFile = Join-Path $env:VS120COMNTOOLS "vsvars32.bat"
-RunBatchfileAndUseItsEnvironmentVariables `"$BatchFile`"
+RunBatchfileAndUseItsEnvironmentVariables $BatchFile
 
 Install-Extension http://visualstudiogallery.msdn.microsoft.com/fb5badda-4ea3-4314-a723-a1975cbdabb4/file/100523/7/Microsoft.CodeDigger.vsix CodeDigger.vsix
 Install-Extension http://visualstudiogallery.msdn.microsoft.com/76293c4d-8c16-4f4a-aee6-21f83a571496/file/9356/23/CodeMaid_v0.7.0.vsix CodeMaid.vsix
@@ -39,7 +39,7 @@ Install-Extension http://visualstudiogallery.msdn.microsoft.com/2beb9705-b568-45
 Install-Extension http://visualstudiogallery.msdn.microsoft.com/4ec1526c-4a8c-4a84-b702-b21a8f5293ca/file/105933/4/NuGet.Tools.2013.vsix NuGet.vsix
 # Install-Extension http://visualstudiogallery.msdn.microsoft.com/ad0897b3-7537-4c92-a38c-104b0e005206/file/75983/4/PerfWatsonMonitor.vsix PerfWatsonMonitor.vsix
 Install-Extension http://visualstudiogallery.msdn.microsoft.com/a058d5d3-e654-43f8-a308-c3bdfdd0be4a/file/89212/35/PostSharp-3.1.27.vsix PostSharp.vsix
-Install-Extension http://visualstudiogallery.msdn.microsoft.com/c9eb3ba8-0c59-4944-9a62-6eee37294597/file/112013/7/PowerShellTools.vsix PowerShellTools.vsix
+Install-Extension https://visualstudiogallery.msdn.microsoft.com/f65f845b-9430-4f72-a182-ae2a7b8999d7/file/166502/10/PowerShellTools.12.0.vsix PowerShellTools.vsix
 Install-Extension http://visualstudiogallery.msdn.microsoft.com/dbcb8670-889e-4a54-a226-a48a15e4cace/file/117115/1/ProPowerTools.vsix ProPowerTools.vsix
 Install-Extension http://visualstudiogallery.msdn.microsoft.com/f0589156-a8e6-47db-8bac-90f01ca6b8a3/file/80662/4/Cobisi.RoutingAssistant-v1.8.vsix RoutingAssistant.vsix
 Install-Extension http://visualstudiogallery.msdn.microsoft.com/b08b0375-139e-41d7-af9b-faee50f68392/file/5131/8/SnippetDesigner.vsix SnippetDesigner.vsix
