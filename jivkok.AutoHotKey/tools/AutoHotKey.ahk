@@ -57,3 +57,23 @@ else
 	WinWaitActive
 }
 return
+
+; Windows-Shift-Z: Babun's shell
+#+z::
+SetTitleMatchMode, 2
+If WinExist("ahk_class mintty")
+{
+	ifWinNotActive,ahk_class mintty
+	{
+		WinActivate,ahk_class mintty
+		WinWaitActive
+	}
+}
+else
+{
+	Run "%USERPROFILE%\.babun\cygwin\bin\mintty.exe" -
+	Sleep 100
+	WinActivate
+	WinWaitActive
+}
+return
