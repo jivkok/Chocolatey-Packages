@@ -7,9 +7,7 @@
     <authors>Jivko Kolev</authors>
     <owners>Jivko Kolev</owners>
     <summary>Jivkok.Tools - Utilities Suite</summary>
-    <description>This set includes a number of utilities installed as part of configuring new Windows machine:
-7zip.install, 7zip.commandline, AutoHotKey_L, Calibre, CCleaner, ChocolateyGui, CloseTheDoor, Console2, CrystalDiskInfo, Defraggler, Dexpot, Filezilla, Firefox, FoxitReader, FreeCommander, Git.Install, GoogleChrome, HTTrack, Inssider, Intel.SSD.Toolbox, KeePass, Kitty, MicrosoftSecurityEssentials, MobaXTerm, Monosnap, NetScan64, NimbleText, nmap, NugetPackageExplorer, PDFCreator, PomoTime, Powershell, Produkey, Putty, ResophNotes, RMPrepUSB, RoyalTS, Secunia.PSI, SetACL, Shotcut, Shotty, SkyDrive, Skype, Speccy, SyncBack, Synergy, SwissFileKnife, TeamViewer, TeraCopy, Terminals.app, thebrain.install, Tunnelier, VirtualCloneDrive, VLC, WinDirStat, WindowsRepair, WinSCP, XMind.
-    </description>
+    <description>This set includes a number of utilities installed as part of configuring new Windows machine. See dependencies below for complete list.</description>
     <projectUrl>https://github.com/jivkok/Chocolatey-Packages</projectUrl>
     <tags>jivkok utilities tools</tags>
     <dependencies>
@@ -53,6 +51,7 @@
       <dependency id='RoyalTS' />
       <dependency id='Secunia.PSI' />
       <dependency id='SetACL' />
+      <dependency id='Sharpkeys' />
       <dependency id='Shotcut' />
       <dependency id='Shotty' />
       <dependency id='SkyDrive' />
