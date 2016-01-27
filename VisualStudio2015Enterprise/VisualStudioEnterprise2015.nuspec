@@ -2,8 +2,8 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>VisualStudio2015Enterprise</id>
-    <title>Visual Studio 2015 Enterprise</title>
-    <version>14.0.23107.0</version>
+    <title>Visual Studio 2015 Enterprise with Update 1</title>
+    <version>14.0.24720.1</version>
     <authors>Microsoft</authors>
     <owners>Jivko Kolev</owners>
     <projectUrl>https://www.visualstudio.com/vs-2015-product-editions</projectUrl>
