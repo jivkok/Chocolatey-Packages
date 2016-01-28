@@ -76,9 +76,9 @@ Here is example that includes the Sql Tools and Windows Phone Emulators:
 - UWPPatch_KB3073097_HiddenV3: KB3073097
 - AppInsightsToolsVSWinExpressHiddenV4: Application Insights Tools (4.1.60107)
 - AppInsightsToolsVWDExpressHiddenV4: Application Insights Tools (4.1.60107)
-- LocalDBHidden: LocalDBHidden
-- ProfilerHidden: ProfilerHidden
-- StoryboardingHidden: StoryboardingHidden
+- LocalDBHidden
+- ProfilerHidden
+- StoryboardingHidden
 
 #### Using own configuration file
 Specifying the optional features above modifies the configuration file used during installation (AdminDeployment.xml). If that is not enough you can provide this file on your own.
