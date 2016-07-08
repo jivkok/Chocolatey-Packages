@@ -3,7 +3,7 @@
   <metadata>
     <id>jivkok.tools</id>
     <title>Jivkok.Tools</title>
-    <version>1.1.1.4</version>
+    <version>1.1.1.5</version>
     <authors>Jivko Kolev</authors>
     <owners>Jivko Kolev</owners>
     <summary>Jivkok.Tools - Utilities Suite</summary>
@@ -24,6 +24,7 @@
       <dependency id='CrystalDiskInfo' />
       <dependency id='defraggler' />
       <dependency id='Dexpot' />
+      <dependency id='f.lux' />
       <dependency id='filezilla' />
       <dependency id='Firefox' />
       <dependency id='FoxitReader' />
