@@ -1,1 +1,0 @@
-﻿Install-ChocolateyPackage 'logparser.lizardgui' 'msi' '/quiet' 'http://www.lizard-labs.net/Download.aspx?fname=LogParserLizardSetup.msi'
