@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>VisualStudio2017Community</id>
+    <title>Visual Studio 2017 Community - Release Candidate</title>
+    <version>15.0.25914.20161116-RC</version>
+    <authors>Microsoft</authors>
+    <owners>Jivko Kolev</owners>
+    <projectUrl>https://www.visualstudio.com/vs/visual-studio-2017-rc</projectUrl>
+    <iconUrl>https://github.com/jivkok/Chocolatey-Packages/raw/master/VisualStudioCommon/VS2015.png</iconUrl>
+    <licenseUrl>http://msdn.microsoft.com/en-US/cc300389.aspx</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Free, full-featured and extensible tool for students, open-source and individual developers</summary>
+    <description>### Overview
+Free, full-featured and extensible tool for students, open-source and individual developers.
+
+#### Boosted productivity
+Enhancements to code navigation, IntelliSense, refactoring, code fixes, and debugging, saves you time and effort on everyday tasks regardless of language or platform. In addition, for teams embracing DevOps, Visual Studio 2017 streamlines the developer inner loop and speeds up code flow with the brand new real time features such as live unit testing and real-time architectural dependency validation.
+
+#### Redefined fundamentals
+There is a renewed focus to enhance the efficiency of the fundamental tasks developers encounter on daily basis. From a brand-new lightweight and modular installation tailored to developers’ need, a faster IDE from startup to shut down, to a new way of view, edit, and debug any code without projects and solutions. Visual Studio 2017 helps developers stay focused on the big picture.
+
+#### Streamlined Azure development
+Built-in suite of Azure tools that enable developers to easily create cloud-first applications powered by Microsoft Azure. Visual Studio makes it easy to configure, build, debug, package, and deploy applications and services on Microsoft Azure directly from the IDE.
+
+#### Five-star mobile development
+With advanced debugging and profiling tools and unit test generation features, Visual Studio 2017 with Xamarin makes it faster and easier than ever for developers to build, connect, and tune mobile apps for Android, iOS, and Windows. Developer can also choose to develop mobile apps with Apache Cordova or Visual C++ cross platform library development in Visual Studio.
+
+### Customizations and Optional features
+Not yet. Expect them in the final released version.
+
+### Installation notes
+
+**IMPORTANT**: This release uses the new Visual Studio installer, which does not support unattended installation yet. Therefore, the installation of this page will require user interaction.
+
+A reboot will most certainly be required after installing/uninstalling this package. A reboot might even be required _before_ installing/uninstalling - if the system is awaiting a reboot due to Windows updates having been installed, or if you are attempting to uninstall the package immediately after installing it. The package will provide informative messages in each case.
+
+If control over reboots is required, please install the dependencies (like dotnet4.6 or later) first, perform a reboot if needed, and then continue with the VS package install.
+</description>
+    <releaseNotes>##### Software
+[Visual Studio 2017 RC release notes](https://www.visualstudio.com/news/releasenotes/vs15-relnotes)
+</releaseNotes>
+    <tags>Microsoft Visual Studio 2017 Community IDE VisualStudio VS VS15</tags>
+    <dependencies>
+      <dependency id="KB3033929" version="1.0.0" />
+      <dependency id="KB2919355" version="1.0.20160915" />
+      <dependency id="vcredist2012" version="11.0.60610" />
+      <dependency id="vcredist2015" version="14.0.24215.20160928" />
+      <dependency id="dotnet4.6.1" version="4.6.1055.1" />
+    </dependencies>
+    <packageSourceUrl>https://github.com/jivkok/Chocolatey-Packages/tree/master/VisualStudio2017Community</packageSourceUrl>
+    <docsUrl>https://www.visualstudio.com/en-us/news/releasenotes/vs15-relnotes</docsUrl>
+    <bugTrackerUrl>https://visualstudio.uservoice.com/forums/121579-visual-studio</bugTrackerUrl>
+  </metadata>
+  <files>
+    <file src="Tools\*" target="Tools\" />
+    <file src="..\VisualStudioCommon\VSModules2017.psm1" target="Tools\VSModules.psm1" />
+  </files>
+</package>
