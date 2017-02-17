@@ -1,6 +1,6 @@
-Uninstall-VS `
+Uninstall-VisualStudio `
     -PackageName 'VisualStudio2017Professional' `
-    -ApplicationName 'Microsoft Visual Studio Professional 2017' `
+    -ApplicationName 'Microsoft Visual Studio Professional 2017 RC' `
     -UninstallerName 'vs_installer.exe' `
-    -AssumeNewVS2017Installer `
-    -InstallerDisplayName 'Microsoft Visual Studio Installer'
+    -InstallerTechnology 'WillowVS2017OrLater' `
+    -ProgramsAndFeaturesDisplayName 'Microsoft Visual Studio 2017'

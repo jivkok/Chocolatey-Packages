@@ -1,9 +1,8 @@
-Import-Module (Join-Path $(Split-Path -parent $MyInvocation.MyCommand.Definition) 'VSModules.psm1')
-
-Install-VS `
+Install-VisualStudio `
     -PackageName 'VisualStudio2017Community' `
-    -ApplicationName 'Microsoft Visual Studio Community 2017' `
-    -Url 'https://aka.ms/vs/15/release/vs_Community.exe' `
-    -ChecksumSha1 '183f56b2989020750f6f5c5c422284019c178c1d' `
-    -AssumeNewVS2017Installer `
-    -InstallerDisplayName 'Microsoft Visual Studio Installer'
+    -ApplicationName 'Microsoft Visual Studio Community 2017 RC' `
+    -Url 'https://download.microsoft.com/download/7/6/6/766DFD1B-5E54-4F2E-82BF-FAAADD4F3401/vs_Community.exe' `
+    -Checksum 'AC856CD48905A7D162EAB6DAFFDFCF3745D5C843' `
+    -ChecksumType 'SHA1' `
+    -InstallerTechnology 'WillowVS2017OrLater' `
+    -ProgramsAndFeaturesDisplayName 'Microsoft Visual Studio 2017'
