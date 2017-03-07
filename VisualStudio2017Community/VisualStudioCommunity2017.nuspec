@@ -2,13 +2,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>VisualStudio2017Community</id>
-    <title>Visual Studio 2017 Community - Release Candidate (2017-02-07)</title>
-    <version>15.0.26206.20170228-rc6</version>
+    <title>Visual Studio 2017 Community</title>
+    <version>15.0.26228.0</version>
     <authors>Microsoft</authors>
     <owners>Jivko Kolev,jberezanski</owners>
-    <projectUrl>https://www.visualstudio.com/vs/visual-studio-2017-rc</projectUrl>
-    <iconUrl>https://github.com/jivkok/Chocolatey-Packages/raw/master/VisualStudioCommon/VS2015.png</iconUrl>
-    <licenseUrl>http://msdn.microsoft.com/en-US/cc300389.aspx</licenseUrl>
+    <projectUrl>https://blogs.msdn.microsoft.com/visualstudio/2017/03/07/announcing-visual-studio-2017-general-availability-and-more/</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/jberezanski/ChocolateyPackages/17d25f2fb8a31d40b93a696e345c22a77913418f/icons/vs2017.png</iconUrl>
+    <licenseUrl>https://www.visualstudio.com/license-terms/mlt553321/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Free, full-featured and extensible tool for students, open-source and individual developers</summary>
     <description>### Overview
@@ -27,37 +27,55 @@ Built-in suite of Azure tools that enable developers to easily create cloud-firs
 With advanced debugging and profiling tools and unit test generation features, Visual Studio 2017 with Xamarin makes it faster and easier than ever for developers to build, connect, and tune mobile apps for Android, iOS, and Windows. Developer can also choose to develop mobile apps with Apache Cordova or Visual C++ cross platform library development in Visual Studio.
 
 ### Customizations and Optional features
-By default, the package installs only the bare minimum required (the Core Editor workload). The easiest way to add more workloads is to use the workload packages: `visualstudio2017-workload-*`, e.g. [visualstudio2017-workload-manageddesktop](https://chocolatey.org/packages/visualstudio2017-workload-manageddesktop).
+By default, the package installs only the bare minimum required (the Core Editor workload). The easiest way to add more workloads (feature sets) is to use the workload packages:
+- [Azure development](https://chocolatey.org/packages/visualstudio2017-workload-azure)
+- [Data storage and processing](https://chocolatey.org/packages/visualstudio2017-workload-data)
+- [.NET desktop development](https://chocolatey.org/packages/visualstudio2017-workload-manageddesktop)
+- [Game development with Unity](https://chocolatey.org/packages/visualstudio2017-workload-managedgame)
+- [Linux development with C++](https://chocolatey.org/packages/visualstudio2017-workload-nativecrossplat)
+- [Desktop development with C++](https://chocolatey.org/packages/visualstudio2017-workload-nativedesktop)
+- [Game development with C++](https://chocolatey.org/packages/visualstudio2017-workload-nativegame)
+- [Mobile development with C++](https://chocolatey.org/packages/visualstudio2017-workload-nativemobile)
+- [.NET Core cross-platform development](https://chocolatey.org/packages/visualstudio2017-workload-netcoretools)
+- [Mobile development with .NET](https://chocolatey.org/packages/visualstudio2017-workload-netcrossplat)
+- [ASP.NET and web development](https://chocolatey.org/packages/visualstudio2017-workload-netweb)
+- [Node.js development](https://chocolatey.org/packages/visualstudio2017-workload-node)
+- [Universal Windows Platform development](https://chocolatey.org/packages/visualstudio2017-workload-universal)
+- [Visual Studio extension development](https://chocolatey.org/packages/visualstudio2017-workload-visualstudioextension)
+- [Mobile development with JavaScript](https://chocolatey.org/packages/visualstudio2017-workload-webcrossplat)
 
 However, the package passes all package parameters to the Visual Studio installer, enabling full customization of the installation. The possible parameters are [described here](https://docs.microsoft.com/en-us/visualstudio/install/use-command-line-parameters-to-install-visual-studio). The package passes `--norestart --wait` by default, and `--quiet`, unless `--passive` is specified in the package parameters.
 
 After installing the package, more workloads/components can also be added interactively, by launching the Visual Studio Installer application from the Start Menu.
 
-#### Full installation
-As an example of using package parameters, this command will install Visual Studio with all available workloads and optional components and display progress during the installation:
+The language of the installed software can be controlled using the package parameter `--locale &lt;language&gt;`.
+The list of supported languages is [presented here](https://docs.microsoft.com/en-us/visualstudio/install/use-command-line-parameters-to-install-visual-studio#list-of-language-locales). By default, the operating system display language is used.
 
-    choco install visualstudio2017professional -packageParameters "--allWorkloads --includeRecommended --includeOptional --passive"
+#### Full installation
+As an example of using package parameters, this command will install Visual Studio with all available workloads and optional components, display progress during the installation and specify the English language regardless of operating system settings:
+
+    choco install visualstudio2017professional --package-parameters "--allWorkloads --includeRecommended --includeOptional --passive --locale en-US"
 
 ### Installation notes
 
 A reboot may be required after installing/uninstalling this package. A reboot might even be required _before_ installing/uninstalling - if the system is awaiting a reboot due to Windows updates having been installed, or if you are attempting to uninstall the package immediately after installing it. The package will provide informative messages in each case.
 
-If control over reboots is required, please install the dependencies (like dotnet4.6 or later) first, perform a reboot if needed, and then continue with the VS package install.
+If control over reboots is required, please install the dependencies (like dotnet4.6.1 or later) first, perform a reboot if needed, and then continue with the VS package install.
 </description>
     <releaseNotes>##### Software
-[Visual Studio 2017 RC release notes](https://www.visualstudio.com/news/releasenotes/vs15-relnotes)
+[Visual Studio 2017 release notes](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-relnotes)
 </releaseNotes>
-    <tags>Microsoft Visual Studio 2017 Community IDE VisualStudio VS VS15</tags>
+    <tags>Microsoft Visual Studio 2017 Community IDE VisualStudio VS VS15 admin</tags>
     <dependencies>
-      <dependency id="chocolatey-visualstudio.extension" version="1.1.0" />
+      <dependency id="chocolatey-visualstudio.extension" version="1.2.0" />
       <dependency id="KB3033929" version="1.0.0" />
       <dependency id="KB2919355" version="1.0.20160915" />
       <dependency id="KB2999226" version="1.0.20161201" />
-      <dependency id="dotnet4.6" version="4.6.00081.20150925" />
-      <dependency id="visualstudio2017-installer" version="1.0.0-rc1" />
+      <dependency id="dotnet4.6.1" version="4.6.01055.20161213" />
+      <dependency id="visualstudio2017-installer" version="1.0.0" />
     </dependencies>
     <packageSourceUrl>https://github.com/jivkok/Chocolatey-Packages/tree/master/VisualStudio2017Community</packageSourceUrl>
-    <docsUrl>https://www.visualstudio.com/en-us/news/releasenotes/vs15-relnotes</docsUrl>
+    <docsUrl>https://docs.microsoft.com/en-us/visualstudio/welcome-to-visual-studio</docsUrl>
     <bugTrackerUrl>https://visualstudio.uservoice.com/forums/121579-visual-studio</bugTrackerUrl>
   </metadata>
   <files>
