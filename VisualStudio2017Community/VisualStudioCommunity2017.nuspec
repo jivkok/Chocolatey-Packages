@@ -14,20 +14,11 @@
     <description>### Overview
 Free, full-featured and extensible tool for students, open-source and individual developers.
 
-#### Boosted productivity
-Enhancements to code navigation, IntelliSense, refactoring, code fixes, and debugging, saves you time and effort on everyday tasks regardless of language or platform. In addition, for teams embracing DevOps, Visual Studio 2017 streamlines the developer inner loop and speeds up code flow with the brand new real time features such as live unit testing and real-time architectural dependency validation.
-
-#### Redefined fundamentals
-There is a renewed focus to enhance the efficiency of the fundamental tasks developers encounter on daily basis. From a brand-new lightweight and modular installation tailored to developers’ need, a faster IDE from startup to shut down, to a new way of view, edit, and debug any code without projects and solutions. Visual Studio 2017 helps developers stay focused on the big picture.
-
-#### Streamlined Azure development
-Built-in suite of Azure tools that enable developers to easily create cloud-first applications powered by Microsoft Azure. Visual Studio makes it easy to configure, build, debug, package, and deploy applications and services on Microsoft Azure directly from the IDE.
-
-#### Five-star mobile development
-With advanced debugging and profiling tools and unit test generation features, Visual Studio 2017 with Xamarin makes it faster and easier than ever for developers to build, connect, and tune mobile apps for Android, iOS, and Windows. Developer can also choose to develop mobile apps with Apache Cordova or Visual C++ cross platform library development in Visual Studio.
+To find out what's new or to see the known issues, see the [Visual Studio 2017 Release Notes](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-relnotes).  
+[System requirements](https://www.visualstudio.com/en-us/productinfo/vs2017-system-requirements-vs)
 
 ### Customizations and Optional features
-By default, the package installs only the bare minimum required (the Core Editor workload). The easiest way to add more workloads (feature sets) is to use the workload packages:
+By default, the package installs only the bare minimum required (the Core Editor workload). The easiest way to add more development features is to use the workload packages:
 - [Azure development](https://chocolatey.org/packages/visualstudio2017-workload-azure)
 - [Data storage and processing](https://chocolatey.org/packages/visualstudio2017-workload-data)
 - [.NET desktop development](https://chocolatey.org/packages/visualstudio2017-workload-manageddesktop)
@@ -44,22 +35,21 @@ By default, the package installs only the bare minimum required (the Core Editor
 - [Visual Studio extension development](https://chocolatey.org/packages/visualstudio2017-workload-visualstudioextension)
 - [Mobile development with JavaScript](https://chocolatey.org/packages/visualstudio2017-workload-webcrossplat)
 
-However, the package passes all package parameters to the Visual Studio installer, enabling full customization of the installation. The possible parameters are [described here](https://docs.microsoft.com/en-us/visualstudio/install/use-command-line-parameters-to-install-visual-studio). The package passes `--norestart --wait` by default, and `--quiet`, unless `--passive` is specified in the package parameters.
+All package parameters are passed to the Visual Studio installer, enabling full customization of the installation. The possible parameters are [described here](https://docs.microsoft.com/en-us/visualstudio/install/use-command-line-parameters-to-install-visual-studio). The package passes `--norestart --wait` by default, and `--quiet`, unless `--passive` is specified in the package parameters.
 
-After installing the package, more workloads/components can also be added interactively, by launching the Visual Studio Installer application from the Start Menu.
+After installing the package, more features can also be added by launching the Visual Studio Installer application from the Start Menu.
 
 The language of the installed software can be controlled using the package parameter `--locale &lt;language&gt;`.
-The list of supported languages is [presented here](https://docs.microsoft.com/en-us/visualstudio/install/use-command-line-parameters-to-install-visual-studio#list-of-language-locales). By default, the operating system display language is used.
+The list of languages is [presented here](https://docs.microsoft.com/en-us/visualstudio/install/use-command-line-parameters-to-install-visual-studio#list-of-language-locales). By default, the operating system display language is used.
 
 #### Full installation
-As an example of using package parameters, this command will install Visual Studio with all available workloads and optional components, display progress during the installation and specify the English language regardless of operating system settings:
+This command will install Visual Studio with all available workloads and optional components, display progress during the installation and specify the English language regardless of operating system settings:
 
-    choco install visualstudio2017professional --package-parameters "--allWorkloads --includeRecommended --includeOptional --passive --locale en-US"
+    choco install visualstudio2017community --package-parameters "--allWorkloads --includeRecommended --includeOptional --passive --locale en-US"
 
-### Installation notes
+### Notes
 
-A reboot may be required after installing/uninstalling this package. A reboot might even be required _before_ installing/uninstalling - if the system is awaiting a reboot due to Windows updates having been installed, or if you are attempting to uninstall the package immediately after installing it. The package will provide informative messages in each case.
-
+A reboot may be required after (or even _before_) installing/uninstalling this package.
 If control over reboots is required, please install the dependencies (like dotnet4.6.1 or later) first, perform a reboot if needed, and then continue with the VS package install.
 </description>
     <releaseNotes>##### Software
