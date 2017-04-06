@@ -3,10 +3,10 @@
   <metadata>
     <id>VisualStudio2017Professional</id>
     <title>Visual Studio 2017 Professional</title>
-    <version>15.0.26228.20170331</version>
+    <version>15.1.26403.20170405</version>
     <authors>Microsoft</authors>
     <owners>Jivko Kolev,jberezanski</owners>
-    <projectUrl>https://blogs.msdn.microsoft.com/visualstudio/2017/03/07/announcing-visual-studio-2017-general-availability-and-more/</projectUrl>
+    <projectUrl>https://blogs.msdn.microsoft.com/visualstudio/2017/04/05/visual-studio-2017-update/</projectUrl>
     <iconUrl>https://cdn.rawgit.com/jberezanski/ChocolateyPackages/17d25f2fb8a31d40b93a696e345c22a77913418f/icons/vs2017.png</iconUrl>
     <licenseUrl>https://www.visualstudio.com/license-terms/mlt687465/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -56,7 +56,7 @@ If control over reboots is required, please install the dependencies (like dotne
     <releaseNotes>##### Software
 [Visual Studio 2017 release notes](https://www.visualstudio.com/en-us/news/releasenotes/vs2017-relnotes)
 ##### Package
-15.0.26228.20170331: Initial package release for Visual Studio 2017 version 15.0.26228.12.
+15.1.26403.20170405: Package metadata updated for Visual Studio 2017 version 15.1.26403.0 (the native installer always installs the latest released Visual Studio 2017 build).
 </releaseNotes>
     <tags>Microsoft Visual Studio 2017 Professional IDE VisualStudio VS VS15 admin</tags>
     <dependencies>
