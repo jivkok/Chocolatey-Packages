@@ -5,6 +5,16 @@ $package = 'jivkok.GitConfig'
 # https://gist.github.com/bradwilson/4215933
 # https://gist.github.com/oli/1637874
 
+function SetDiffMergeTool($toolAlias) {
+  # The alias must match teh namespacing used for configuring the diff/meerge tools. E.g. difftool.kdiff3.path -> alias is kdiff3
+
+  Write-Output "Setting $toolAlias as diff/merge tool"
+
+  . $git_exe config --global diff.tool $toolAlias
+  . $git_exe config --global diff.guitool $toolAlias
+  . $git_exe config --global merge.tool $toolAlias
+}
+
 # Prereqs
 
 $git_exe = 'git.exe'
@@ -25,26 +35,26 @@ if ((Get-Command $git_exe -ErrorAction SilentlyContinue) -eq $null)
 }
 Write-Output "Found Git: $git_exe"
 
-setx TERM cygwin /M
-$kdiffPath = "$env:ProgramW6432\KDiff3\kdiff3.exe"
-if (Test-Path $kdiffPath) { Write-Output "Found KDiff3 at: $kdiffPath" } else { Write-Warning "Could not find KDiff3 at: $kdiffPath" }
-
 # Core
+
 . $git_exe config --global core.autocrlf true
 . $git_exe config --global core.preloadindex true
 . $git_exe config --global core.fscache true
 . $git_exe config --global core.safecrlf false
+
 $defaultEditor = . $git_exe config --get core.editor
 if (!$defaultEditor)
 {
   . $git_exe config --global core.editor notepad
 }
+
 . $git_exe config --global help.format html
 . $git_exe config --global pack.packSizeLimit 2g
 . $git_exe config --global push.default current
 . $git_exe config --global rebase.autosquash true
 
 # Colors
+
 . $git_exe config --global color.branch.current "red bold"
 . $git_exe config --global color.branch.local normal
 . $git_exe config --global color.branch.remote "yellow bold"
@@ -62,23 +72,84 @@ if (!$defaultEditor)
 . $git_exe config --global color.status.nobranch "red bold"
 
 # Diff & Merge
+
+$kdiffPath = "$env:ProgramW6432\KDiff3\kdiff3.exe"
+$bcPath = "$env:ProgramW6432\Beyond Compare 4\BCompare.exe"
+$meldPath = "${env:ProgramFiles(x86)}\Meld\Meld.exe"
+$winmergePath = "$env:ProgramW6432\WinMerge\WinMergeU.exe"
+
+. $git_exe config --global difftool.prompt false
+. $git_exe config --global mergetool.prompt false
+
 if (Test-Path $kdiffPath)
 {
-  . $git_exe config --global diff.tool kdiff3
-  . $git_exe config --global diff.guitool kdiff3
-  . $git_exe config --global difftool.prompt false
+  Write-Output "Found KDiff3 at: $kdiffPath"
+
   . $git_exe config --global difftool.kdiff3.path "$kdiffPath"
   . $git_exe config --global difftool.kdiff3.keepBackup false
   . $git_exe config --global difftool.kdiff3.trustExitCode false
 
-  . $git_exe config --global merge.tool kdiff3
-  . $git_exe config --global mergetool.prompt false
   . $git_exe config --global mergetool.kdiff3.path "$kdiffPath"
   . $git_exe config --global mergetool.kdiff3.keepBackup false
   . $git_exe config --global mergetool.kdiff3.trustExitCode false
 }
+if (Test-Path $bcPath)
+{
+  Write-Output "Found BeyondCompare at: $bcPath"
+
+  . $git_exe config --global difftool.bc.path "$bcPath"
+  . $git_exe config --global difftool.bc.keepBackup false
+  . $git_exe config --global difftool.bc.trustExitCode false
+
+  . $git_exe config --global mergetool.bc.path "$bcPath"
+  . $git_exe config --global mergetool.bc.keepBackup false
+  . $git_exe config --global mergetool.bc.trustExitCode false
+}
+if (Test-Path $meldPath)
+{
+  Write-Output "Found Meld at: $meldPath"
+
+  . $git_exe config --global difftool.meld.path "$meldPath"
+  . $git_exe config --global difftool.meld.keepBackup false
+  . $git_exe config --global difftool.meld.trustExitCode false
+
+  . $git_exe config --global mergetool.meld.cmd "'$meldPath' `"`$LOCAL`" `"`$MERGED`" `"`$REMOTE`" --output `"`$MERGED`""
+  . $git_exe config --global mergetool.meld.keepBackup false
+  . $git_exe config --global mergetool.meld.trustExitCode false
+}
+if (Test-Path $winmergePath)
+{
+  Write-Output "Found WinMerge at: $winmergePath"
+
+  . $git_exe config --global difftool.winmerge.cmd "'$winmergePath' -u -e `$LOCAL `$REMOTE"
+  . $git_exe config --global difftool.winmerge.keepBackup false
+  . $git_exe config --global difftool.winmerge.trustExitCode true
+
+  . $git_exe config --global mergetool.winmerge.cmd "'$winmergePath' -u -e -dl \`"Local\`" -dr \`"Remote\`" `$LOCAL `$REMOTE `$MERGED"
+  . $git_exe config --global mergetool.winmerge.keepBackup false
+  . $git_exe config --global mergetool.winmerge.trustExitCode true
+}
+
+# Tools (in order of preference): KDiff3, BeyondCompare, Meld, WinMerge.
+if (Test-Path $kdiffPath)
+{
+  SetDiffMergeTool 'kdiff3'
+}
+elseif (Test-Path $bcPath)
+{
+  SetDiffMergeTool 'bc'
+}
+elseif (Test-Path $meldPath)
+{
+  SetDiffMergeTool 'meld'
+}
+elseif (Test-Path $winmergePath)
+{
+  SetDiffMergeTool 'winmerge'
+}
 
 # Aliases
+
 . $git_exe config --global alias.a 'add -A'
 . $git_exe config --global alias.aliases 'config --get-regexp alias'
 . $git_exe config --global alias.amend 'commit --amend -C HEAD'
@@ -90,6 +161,7 @@ if (Test-Path $kdiffPath)
 . $git_exe config --global alias.cm 'commit -m'
 . $git_exe config --global alias.co 'checkout'
 . $git_exe config --global alias.df 'diff --word-diff=color --word-diff-regex=. -w --patience'
+. $git_exe config --global alias.dt 'difftool --dir-diff'
 . $git_exe config --global alias.dump 'cat-file -p'
 . $git_exe config --global alias.files '! git ls-files | grep -i'
 . $git_exe config --global alias.filelog 'log -u'
@@ -100,6 +172,7 @@ if (Test-Path $kdiffPath)
 . $git_exe config --global alias.lasttag 'describe --tags --abbrev=0'
 . $git_exe config --global alias.lg 'log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short'
 . $git_exe config --global alias.loglist 'log --oneline'
+. $git_exe config --global alias.mt 'mergetool'
 . $git_exe config --global alias.pick 'add -p'
 . $git_exe config --global alias.pp 'pull --prune'
 . $git_exe config --global alias.pullom 'pull origin master'
@@ -116,6 +189,7 @@ if (Test-Path $kdiffPath)
 . $git_exe config --global alias.wdiff 'diff --word-diff'
 . $git_exe config --global alias.who 'shortlog -s -e --'
 . $git_exe config --global alias.zap 'reset --hard HEAD'
+
 $userName = . $git_exe config --global --get user.name
 if ($userName)
 {
@@ -123,5 +197,5 @@ if ($userName)
 }
 else
 {
-  Write-Warning "Set git global username with git config --global user.name 'foo' to use standup"
+  Write-Output "Set git global username with git config --global user.name 'foo' to use standup"
 }

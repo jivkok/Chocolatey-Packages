@@ -3,7 +3,7 @@
   <metadata>
     <id>jivkok.GitConfig</id>
     <title>Git - Config</title>
-    <version>1.0.1.0</version>
+    <version>1.1.0.0</version>
     <authors>Various</authors>
     <owners>Jivko Kolev</owners>
     <summary>Jivko's standard Git configuration and aliases</summary>
