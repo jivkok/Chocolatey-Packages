@@ -1,9 +1,8 @@
-Import-Module (Join-Path $(Split-Path -parent $MyInvocation.MyCommand.Definition) 'VSModules.psm1')
-
-Install-VS `
+Install-VisualStudio `
     -PackageName 'VisualStudio2017Professional' `
     -ApplicationName 'Microsoft Visual Studio Professional 2017' `
-    -Url 'https://aka.ms/vs/15/release/vs_Professional.exe' `
-    -ChecksumSha1 '2a8511d873e0f204c8357851749a245292bc0b4b' `
-    -AssumeNewVS2017Installer `
-    -InstallerDisplayName 'Microsoft Visual Studio Installer'
+    -Url 'https://download.microsoft.com/download/C/5/0/C5092724-4FFE-4DD3-9EE7-0AE31BF17620/vs_Professional.exe' `
+    -Checksum 'EB4FC0A0C9C55AFDF86CF4D53625A41F554A4A49A7EDCAC6C9CFDFDC34FE1722' `
+    -ChecksumType 'SHA256' `
+    -InstallerTechnology 'WillowVS2017OrLater' `
+    -ProgramsAndFeaturesDisplayName 'Microsoft Visual Studio 2017'
