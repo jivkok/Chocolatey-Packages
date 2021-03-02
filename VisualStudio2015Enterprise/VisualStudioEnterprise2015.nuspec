@@ -2,8 +2,8 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>VisualStudio2015Enterprise</id>
-    <title>Visual Studio 2015 Enterprise</title>
-    <version>14.0.23107.0</version>
+    <title>Visual Studio 2015 Enterprise with Update 1</title>
+    <version>14.0.24720.1</version>
     <authors>Microsoft</authors>
     <owners>Jivko Kolev</owners>
     <projectUrl>https://www.visualstudio.com/vs-2015-product-editions</projectUrl>
@@ -27,18 +27,60 @@ Optional features (Sql tools, phone tools, etc.) are available but not installed
 You can provide optional parameters to include them during the install.
 Here is example that includes the Sql Tools and Windows Phone Emulators:
 
-    choco install VisualStudio2015Enterprise -packageParameters "--Features SQL,WindowsPhone81Emulators"
+    choco install VisualStudio2015Enterprise -packageParameters "--Features SQLV1,WindowsPhone81EmulatorsV1"
 
 ##### Available features:
-- LightSwitch
-- MDDCPlusPlus
-- MDDJS
-- OfficeDeveloperTools
-- SilverLight_Developer_Kit
-- SQL
-- ToolsForWin81_WP80_WP81
-- VC_MFC_Libraries
-- WindowsPhone81Emulators
+| Feature                              | Description                                                            |
+|--------------------------------------|------------------------------------------------------------------------|
+| VSUV1PreReqV1                        | Visual Studio 2015 Update 1 Prerequisite                               |
+| NativeLanguageSupport_VCV1           | Common Tools for Visual C++ 2015                                       |
+| NativeLanguageSupport_MFCV1          | Microsoft Foundation Classes for C++                                   |
+| NativeLanguageSupport_XPV1           | Windows XP Support for C++                                             |
+| Win81SDK_HiddenV1                    | Windows 8.1 SDK and Universal CRT SDK                                  |
+| FSharpV1                             | Visual F#                                                              |
+| PythonToolsForVisualStudioV4         | Python Tools for Visual Studio (December 2015)                         |
+| ClickOnceV1                          | ClickOnce Publishing Tools                                             |
+| LightSwitchV1                        | LightSwitch                                                            |
+| OfficeDeveloperToolsV1               | Microsoft Office Developer Tools                                       |
+| SQLV1                                | Microsoft SQL Server Data Tools                                        |
+| WebToolsV1                           | Microsoft Web Developer Tools                                          |
+| PowerShellToolsV1                    | PowerShell Tools for Visual Studio                                     |
+| SilverLight_Developer_KitV1          | Silverlight Development Kit                                            |
+| Windows10_ToolsAndSDKV4              | Tools (1.2) and Windows 10 SDK (10.0.10586)                            |
+| Win10_EmulatorV1                     | Emulators for Windows 10 Mobile (10.0.10240)                           |
+| Win10_EmulatorV2                     | Emulators for Windows 10 Mobile (10.0.10586)                           |
+| XamarinVSCoreV1                      | C#/.NET (Xamarin)                                                      |
+| MDDJSCoreV6                          | HTML/JavaScript (Apache Cordova) Update 5                              |
+| AndroidNDKV1                         | Android Native Development Kit (R10E, 32 bits)                         |
+| AndroidSDKV1                         | Android SDK                                                            |
+| AndroidSDK_API1921V1                 | Android SDK Setup (API Level 19 and 21)                                |
+| AndroidSDK_API22V1                   | Android SDK Setup (API Level 22)                                       |
+| AndroidSDK_API23V1                   | Android SDK Setup (API Level 23)                                       |
+| AntV1                                | Apache Ant (1.9.3)                                                     |
+| L_MDDCPlusPlus_iOS_V4                | Visual C++ iOS Development (Update 1)                                  |
+| L_MDDCPlusPlus_ClangC2_V2            | Clang with Microsoft CodeGen (January 2016)                            |
+| L_MDDCPlusPlus_Android_V4            | Visual C++ Android Development (Update 1)                              |
+| L_IncrediBuild_V1                    | IncrediBuild                                                           |
+| JavaJDKV1                            | Java SE Development Kit (7.0.550.13)                                   |
+| Node.jsV1                            | Joyent Node.js                                                         |
+| VSEmu_AndroidV1.0.60106.1            | Microsoft Visual Studio Emulator for Android (January 2016)            |
+| WebSocket4NetV1                      | WebSocket4Net                                                          |
+| ToolsForWin81_WP80_WP81V1            | Tools and Windows SDKs                                                 |
+| WindowsPhone81EmulatorsV1            | Emulators for Windows Phone 8.1                                        |
+| GitForWindowsV3                      | Git for Windows                                                        |
+| GitHubVSV1                           | GitHub Extension for Visual Studio                                     |
+| VS_SDK_GroupV3                       | Visual Studio Extensibility Tools Update 1                             |
+| VS_SDK_Breadcrumb_GroupV3            | Visual Studio Extensibility Tools Update 1                             |
+| Win10_VSToolsV4                      | Tools for Universal Windows Apps (1.2) and Windows 10 SDK (10.0.10586) |
+| Win10SDK_HiddenV1                    | Windows 10 SDK (10.0.10240)                                            |
+| Win10SDK_HiddenV2                    | Windows 10 SDK (10.0.10586)                                            |
+| Win10SDK_VisibleV1                   | Windows 10 SDK 10.0.10240                                              |
+| UWPPatch_KB3073097_HiddenV3          | KB3073097                                                              |
+| AppInsightsToolsVSWinExpressHiddenV4 | Application Insights Tools (4.1.60107)                                 |
+| AppInsightsToolsVWDExpressHiddenV4   | Application Insights Tools (4.1.60107)                                 |
+| LocalDBHidden                        | LocalDB                                                                |
+| ProfilerHidden                       | Profiler                                                               |
+| StoryboardingHidden                  | Storyboarding                                                          |
 
 #### Using own configuration file
 Specifying the optional features above modifies the configuration file used during installation (AdminDeployment.xml). If that is not enough you can provide this file on your own.
